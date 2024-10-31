@@ -17,6 +17,7 @@ html{
 
 a{
     text-decoration: none;
+    color:#000
 }
 
 #main{}
@@ -37,8 +38,7 @@ a{
 
 
 /* Hiệu ứng cuộn trang header */
-#main header.sticky{
-}
+
 
 /* end hiệu ứng cuộn trang header */
 
@@ -135,9 +135,19 @@ a{
 
 /* Begin banner */
 
+.mb__banner-page__all__first{
+    display: none;
+}
+
+
 #banner-page .banner-page__all{
     margin-top: 84px;
 }
+
+#banner-page .mb__banner-page__all__first{
+    display: none;
+}
+
 
 #banner-page .banner-page__all__third,
 #banner-page .banner-page__all__second,
@@ -253,6 +263,7 @@ a{
     text-align: center;
     border-radius: 50%;
     font-size: 0;
+    cursor: pointer;
 }
 
 /* end dots trong thư viện jsquery */
@@ -277,6 +288,10 @@ a{
 
 #footer-page .footer-page__all{
     position: relative;
+}
+
+#footer-page .footer-page__all__info>img{
+    height: 100px;
 }
 
 
@@ -340,4 +355,255 @@ a{
 }   
 
 /* end footer */
+
+
+
+
+
+/* begin responsive */
+
+/* desktop */
+@media screen and (min-width:1024px){
+/* begin header*/
+#header-page .mb__header-page__menu-nav{
+    display: none;
+}
+
+
+#mb__header-page{
+    display: none;
+}
+
+
+/* end header*/
+
+
+}
+/* end destop */
+
+
+/* tablet */
+@media screen and (min-width:768px){
+
+}
+/* end tablet */
+
+
+/* mobile */
+@media screen and (max-width:767px){
+    /* begin header */
+   
+
+    #mb__header-page.active_mb{
+        display: block;
+    }
+
+ 
+
+    #mb__header-page{ 
+        position: fixed;
+        display: none;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }   
+
+    #mb__header-page .mb__header-page-all{
+        background-color: #fff;
+        width: 187px;
+        position: relative;
+        box-shadow: 0 0 10px #000;
+       
+    }
+
+    #mb__header-page .mb__header-page__close{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+
+    #mb__header-page ul{
+        padding: 40px 0;
+    }
+
+    #mb__header-page ul li{
+        padding: 15px 10px;
+        color:#000
+    }
+
+
+    #mb__header-page ul li a{
+        color:#000;
+        font-weight: 600;
+    }
+
+    #mb__header-page .mb__header-page__cart,
+    #mb__header-page .mb__header-page__login{
+        padding: 15px 0;
+        display: flex;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    #mb__header-page .mb__header-page__cart i,
+    #mb__header-page .mb__header-page__login i{
+        min-width: 20px;
+    }
+
+
+
+    #header-page{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    #header-page .mb__header-page__menu-nav{
+        display: block;
+        margin-left: 15px;
+    }
+
+   
+    
+
+
+    #header-page .header-page__logo{
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+
+    #header-page .header-page__nav{
+        display: none;
+        list-style: none;
+        margin-left: 50px;
+    }
+
+    #header-page .header-page__search {
+        margin: 0;
+    }
+
+
+#header-page .header-page__search input.active_in{
+    display: block;
+}
+    #header-page .header-page__search input{
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        display: none;
+        padding: 6px 12px;
+    }
+
+
+    #header-page .header-page__search span{
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    #header-page .header-page__info{
+        display: none;
+    }
+    /* end header */
+
+
+    /* begin banner */
+    .mb__banner-page__all__first{
+        display: block;
+        position: relative;
+        margin-top: 84px;
+    }
+
+    .mb__banner-page__all__first__logo{
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+
+    
+    #banner-page {
+        display: none;
+    }
+
+    /* end banner */
+
+
+    /* begin footer */
+
+
+    #footer-page .footer-page__all>img{
+        min-height: 528px;
+    }
+
+    #footer-page .footer-page__all__info>img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #footer-page .footer-page__all__info{
+        display: grid;
+        position: absolute;
+        top: 64%;
+        transform: translateY(-50%);
+        width: 100%;
+        margin-top: 20px;
+        gap:20px;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 50px 1fr 1fr;
+    }
+
+
+    #footer-page .footer-page__all__info__second{
+        display: none;
+    }
+
+    #footer-page .footer-page__all__info__fourd{
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    #footer-page .footer-page__all__info__first h3,
+    #footer-page .footer-page__all__info__third h3,
+    #footer-page .footer-page__all__info__fourd h3{
+        font-size: 10px;
+    }
+
+
+    #footer-page .footer-page__all__info__first ul li,
+    #footer-page .footer-page__all__info__third ul li,
+    #footer-page .footer-page__all__info__fourd ul li{
+        padding: 10px 0;
+    }
+
+    #footer-page .footer-page__all__info__first ul li a,
+    #footer-page .footer-page__all__info__third ul li a,
+    #footer-page .footer-page__all__info__fourd ul li a{
+        font-size: 10px;
+    }
+
+    #footer-page .footer-page__all__info__chat p{
+        font-size: 12px;
+    }
+
+    #footer-page .footer-page__all__info__pay p{
+        font-size: 10px;
+    }
+
+
+}
+
+
+/* end mobile */
+
+
+/* end responsive */
+
+
 
