@@ -258,8 +258,8 @@ a{
 
 #banner-page .banner-page__all .slick-dots li button{
     border: none;
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
     text-align: center;
     border-radius: 50%;
     font-size: 0;
@@ -361,21 +361,140 @@ a{
 
 
 /* begin responsive */
+@media screen and (min-width:1025px) {
+    #header-page .mb__header-page__menu-nav{
+        display: none;
+    }
+    
+    
+    #mb__header-page{
+        display: none;
+    }
+}
+
 
 /* desktop */
-@media screen and (min-width:1024px){
+@media screen and (max-width:1024px){
 /* begin header*/
+
+#header-page .header-page__logo{
+    margin: 0 0 0 10px;
+}
+
+#header-page .header-page__logo img{
+    width: 60px;
+    height: 60px;
+}
+
+
+#header-page .header-page__nav li a{
+    font-size: 12px;
+    padding: 10px;
+}
+
+#header-page .header-page__search{
+    margin: 0 40px;
+}
+
+#header-page .header-page__search input{
+    font-size: 12px;
+}
+
+
+#header-page .header-page__info .header-page__info__login,
+#header-page .header-page__info .header-page__info__cart{
+    font-size: 12px;
+    padding: 10px 12px;
+}
+
+
 #header-page .mb__header-page__menu-nav{
     display: none;
 }
 
+
+/* end header*/
+
+/* Begin banner */
+#banner-page .banner-page__all{
+    margin-top: 64px;
+}
 
 #mb__header-page{
     display: none;
 }
 
 
-/* end header*/
+
+#banner-page .banner-page__all__third > img, 
+#banner-page .banner-page__all__second > img,
+#banner-page .banner-page__all__first > img{
+    height: 384px !important;
+}
+
+#banner-page .banner-page__all__first__logo {
+    position: absolute;
+    top: 10px;
+    left: 32%;
+    transform: translateX(-45%);
+}
+
+#banner-page .banner-page__all__first__logo img{
+    width: 70px;
+    height: 70px;
+}
+
+#banner-page .banner-page__all__first__buy{
+
+}
+
+#banner-page .banner-page__all__third__buy button, 
+#banner-page .banner-page__all__first__buy button{
+    border: none;
+    padding: 10px 20px;
+    font-size: 29px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#banner-page .banner-page__all__second__logo{
+    left: 8px;
+}
+
+#banner-page .banner-page__all__second__logo img{
+    width: 100px;
+}
+
+#banner-page .banner-page__all__second__buy{
+
+}
+
+#banner-page .banner-page__all__second__buy button{
+    padding: 12px 70px;
+    font-size: 20px;
+}
+
+
+#banner-page .banner-page__all__third__logo{
+
+}
+
+#banner-page .banner-page__all__third__logo img{
+    width: 100px;
+    height: 100px;
+
+}
+
+/* end banner */
+
+
+/* begin footer */
+#footer-page .footer-page__all >img{
+    height: 380px;
+}
+
 
 
 }
@@ -413,7 +532,7 @@ a{
 
     #mb__header-page .mb__header-page-all{
         background-color: #fff;
-        width: 187px;
+        width: 180px;
         position: relative;
         box-shadow: 0 0 10px #000;
         animation: fadein 0.2s ease;
@@ -439,7 +558,7 @@ a{
 
 
     #mb__header-page ul{
-        padding: 40px 0;
+        padding: 35px 0;
     }
 
     #mb__header-page ul li{
@@ -528,7 +647,7 @@ a{
     .mb__banner-page__all__first{
         display: block;
         position: relative;
-        margin-top: 84px;
+        margin-top: 64px;
     }
 
     .mb__banner-page__all__first__logo{

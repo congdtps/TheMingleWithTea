@@ -7,18 +7,18 @@
 
 
 // Thư viện jsquery của banner
-$(document).ready(function(){
-    $('.banner-page__all').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        dots:true,
-        arrows:false
-    }
-        
-    );
-  });
+    $(document).ready(function(){
+        $('.banner-page__all').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots:true,
+            arrows:false
+        }
+            
+        );
+      });
 
 
 // mobile ẩn hiện menu
