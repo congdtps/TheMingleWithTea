@@ -217,7 +217,6 @@ a{
 /* banner-page__all__third */
 
 
-
 #banner-page .banner-page__all__third__logo{
     position: absolute;
     top: 40px;
@@ -272,6 +271,11 @@ a{
 /* End banner */
 
 
+/* begin content */
+
+#content{
+    margin-top: 84px;
+}
 
 
 
