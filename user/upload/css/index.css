@@ -416,7 +416,18 @@ a{
         width: 187px;
         position: relative;
         box-shadow: 0 0 10px #000;
+        animation: fadein 0.2s ease;
        
+    }
+
+    @keyframes fadein{
+        from{
+            transform: translateX(-100px);
+        }
+
+        to{
+            transform: translateX(0);
+        }
     }
 
     #mb__header-page .mb__header-page__close{
