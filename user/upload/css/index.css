@@ -274,7 +274,7 @@ a{
 /* begin content */
 
 #content{
-    margin-top: 84px;
+    margin-top: 100px;
 }
 
 
@@ -667,9 +667,15 @@ a{
 
     /* end banner */
 
+    /* begin content */
+    #content{
+        margin-top: 80px;
+    }
+
+    /* end content */
+
 
     /* begin footer */
-
 
     #footer-page .footer-page__all>img{
         min-height: 528px;
