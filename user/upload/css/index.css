@@ -891,11 +891,26 @@ a{
 /* end banner */
 
 
-/* begin footer */
-#footer-page .footer-page__all >img{
-    height: 380px;
+/* begin content trang chủ */
+#content .content__background__list-uudai .content__background__list-uudai__lists-product,
+#content .content__background__list-bestseller .content__background__list-bestseller__lists-product{
+    justify-content: center;
+    gap:25px
 }
 
+
+
+
+
+
+/* end content trang chủ */
+
+
+
+/* begin footer */
+#footer-page .footer-page__all > img{
+    height: 306px;
+}
 
 
 }
