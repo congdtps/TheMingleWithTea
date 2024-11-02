@@ -368,7 +368,9 @@ a{
     background-color: #FFB647;
     border-radius: 5px; 
     color: black;
-    border: none;
+    font-weight: 600;
+    border: 1px solid var(--text-color);
+    transition: all 0.2s ease;
 }
 #content .content__background .content__background__list-uudai{
     display: flex;
@@ -462,7 +464,9 @@ a{
     background-color: #FFB647;
     border-radius: 5px; 
     color: black;
-    border: none;
+    border: 1px solid var(--text-color);
+    font-weight: 600;
+    transition: all 0.2 ease;
 }
 #content .content__business{
     display: flex;
@@ -480,6 +484,14 @@ a{
 }
 #content .content__business .content__business__logo img{
     width: 18%;
+}
+
+
+#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button:hover,
+#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--main-color);
 }
 
 
