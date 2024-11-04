@@ -27,7 +27,7 @@ a{
 #main header{
     background-color: #EFEEEC;
     border-bottom: 2px solid var(--main-color);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
@@ -260,11 +260,186 @@ a{
 
 /* End banner */
 
+/* Begin content cart */
+#content__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+article {
+    flex-basis: 50%;
+}
+
+article .content__box__title-cart{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:var(--text-color);
+    font-size: 24px;
+}
+
+article .content__box__nav-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+article .content__box__nav-cart__main{
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+article .content__box__nav-cart__pay-cart__money-cart{
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart__copy{
+   display: flex;
+   gap:100px
+}
+
+
+article .content__box__nav-cart .content__box__nav-cart__pay-cart{
+    display: flex;
+    gap: 40px;
+    flex-basis: 375px;
+}
+article .content__box__nav-cart .content__box__nav-cart__check-cart .content__box__nav-cart__check-cart__img img
+{
+    width: 100px;
+}
+
+
+article .content__box__nav-cart .content__box__nav-cart__pay-cart div > input{
+    width: 65px;
+    border-radius: 6px;
+}
+
+aside{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+aside .content__box__addres{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside .content__box__more-addres{
+    text-align: center;
+    margin-top: 10px;
+}
+
+aside .content__box__sale-all{
+    margin: 50px 0;
+}
+
+aside .content__box__sale{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
+aside .content__box__addres__apply-sale-off {
+    width: 100%;
+}
+aside .content__box__addres__apply-sale-off input{
+    width: 80%;
+    border-radius: 6px;
+    font-size: 24px;
+    padding: 8px 14px 8px 14px;
+    
+}
+
+aside .content__box__total-money{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+aside .content__box__addres__ship{
+    line-height: 1.5;
+    color: rgb(35, 44, 53);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+aside .content__box__addres__add{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color)    
+}
+
+aside .content__box__more-addres{
+    line-height: 1.5;
+    color: rgb(35, 44, 53);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+aside .content__box__total-money__tem,
+aside .content__box__total-money__sale,
+aside .content__box__total-money__ship,
+aside .content__box__total-money__total-all{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+aside .content__box__total-money__buy{
+    margin-top: 40px;
+}
+
+aside .content__box__total-money__buy input{
+    width: 100%;
+}
+
+aside .content__box__sale__apply input{
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: #000;
+}
+
+aside .content__box__total-money__buy input{
+    border-radius: 32px;
+    background-color: #FFCB05;
+    text-decoration: brown;
+    font-size: 18px;
+    padding: 8px 6px 8px 6px;
+}
+
+aside .content__box__total-money__total-all__price--color{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
 
 
+
+/* End content cart */
+
+
+article .content__box__nav-cart__pay-cart .content__box__nav-cart__pay-cart__button{
+   
+}
 
 
 
