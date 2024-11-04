@@ -81,6 +81,10 @@ a{
     font-weight:550;
 }
 
+#header-page .header-page__nav li a.active-head{
+    border-bottom: 2px solid var(--main-color);
+}
+
 #header-page .header-page__nav li a:hover{
     border-bottom: 2px solid var(--main-color);
 
@@ -1283,6 +1287,7 @@ a{
 /* end tablet */
 
 
+
 /* mobile */
 @media screen and (max-width:767px){
     /* begin header */
@@ -1339,6 +1344,12 @@ a{
     #mb__header-page ul li{
         padding: 15px 10px;
         color:#000
+    }
+
+   
+
+    #mb__header-page ul a.active-head{
+        border-bottom: 2px solid var(--main-color);
     }
 
 
