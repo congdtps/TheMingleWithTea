@@ -26,6 +26,10 @@
             break;
             case "cart":require_once('app/view/cart.php');
             break;
+            case "dangnhap":require_once('app/view/dangNhap.php');
+            break;
+            case "dangki":require_once('app/view/dangKi.php');
+            break;
 
 
             default:require_once('app/view/body.php');

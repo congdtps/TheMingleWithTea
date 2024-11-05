@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="content__background__list-bestseller__lists-product">
-                        <a href="app/view/detail.html">
+                        <a href="index.php?page=detail">
                             <div class="content__background__list-bestseller__lists-product__product">
                                 <img src="img/sp1.png" alt="Trà sữa Trân Châu">
                                 <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Trân Châu</div>
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="app/view/detail.html">
+                        <a href="index.php?page=detail">
                             <div class="content__background__list-bestseller__lists-product__product">
                                 <img src="img/sp2.png" alt="Trà sữa Kem Trứng Khè">
                                 <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Kem Trứng Khè</div>
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-bestseller__lists-product__product">
                             <img src="img/sp3.png" alt="Trà sữa Sunday">
                             <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Sunday</div>
@@ -173,7 +173,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-bestseller__lists-product__product">
                             <img src="img/sp4.png" alt="Sữa tươi truyền thống"><div class="content__background__list-bestseller__lists-product__product__name">Sữa tươi truyền thống</div>
                             <div class="content__background__list-bestseller__lists-product__product__col"></div>
@@ -200,7 +200,7 @@
                     </div>
                 </div>
                 <div class="content__background__list-uudai__lists-product">
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-uudai__lists-product__product">
                             <div class="content__background__list-uudai__lists-product__product__sale">
                                 <p>Ưu đãi</p>
@@ -220,7 +220,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-uudai__lists-product__product">
                             <div class="content__background__list-uudai__lists-product__product__sale">
                                 <p>Ưu đãi</p>
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-uudai__lists-product__product">
                             <div class="content__background__list-uudai__lists-product__product__sale">
                                 <p>Ưu đãi</p>
@@ -261,7 +261,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="app/view/detail.html">
+                    <a href="index.php?page=detail">
                         <div class="content__background__list-uudai__lists-product__product ">
                             <div class="content__background__list-uudai__lists-product__product__sale">
                                 <p>Ưu đãi</p>
