@@ -81,6 +81,11 @@ a{
     font-weight:550;
 }
 
+#header-page .header-page__nav li a.active-head{
+    border-bottom: 2px solid var(--main-color);
+}
+
+
 #header-page .header-page__nav li a:hover{
     border-bottom: 2px solid var(--main-color);
 
@@ -1334,6 +1339,10 @@ a{
 
     #mb__header-page ul{
         padding: 35px 0;
+    }
+
+    #mb__header-page ul li a.active-head{
+        border-bottom: 3px solid var(--main-color);
     }
 
     #mb__header-page ul li{
