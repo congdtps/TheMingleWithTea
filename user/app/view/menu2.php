@@ -10,7 +10,7 @@
                         <li><a class="" href="index.php?page=store">CỬA HÀNG</a></li>
                         <li><a class="" href="index.php?page=news">TIN TỨC</a></li>
                         <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
-                        <a href="">
+                        <a href="index.php?page=cart">
                             <div class="mb__header-page__cart">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <p>Giỏ hàng</p>
@@ -46,7 +46,7 @@
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
                 <div class="header-page__info">
-                    <a href="#">
+                    <a href="index.php?page=cart">
                         <div class="header-page__info__cart">
                             <span><i class="fa-solid fa-cart-shopping"></i></span>
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>

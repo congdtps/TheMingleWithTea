@@ -6,10 +6,27 @@
             break;
             case 'menu2':require_once('app/view/menu2.php');
             break;
+            case 'bestseller':require_once('app/view/bestSeller.php');
+            break;
+            case 'bocollection':require_once('app/view/boCollection.php');
+            break;
+            case 'suatuoi':require_once('app/view/suaTuoi.php');
+            break;
+            case 'tranguyenvi':require_once('app/view/traNguyenVi.php');
+            break;
+            break;
+            case 'trasua':require_once('app/view/traSua.php');
+            break;
+            break;
+            case 'trathanhnhiet':require_once('app/view/traThanhNhiet.php');
+            break;
             case "detail":require_once('app/view/detail.php');
             break;
             case "store":require_once('app/view/store.php');
             break;
+            case "cart":require_once('app/view/cart.php');
+            break;
+
 
             default:require_once('app/view/body.php');
             break;

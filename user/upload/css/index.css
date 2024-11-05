@@ -86,6 +86,17 @@ a{
 }
 
 
+
+
+#header-page .header-page__info .header-page__info__login.active-head, 
+#header-page .header-page__info .header-page__info__cart.active-head{
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+
+
+
 #header-page .header-page__nav li a:hover{
     border-bottom: 2px solid var(--main-color);
 
@@ -276,8 +287,272 @@ a{
 
 /* End banner */
 
+/* Begin content cart */
+#content__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
 
-/* begin content */
+#content__box article {
+    flex-basis: 50%;
+}
+
+#content .content__title-cart{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:var(--text-color);
+    font-size: 24px;
+    margin-left: 155px;
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+
+#content .content__title-cart__col{
+    width: 70px;
+    height: 15px;
+    background-color: var(--main-color);
+}
+
+
+
+article .content__box__nav-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+article .content__box__nav-cart__main{
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart input{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+article .content__box__nav-cart__pay-cart__money-cart{
+    color: var(--text-color);
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart__copy{
+   display: flex;
+   gap:40px
+}
+
+
+article .content__box__nav-cart .content__box__nav-cart__check-cart__copy input{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+article .content__box__nav-cart .content__box__nav-cart__pay-cart{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    flex-basis: 325px;
+}
+article .content__box__nav-cart .content__box__nav-cart__check-cart .content__box__nav-cart__check-cart__img img
+{
+    width: 100px;
+}
+
+
+
+
+
+article .content__box__nav-cart__pay-cart__quantity input{
+    width: 65%;
+    text-align: center;
+}
+
+
+article .content__box__nav-cart__pay-cart__button input{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color:#fff;
+    transition: all 0.2s ease;
+}
+
+
+article .content__box__nav-cart__pay-cart__button input:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+article .content__box__add-product{
+    padding: 4px 6px;
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    background-color: var(--main-color);
+    margin-top: 60px;
+    transition: all 0.2s ease;
+}
+
+article .content__box__add-product:hover{
+    background-color: var(--bg-product);
+}
+
+
+
+#content__box aside{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 30px;
+}
+
+
+aside .content__box__addres{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside .content__box__more-addres{
+    text-align: center;
+    margin-top: 10px;
+}
+
+aside .content__box__sale-all{
+    margin: 50px 0;
+}
+
+aside .content__box__sale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+aside .content__box__addres__apply-sale-off {
+    width: 100%;
+}
+aside .content__box__addres__apply-sale-off input{
+    width: 90%;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 8px 14px 8px 14px;
+    
+}
+
+aside .content__box__total-money{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+aside .content__box__addres__ship{
+    line-height: 1.5;
+    color: rgb(35, 44, 53);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+aside .content__box__addres__add{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color)    
+}
+
+aside .content__box__more-addres{
+    line-height: 1.5;
+    color: rgb(35, 44, 53);
+    font-size: 16px;
+    font-weight: 550;
+}
+
+aside .content__box__total-money__tem,
+aside .content__box__total-money__sale,
+aside .content__box__total-money__ship,
+aside .content__box__total-money__total-all{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+aside .content__box__total-money__buy{
+    margin-top: 40px;
+}
+
+aside .content__box__total-money__buy input{
+    width: 100%;
+}
+
+aside .content__box__sale__apply input{
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: #000;
+    padding: 8px 10px;
+    background-color: var(--main-color);
+    transition: all 0.2s ease;
+}
+
+aside .content__box__sale__apply input:hover{
+    background-color: var(--bg-product);
+    cursor: pointer;
+}
+
+
+
+
+aside .content__box__total-money__buy input{
+    border-radius: 32px;
+    background-color: #FFCB05;
+    text-decoration: brown;
+    font-size: 18px;
+    padding: 8px 6px 8px 6px;
+    transition: all 0.2s ease;
+}
+
+aside .content__box__total-money__buy input:hover{
+    background-color: var(--bg-product);
+    cursor: pointer;
+}
+
+
+
+aside .content__box__total-money__total-all__price--color{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* end content cart */
+
 
 
 /* begin content trang chủ */
@@ -1018,6 +1293,10 @@ a{
 
 
 
+/* End content cart */
+
+
+
 
 
 /* Begin footer */
@@ -1147,6 +1426,8 @@ a{
     font-size: 12px;
     padding: 10px 12px;
 }
+
+
 
 
 #header-page .mb__header-page__menu-nav{
@@ -1288,6 +1569,7 @@ a{
 /* end tablet */
 
 
+
 /* mobile */
 @media screen and (max-width:767px){
     /* begin header */
@@ -1350,6 +1632,12 @@ a{
         color:#000
     }
 
+   
+
+    #mb__header-page ul a.active-head{
+        border-bottom: 2px solid var(--main-color);
+    }
+
 
     #mb__header-page ul li a{
         color:#000;
@@ -1363,6 +1651,13 @@ a{
         margin-left: 10px;
         font-weight: 600;
     }
+
+
+    #mb__header-page .mb__header-page__cart.active-head, #mb__header-page .mb__header-page__login.active-head{
+        border-bottom: 2px solid var(--main-color);
+
+    }
+
 
     #mb__header-page .mb__header-page__cart i,
     #mb__header-page .mb__header-page__login i{
@@ -1452,7 +1747,7 @@ a{
 
     /* begin content */
     #content{
-        margin-top: 80px;
+        margin-top: 25px;
     }
 
 
