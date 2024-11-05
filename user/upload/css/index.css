@@ -1131,7 +1131,7 @@ aside .content__box__total-money__total-all__price--color{
 
 
 #content-detail .content-detail__all-product-info__buy input:hover{
-    background-color: #fff;
+    background-color: var(--bg-product);
 }
 
 
@@ -2014,6 +2014,7 @@ aside .content__box__total-money__total-all__price--color{
     /* begin content detail */
 
     #content-detail{
+        margin-top: 80px;
         padding: 10px 20px 20px 20px;
     }
 
@@ -2057,11 +2058,11 @@ aside .content__box__total-money__total-all__price--color{
 
 #content .content__container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 90px;
     margin-right: 5px;
     margin-left: 5px;
     width: 100%;
-    gap:50px;
+    gap:0px;
     flex-direction: column;
     align-items: center;
 }
