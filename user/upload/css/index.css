@@ -29,7 +29,7 @@ a{
 #main header{
     background-color: #EFEEEC;
     border-bottom: 2px solid var(--main-color);
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -156,6 +156,7 @@ a{
 
 
 #banner-page .banner-page__all{
+    margin-top: 84px;
 }
 
 #banner-page .mb__banner-page__all__first{
@@ -290,7 +291,7 @@ a{
     margin-top: 50px;
 }
 
-article {
+#content__box article {
     flex-basis: 50%;
 }
 
@@ -354,7 +355,7 @@ article .content__box__nav-cart__pay-cart__money-cart{
 
 article .content__box__nav-cart .content__box__nav-cart__check-cart__copy{
    display: flex;
-   gap:60px
+   gap:40px
 }
 
 
@@ -403,8 +404,23 @@ article .content__box__nav-cart__pay-cart__button input:hover{
 }
 
 
+article .content__box__add-product{
+    padding: 4px 6px;
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    background-color: var(--main-color);
+    margin-top: 60px;
+    transition: all 0.2s ease;
+}
 
-aside{
+article .content__box__add-product:hover{
+    background-color: var(--bg-product);
+}
+
+
+
+#content__box aside{
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
@@ -502,7 +518,7 @@ aside .content__box__sale__apply input{
 }
 
 aside .content__box__sale__apply input:hover{
-    opacity: 0.6;
+    background-color: var(--bg-product);
     cursor: pointer;
 }
 
@@ -519,7 +535,7 @@ aside .content__box__total-money__buy input{
 }
 
 aside .content__box__total-money__buy input:hover{
-    opacity: 0.6;
+    background-color: var(--bg-product);
     cursor: pointer;
 }
 
@@ -1701,6 +1717,7 @@ aside .content__box__total-money__total-all__price--color{
     .mb__banner-page__all__first{
         display: block;
         position: relative;
+        margin-top: 64px;
     }
 
     .mb__banner-page__all__first__logo{
