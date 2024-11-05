@@ -944,6 +944,263 @@ aside .content__box__total-money__total-all__price--color{
 
 /* end content menu */
 
+/* begin content -login_register */
+.login{
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.login-container h2 {
+    color: #FFB300;
+    margin-bottom: 20px;
+}
+.login-container p{
+    margin: 10px 5px;
+}
+.login-container .login-container_input h3 {
+    font-weight: 100;
+    margin: 5px 0 2px;
+    text-align: left;
+    font-size: 17px;
+
+}
+
+.login-container .login-container_logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+.login-container .login-container_input{
+    margin: 10px 5px;
+}
+.login-container .login-container_input input[type="text"],
+.login-container .login-container_input input[type="password"] {
+    /* width: 100%;
+    padding: 5px;
+    margin: 10px 0; */
+    /* border: 1px solid #CCC; */
+    /* border-radius: 7px; */
+    width: 300px;
+    padding: 5px 5px 5px 15px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 16px;
+    color:#a09c9c;
+    background: transparent;
+    position: relative;
+    margin: 5px 0 17px; ;
+    
+}
+.login-container .login-container_input .icon{
+    color: #a09c9c;
+}
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFB300;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #E0A200;
+}
+.login-container .login-container__information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.login-container .login-container__information a {
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+    /* display: block; */
+     margin: -15px 15px 15px;
+     /* text-decoration: none; */
+}
+
+.login-container .login-container__information p {
+    /* margin-top: 10px; */
+    color: #666;
+    font-size: 12px;
+    outline: none;
+    margin: -15px 19px 24px;
+    /* text-decoration: none; */
+}
+
+.login-container .login-container__social-login {
+    display: flex;
+   justify-content: center;
+   margin-top: 15px;
+}
+.login-container .login-container__social-login button {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .login-container__social-login i {
+    font-size: 24px;
+    color: #FFB300;
+    margin: 0 5px;
+}
+.login-container .location{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #E0A200;
+}
+.register{
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;}
+
+    .register-container {
+        background-color: #FFFFFF;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+    }
+    
+    .register-container h2 {
+        color: #FFB300;
+        margin-bottom: 20px;
+    }
+    .register-container p{
+        margin: 10px 5px;
+    }
+    .register-container .register-container__input h3{
+        font-weight: 100;
+        margin: 5px 0 2px;
+        text-align: left;
+        font-size: 17px;
+    
+    }
+    
+    .register-container .register__logo{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+    .register-container .register-container__input{
+        margin: 10px 5px;
+    }
+    .register-container .register-container__input input[type="text"],
+    .register-container .register-container__input input[type="password"] {
+        /* width: 100%;
+        padding: 5px;
+        margin: 10px 0; */
+        /* border: 1px solid #CCC; */
+        /* border-radius: 7px; */
+        width: 300px;
+        padding: 5px 5px 5px 15px;
+        border: none;
+        border-bottom: 1px solid #333;
+        outline: none;
+        font-size: 16px;
+        color:#a09c9c;
+        background: transparent;
+        position: relative;
+        margin: 5px 0 17px; ;
+        
+    }
+    .register-container .register-container__input .icon{
+        color: #a09c9c;
+    }
+    .register-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #FFB300;
+        color: #FFF;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .register-container input[type="submit"]:hover {
+        background-color: #E0A200;
+    }
+    
+    .register-container .forgot-password {
+        color: #666;
+        font-size: 12px;
+        text-align: right;
+        display: block;
+        margin: 19px 17px;
+        margin-top: -18px;
+    }
+    
+    .register-container .sign-up {
+        margin-top: 10px;
+        color: #666;
+        font-size: 14px;
+    }
+    
+    .register-container .register-container__social-login {
+        display: flex;
+       justify-content: center;
+       margin-top: 15px;
+      
+    }
+    .register-container .register-container__social-login button {
+      width: 50px;
+      height: 50px;
+      margin: 0 5px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .register-container .register-container__social-login i {
+        font-size: 24px;
+        color: #FFB300;
+        margin: 0 5px;
+    }
+    .register-container .location{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        color: #E0A200;
+    }
+    
+    /* end content -login_register */
+
 
 
 
@@ -2178,6 +2435,302 @@ aside .content__box__total-money__total-all__price--color{
 /* end content store */
 
 
+
+
+/* begin content cart*/
+#content .content__title-cart{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+article .content__box__nav-cart__main{
+    
+}
+
+
+#content__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+
+#content__box article{
+    margin: 0;
+}
+
+/* end content cart */
+
+/* begin content_login_register */
+.login{
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    width: 390px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #FFFFFF;
+    height: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.login-container h2 {
+    color: #FFB300;
+    margin-bottom: 20px;
+}
+.login-container p{
+    margin: 10px 5px;
+}
+.login-container .login-container_input h3 {
+    font-weight: 100;
+    margin: 5px 0 2px;
+    text-align: left;
+    font-size: 17px;
+
+}
+
+.login-container .login-container_logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+.login-container .login-container_input{
+    margin: 10px 5px;
+}
+.login-container .login-container_input input[type="text"],
+.login-container .login-container_input input[type="password"] {
+    /* width: 100%;
+    padding: 5px;
+    margin: 10px 0; */
+    /* border: 1px solid #CCC; */
+    /* border-radius: 7px; */
+    width: 250px;
+    padding: 5px 5px 5px 15px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 15px;
+    color:#a09c9c;
+    background: transparent;
+    position: relative;
+    margin: 5px 0 17px; ;
+    
+}
+.login-container .login-container_input .icon{
+    color: #a09c9c;
+    width: 10px;
+    height: 10px;
+}
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFB300;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #E0A200;
+}
+.login-container .login-container__information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.login-container .login-container__information a {
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+    /* display: block; */
+     margin: -15px 7px 15px;
+    /* text-decoration: none; */
+}
+
+.login-container .login-container__information p {
+    /* margin-top: 10px; */
+    color: #666;
+    font-size: 12px;
+    outline: none;
+    margin: -15px 7px 24px;
+    /* text-decoration: none; */
+}
+
+.login-container .login-container__social-login {
+    display: flex;
+   justify-content: center;
+   margin-top: 15px;
+}
+.login-container .login-container__social-login button {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .login-container__social-login i {
+    font-size: 24px;
+    color: #FFB300;
+    margin: 0 5px;
+}
+.login-container .location{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #E0A200;
+}
+.register{
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;height: 860px;
+    width: 390px;;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.register-container {
+    background-color: #FFFFFF;
+    height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+.register-container p{
+    margin: 10px 5px;
+}
+.register-container h2 {
+    color: #FFB300;
+    margin-bottom: 20px;
+}
+
+.register-container .register-container__input h3{
+    font-weight: 100;
+    margin: 5px 0 2px;
+    text-align: left;
+    font-size: 17px;
+
+}
+
+.register-container .register__logo{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+.register-container .register-container__input{
+    margin: 10px 5px;
+}
+.register-container .register-container__input input[type="text"],
+.register-container .register-container__input input[type="password"] {
+    /* width: 100%;
+    padding: 5px;
+    margin: 10px 0; */
+    /* border: 1px solid #CCC; */
+    /* border-radius: 7px; */
+    width: 250px;
+    padding: 5px 5px 5px 15px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 16px;
+    color:#a09c9c;
+    background: transparent;
+    position: relative;
+    margin: 5px 0 17px; 
+    
+}
+.register-container .register-container__input .icon{
+    color: #a09c9c;
+}
+.register-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFB300;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-container input[type="submit"]:hover {
+    background-color: #E0A200;
+}
+
+.register-container .forgot-password {
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    margin: 19px 7px;
+    margin-top: -18px;
+}
+
+.register-container .sign-up {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-container .register-container__social-login {
+    display: flex;
+   justify-content: center;
+   margin-top: 15px;
+  
+}
+.register-container .register-container__social-login button {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container .register-container__social-login i {
+    font-size: 24px;
+    color: #FFB300;
+    margin: 0 5px;
+}
+.register-container .location{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #E0A200;
+}
+
+
+/* end content login_register */
 
 
 
