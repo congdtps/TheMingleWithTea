@@ -17,7 +17,7 @@
                                 <p>Giỏ hàng</p>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="index.php?page=dangnhap">
                             <div class="mb__header-page__login">
                                 <i class="fa-solid fa-user"></i>
                                 <p>Đăng nhập</p>
@@ -53,7 +53,7 @@
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>
                         </div>
                     </a>
-                    <a class="" href="#">
+                    <a class="" href="index.php?page=dangnhap">
                         <div class="header-page__info__login">
                             <span><i class="fa-solid fa-user"></i></span>
                             <h3 style="margin-left: 5px;">Đăng nhập</h3>
@@ -92,8 +92,8 @@
                     <div class="content__box__nav-cart ">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
                             <input type="checkbox" name="" id="">
-                            <div class="content__box__nav-cart__check-cart__img"><img src="/user/img/__-removebg-preview.png" alt=""></div>
-                            <div class="content__box__nav-cart__check-cart__name">Cà phê</div>
+                            <div class="content__box__nav-cart__check-cart__img"><img src="img/sp1.png" alt=""></div>
+                            <div class="content__box__nav-cart__check-cart__name">Hồng trà</div>
                         </div>
                         <div class="content__box__nav-cart__pay-cart">
                             <div class="">45.000đ</div>

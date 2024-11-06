@@ -16,7 +16,7 @@
                                 <p>Giỏ hàng</p>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="index.php?page=dangnhap">
                             <div class="mb__header-page__login">
                                 <i class="fa-solid fa-user"></i>
                                 <p>Đăng nhập</p>
@@ -52,7 +52,7 @@
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="index.php?page=dangnhap">
                         <div class="header-page__info__login">
                             <span><i class="fa-solid fa-user"></i></span>
                             <h3 style="margin-left: 5px;">Đăng nhập</h3>

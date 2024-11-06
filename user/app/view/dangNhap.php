@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <link rel="stylesheet" href="/user/front/fontawesome-free-6.5.2-web/css/all.css">
-    <link rel="stylesheet" href="/user/upload/css/index.css">
-</head>
-<body>
-    <!-- Sang -->
-    <div id="main">
+<div id="main">
        <!-- Begin content -->
        <div class="login">
         <div class="login-container">
-            <a href="/user/index.html">
+            <a href="index.php">
                 <i class="fa-solid fa-circle-xmark location"></i>
             </a>
-            <img src="/user/img/__-removebg-preview.png" alt="Logo" class="login-container_logo">
+            <img src="img/__-removebg-preview.png" alt="Logo" class="login-container_logo">
             <h2>Đăng nhập</h2>
                 <form onsubmit="event.preventDefault(); login();">
                     <div class="login-container_input">  
@@ -30,7 +19,7 @@
                         <input id="login-container_input_password" type="password" placeholder="Điền mật khẩu">
                     </div>
                     <div class="login-container__information">
-                        <p><a href="dangKi.html">Chưa có tài khoản</a></p>
+                        <p><a href="index.php?page=dangki">Chưa có tài khoản</a></p>
                         <a href="#">Quên mật khẩu</a>
                     </div>
                         <input type="submit" value="Đăng nhập">
@@ -47,6 +36,3 @@
        <!-- End content -->
 
     </div>
-</body>
-<script src="/user/upload/js/index.js"></script>
-</html>

@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng kí</title>
-    <link rel="stylesheet" href="/user/front/fontawesome-free-6.5.2-web/css/all.css">
-    <link rel="stylesheet" href="/user/upload/css/index.css">
-</head>
-<body>
-    <!-- Sang -->
-    <div id="main">
+<div id="main">
        <!-- Begin content -->
        <div class="register">
         <div class="register-container">
-            <a href="/user/index.html">
+            <a href="index.php">
                 <i class="fa-solid fa-circle-xmark location"></i>
             </a>
-            <img src="/user/img/__-removebg-preview.png" alt="Logo" class="register__logo">
+            <img src="img/__-removebg-preview.png" alt="Logo" class="register__logo">
             <h2>Đăng kí</h2>
             <form onsubmit="event.preventDefault(); resgister();">
                     <div class="register-container__input">  
@@ -34,7 +23,7 @@
                         <i class="fa-solid fa-lock icon"></i>
                         <input id="enter_password" type="password" placeholder="Nhập lại mật khẩu">
                     </div>
-                        <a href="dangNhap.html" class="forgot-password">Đã có tài khoản</a>
+                        <a href="index.php?page=dangnhap" class="forgot-password">Đã có tài khoản</a>
                         <input type="submit" value="Đăng kí">
             </form>
                         <!-- <button onclick="resgister()">Đăng nhập</button> -->
@@ -51,6 +40,3 @@
        <!-- End content -->
 
     </div>
-</body>
-<script src="/user/upload/js/index.js"></script>
-</html>
