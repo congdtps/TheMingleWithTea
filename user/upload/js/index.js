@@ -94,3 +94,62 @@ function resgister(){
 }
 
 // end login_register
+
+
+
+
+
+// begin info cart
+const cart_buy= document.querySelector('.content__box__total-money__buy input')
+const content_container= document.getElementById('content-container')
+let content_container_all=document.querySelector('.content-container__all')
+let content_container_inputs= document.querySelectorAll('.content-container__all__body__info input')
+let content_container_close= document.querySelector('.content-container__all__close')
+let content_container_pay=document.querySelector('.content-container__all__body__check-pay input')
+
+cart_buy.addEventListener('click',(e)=>{
+    e.preventDefault()
+    content_container.classList.add('active-container')
+})
+
+
+content_container_close.addEventListener('click',()=>{
+    content_container.classList.remove('active-container')
+
+})
+
+
+content_container.addEventListener('click',()=>{
+    content_container.classList.remove('active-container')
+})
+
+content_container_all.addEventListener('click',(e)=>{
+    e.stopPropagation()
+})
+
+
+content_container_pay.addEventListener('click',(e)=>{
+    e.preventDefault()
+    let inputValue
+    content_container_inputs.forEach((input)=>{
+        inputValue= input.value.trim()
+        if(inputValue===''){
+            input.classList.add('active-error-container')
+        }else{
+            input.classList.remove('active-error-container')
+
+        }
+    })
+
+
+
+
+})
+
+
+
+
+
+
+// end info cart
+
