@@ -89,14 +89,14 @@
 
 
                     </div>
-                    <div class="content__box__nav-cart ">
+                    <div class="content__box__nav-cart mb__content__box__nav-cart">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
                             <input type="checkbox" name="" id="">
                             <div class="content__box__nav-cart__check-cart__img"><img src="img/sp1.png" alt=""></div>
                             <div class="content__box__nav-cart__check-cart__name">Hồng trà</div>
                         </div>
-                        <div class="content__box__nav-cart__pay-cart">
-                            <div class="">45.000đ</div>
+                        <div class="content__box__nav-cart__pay-cart ">
+                            <div class="content__box__nav-cart__pay-cart__price_tem">45.000đ</div>
                             <div class="content__box__nav-cart__pay-cart__quantity"><input type="number" name="" id="" value="1" min="1"></div>
                             <div class="content__box__nav-cart__pay-cart__money-cart">45.000đ</div>
                             <div class="content__box__nav-cart__pay-cart__button">
@@ -159,5 +159,43 @@
                 </aside>
             </div>
             </form>
+        </div>
+        <div id="content-container">
+            <div class="content-container__all">
+                <div class="content-container__all__close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="content-container__all__header">
+                    Thêm thông tin giao hàng
+                </div>
+                <form action="">
+                    <div class="content-container__all__body">
+                        <div class="content-container__all__body__about">
+                            <div class="content-container__all__body__info">
+                                <input class="" type="text" name="" id="" placeholder="Tên người nhận">
+                                <input class="" type="text" name="" id="" placeholder="Số điện thoại">
+                            </div>
+                            <div class="content-container__all__body__info">
+                                <input class="" type="text" name="" id="" placeholder="Tỉnh/Thành phố">
+                                <input class="" type="text" name="" id="" placeholder="Quận/Huyện">
+                            </div>
+                            <div class="content-container__all__body__info">
+                                <input class="" type="text" name="" id="" placeholder="Phường/Xã">
+                                <input class="" type="text" name="" id="" placeholder="Địa chỉ cụ thể">
+                            </div>
+                        </div>
+                        <div class="content-container__all__body__methob-pay">
+                            <label for="">Phương thức thanh toán</label>
+                            <select name="" id="">
+                                <option value="Tiền mặt">Tiền mặt</option>
+                                <option value="Chuyển khoản">Chuyển khoản</option>
+                            </select>
+                        </div>
+                        <div class="content-container__all__body__check-pay">
+                            <input type="submit" value="Xác Nhận">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- End content -->

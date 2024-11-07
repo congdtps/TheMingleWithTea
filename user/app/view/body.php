@@ -40,7 +40,6 @@
                         <li><a class="" href="index.php?page=store">CỬA HÀNG</a></li>
                         <li><a class="" href="index.php?page=news">TIN TỨC</a></li>
                         <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
-                        <li><a class="" href="index.php?page=account">LIÊN HỆ</a></li>
                 </ul>
                 <div class="header-page__search">
                     <input type="text" name="" id="" placeholder="Trà sữa">
