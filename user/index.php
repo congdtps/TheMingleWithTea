@@ -30,6 +30,8 @@
             break;
             case "dangki":require_once('app/view/dangKi.php');
             break;
+            case "account":require_once('app/view/account.php');
+            break;
 
 
             default:require_once('app/view/body.php');
