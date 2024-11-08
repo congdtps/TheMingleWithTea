@@ -1100,7 +1100,43 @@ aside .content__box__total-money__total-all__price--color{
 /* end content menu */
 
 
+/* begin content contact */
+#content__all .content__all-title{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin-left: 20px;
+}
 
+#content__all .content__all-title .content__all-title-col{
+    width: 70px;
+    height: 15px;
+    background-color: var(--main-color);
+}
+
+#content__all .content__all-title .content__all-title-text{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+#content .content__main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top:60px;
+}
+
+#content .content__main-text{
+    font-size: 20px;
+}
+
+#content .content__main-email{
+    font-size: 18px;
+   
+}
+
+/* end content contact */
 
 
 /* begin content -login_register */
@@ -1733,6 +1769,197 @@ aside .content__box__total-money__total-all__price--color{
 
 
 /* end content store */
+
+
+/* begin content news */
+#content_all{
+    
+}
+
+#content_all .content_all_title-news{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+#content_all .content_all_title-news_col{
+ width: 70px;
+ height: 15px;
+ background-color: var(--main-color);
+}
+
+
+#content_all .content_all_title-news-text{
+    font-size: 32px;
+    text-transform: uppercase;
+    color:var(--text-color);
+   
+}
+
+
+
+
+#content_all .content_box_news {
+   display: flex;
+   gap:50px;
+   margin: 50px 0 50px 118px;
+}
+
+
+
+#content_all .content_box_news a.active-news{
+    background-color: var(--main-color);
+
+}
+
+#content_all .content_box_news a{
+flex-basis: 182px;
+padding: 10px;
+text-align: center;
+font-size: 20px;
+border: 1px solid var(--text-color);
+color:#75462B;
+border-radius: 6px;
+transition: all 0.2s ease;
+}
+
+
+#content_all .content_box_news a:hover{
+    background-color: var(--main-color);
+}
+
+#content_all .content_all_main-news{
+display: flex;
+
+}
+
+
+
+
+#content_all .content_news_all{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+
+}
+
+.content_news_all .content_news_detail{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.content_news_all img{
+    width: 267px ;
+    height: 215px ;
+}
+
+.content_news_all .content_news_text{
+    color: #75462B;
+    font-size: 20px;
+    flex-basis: 450px;
+    display: flex;
+    flex-direction: column;
+}
+    
+.content_news_all .content-news_text-dayandmonth{
+    margin: 15px 0 50px;
+}
+
+
+.content_news_all .content_button-new{
+    width: 740px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color:var(--main-color) ;
+}
+
+#content_all .content_register_follow {
+}
+
+
+#content_all .content_register_follow_search{
+    display: flex;
+    margin-left: 30px;
+
+}
+
+#content_all .content_register_follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 403px;
+    background: #E7E7E7;
+    width: 360px;
+    padding: 10px;
+    gap:15px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#content_all .content_register_follow__text-email{
+    display: flex;
+    flex-direction: column;
+    color: #75462B;
+}
+
+#content .content_register_follow__text-email_text{
+    text-align: center;
+}
+
+
+#content_all .content_register_follow_search .search_text{
+    display: flex;
+    
+      
+}
+
+#content_all .content_register_follow_search .search_text input{
+    width: 223px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+}
+
+
+
+#content_all .content_register_follow_search .search_text .search_item{
+    height: 40px;
+    width: 38px;
+    background: #000;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+       
+}
+
+
+#content_all .content_button-news{
+ margin-left: 118px;
+}
+
+#content_all .content_button-news button{
+    width: 100%;
+    padding: 12px 0;
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#content_all .content_button-news button:hover{
+    background-color: var(--bg-product);
+}
+
+
+
+/* end content news */
 
 
 
@@ -3107,6 +3334,118 @@ aside .content__box__addres__apply-sale-off input{
 /* end content account */
 
 
+    /* begin content news */
+    #content_all{
+        margin-top: 100px;
+    }
+
+
+    #content_all .content_all_title-news{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    #content_all .content_box_news{
+        display: flex;
+        gap: 20px;
+        margin: 50px 0 50px 40px;
+    }
+
+    #content_all .content_box_news a{
+        flex-basis: 120px;
+        padding: 10px 6px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid var(--text-color);
+        color: #75462B;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+    }
+
+    .content_news_all .content_news_detail {
+        display: block;
+    }
+
+    #content_all .content_news_all{
+        padding: 0 30px;
+    }
+
+    #content_all .content_button-news {
+      margin-left: 0;
+    }
+    .content_news_all .content_news_text {
+        color: #75462B;
+        font-size: 16px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    #content_all .content_all_main-news{
+        display: block;
+        
+    }
+
+    #content_all .content_register_follow_search{
+        margin-left: 0;
+    }
+
+
+    #content_all .content_register_follow_search .search_text input{
+        width: 240px;
+    }
+
+    #content_all .content_register_follow{
+        margin-left: 16px;
+        margin-top: 40px;
+    }
+
+
+
+    /* end content news */
+
+
+
+    /* begin content contact */
+    #content__all .content__all-title {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 120px;
+    }
+
+    #content__all .content__all-title .content__all-title-text {
+        font-size: 26px;
+        text-transform: uppercase;
+        color: var(--text-color);
+    }
+
+    #content__all .content__all-title .content__all-title-col {
+        width: 64px;
+        height: 15px;
+        background-color: var(--main-color);
+    }
+
+    #content .content__main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    #content .content__main-text {
+        font-size: 17px;
+    }
+
+    #content .content__main-email {
+        font-size: 22px;
+        color: #FFB647;
+    }
+
+
+    /* end content contact */
 
     /* end content */
 

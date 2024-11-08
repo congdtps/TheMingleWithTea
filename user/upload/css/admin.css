@@ -111,7 +111,7 @@ aside .content-admin__all__controler-admin__info-product__nav__price.controller-
 
 #content-admin aside{
     width: 85%;
-    padding: 40px;
+    padding: 20px;
     background-color: #F5F5F5;
 
 }
@@ -219,7 +219,7 @@ aside .content-admin__all__controler-admin__search-all__bell-admin img{
 
 aside .content-admin__all__controler-admin__search-all-product{
     display: flex;
-    gap:50px;
+    gap:18px;
     align-items: center;
     margin-top: 40px;
 }
@@ -229,6 +229,14 @@ aside .content-admin__all__controler-admin__search-all-product__product{
     width: 266px;
     height: 50px;
 }
+
+
+aside .content-admin__all__controler-admin__search-all-product__product select{
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 100%;
+}
+
 
 
 aside .content-admin__all__controler-admin__search-all-product__product label{
@@ -279,9 +287,14 @@ aside .content-admin__all__controler-admin__info-product__nav.first{
     margin-bottom: 40px;
 }
 
+aside .content-admin__all__controler-admin__info-product__nav.second{
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
 aside .content-admin__all__controler-admin__info-product__nav{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     margin-bottom: 20px;
 }
 
@@ -334,9 +347,11 @@ aside .content-admin__all__controler-admin__info-product__nav__price{
 
 
 
+
+
 @media screen and (max-width:1024px) {
     #content-admin aside{
-        padding: 20px;
+        padding: 10px;
     }
 
     aside .content-admin__all__controler-admin__search-all-product{
