@@ -1,5 +1,8 @@
 <?php
+    require_once('app/model/data.php');
     require_once ('app/view/header.php');
+    $db= new data();
+
     if(isset($_GET['page'])&& $_GET['page'] ){
         switch($_GET['page']){
             case 'menu1':require_once('app/view/menu1.php');

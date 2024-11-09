@@ -290,7 +290,7 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="content-page__all__nav__list__more-pages">
+                        <div class="content-page__all__nav__list__more-pages mb_content_page">
                             <a href="#">
                                 <div class="content-page__all__nav__list__more-pages__pages active--main-color">
                                     1
