@@ -1433,6 +1433,11 @@ aside .content__box__total-money__total-all__price--color{
 
 
 
+
+
+
+
+
 /* begin content bestseller */
 
 #content .content-page__all__nav__about-list.active-nav{
@@ -1918,7 +1923,6 @@ display: flex;
 #content_all .content_register_follow_search .search_text{
     display: flex;
     
-      
 }
 
 #content_all .content_register_follow_search .search_text input{
@@ -1964,6 +1968,181 @@ display: flex;
 
 
 /* end content news */
+
+
+/* begin content-don-hang */
+
+.notthing{
+    margin-bottom: 120px;
+}
+ 
+#content-cover .content__icon{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+
+
+#content-cover .content__icon .content_icon__box__cover__img > img{
+    width: 200px;
+
+}
+
+.content__icon__box .content__icon__box__cover-all .content__icon__box__cover-all__box{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text{
+    color: #FFB647;
+    font-size: 24px;
+    
+}
+
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text a{
+    color: #FFB647;
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover-all__box__color-text {
+    color: #75462B;
+    font-size: 24px;
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text-3 a button{
+    border-radius: 10px;
+    background-color: #FFCB05;
+    text-decoration: brown;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    padding: 12px 8px 12px 8px;
+    transition: all 0.2s ease;
+    
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text-3 a button:hover{
+    background-color: var(--bg-product);
+    color: var(--text-color);    
+    cursor: pointer;
+}
+
+
+
+#content-cover .content__icon__box__cover-all .content__icon__box__cover__bills-text{
+    display: ruby;
+}
+
+
+
+/* contend_history */
+#content_history h2{
+    color: #9C623C;
+    margin: -135px 300px 35px 184px;
+}
+#content_history .content_history__color{
+    width: 70px;
+    height: 15px;
+    background-color: #ffd700;
+    margin: 130px 15px 114px 75px;
+}
+#content_history .shared{
+    margin: 10px;
+}
+#content_history .content_hisrory_list{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: left;
+    align-items: center;
+    gap:33px
+}
+#content_history .content_hisrory_list .header-table,
+#content_history .content_hisrory_list .data-table {
+    width: 900px;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+    border: 1px solid hsl(36, 90%, 49%);
+    table-layout: fixed;
+    margin-left: 100px;
+}
+
+
+#content_history .content_hisrory_list .header-table th,
+#content_history .content_hisrory_list .data-table td {
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+/*  Ghi chú : kích thước cố định cho mỗi cột để căn chỉnh chính xác
+trong th  or td có thể dùng  th:nth-child() or td:nth-child()  theo thứ tự của các th td  hehe*/
+#content_history .content_hisrory_list .header-table th:nth-child(1),
+#content_history .content_hisrory_list .data-table td:nth-child(1) {
+    width: 120px;
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(2),
+#content_history .content_hisrory_list .data-table td:nth-child(2) {
+    width: 150px;
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(3),
+#content_history .content_hisrory_list .data-table td:nth-child(3) {
+    width: 80px; 
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(4),
+#content_history .content_hisrory_list .data-table td:nth-child(4) {
+    width: 100px; 
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(5),
+#content_history .content_hisrory_list .data-table td:nth-child(5) {
+    width: 80px;
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(6),
+#content_history .content_hisrory_list .data-table td:nth-child(6) {
+    width: 100px;
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(7),
+#content_history .content_hisrory_list .data-table td:nth-child(7) {
+    width: 120px;
+}
+
+#content_history .content_hisrory_list .header-table th:nth-child(8),
+#content_history .content_hisrory_list .data-table td:nth-child(8) {
+    width: 120px;
+}
+
+
+#content_history .content_hisrory_list .header-table th {
+    background-color: #f4ca62;
+    font-weight: 100;
+}
+
+#content_history .content_hisrory_list .data-table td img {
+    display: block;
+    margin: 0 auto;
+}
+#content_history .data-table button{
+    width: 20px;
+    height: 20px;
+}
+#content_history .content_hisrory_list .data-table tr:hover {
+    background-color: #f9f9f9;
+}
+/* end contend_history */
+
+
+
+
 
 
 
@@ -2434,7 +2613,7 @@ aside .content__box__addres__apply-sale-off input{
     .mb__banner-page__all__first{
         display: block;
         position: relative;
-        margin-top: 64px;
+        margin-top: 85px;
     }
 
     .mb__banner-page__all__first__logo{
@@ -2687,6 +2866,11 @@ aside .content__box__addres__apply-sale-off input{
 
     #content-page__all .content-page__all__col-info{
         margin: 0;
+    }
+
+
+    #content-page__all .content-page__all__nav {
+        margin-top: 66px;
     }
 
 
@@ -3306,6 +3490,8 @@ aside .content__box__addres__apply-sale-off input{
 /* end content login_register */
 
 
+
+
 /* begin content account */
 
 .customer-account{
@@ -3329,7 +3515,7 @@ aside .content__box__addres__apply-sale-off input{
     background-color: #FFCB05;
     color: #9C623C;
     border-radius: 15px;
-    width: 210px;
+    width: 250px;
     height: 40px;
     font-size: 20px;
     text-align: center;
@@ -3458,6 +3644,155 @@ aside .content__box__addres__apply-sale-off input{
 
     /* end content contact */
 
+
+    /* contend_history */
+    #content_history {
+        padding: 10px;
+    }
+
+    #content_history h2 {
+        color: #9C623C;
+        margin: 20px auto;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    #content_history .content_history__color {
+        width: 50px;
+        height: 10px;
+        background-color: #ffd700;
+        margin: 72px 12px -35px 34px;
+    }
+
+    
+    #content_history .shared {
+        margin: 7px 20px;
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Chỉnh sửa cấu trúc bảng để hiển thị cột theo hàng */
+    #content_history .content_hisrory_list {
+        display: block;
+        padding: 0;
+        margin-left: -50px;
+        color: #75462B;
+    }
+
+    /* Cấu trúc của bảng header */
+    #content_history .content_hisrory_list.mb-bg-reset .header-table,
+    #content_history .content_hisrory_list.mb-bg-reset .data-table {
+        width: 45%;
+        border-collapse: collapse;
+        margin-bottom: 8px;
+        border: 1px solid hsl(36, 90%, 49%);
+        table-layout: auto;
+    }
+    #content_history .content_hisrory_list.mb-bg-reset .header-table th{
+        padding: 8px;
+        text-align: left; 
+        font-size: 0.9em;
+        border: none;
+        display: block;
+        font-weight: 500;
+    }
+    #content_history .content_hisrory_list.mb-bg-reset .data-table td {
+        padding: 8px;
+        text-align: left; 
+        font-size: 0.9em;
+        border: none;
+        display: block;
+    }
+
+    #content_history .content_hisrory_list .data-table td {
+        width: 100%;
+    }
+    /* Các cột riêng biệt có thể hiển thị theo thứ tự của th */
+    #content_history .content_hisrory_list .header-table th:nth-child(1),
+    #content_history .content_hisrory_list .data-table td:nth-child(1) {
+        order: 1;
+        margin: 0;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(2),
+    #content_history .content_hisrory_list .data-table td:nth-child(2) {
+        order: 2;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(3){
+        order: 3;
+        margin: 13px 0 5px;
+    }
+    #content_history .content_hisrory_list .data-table td:nth-child(3) {
+        order: 3;
+        margin: -10px 0 5px;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(4){
+        order: 4;
+        margin: 32px 2px 23px;
+    }
+    #content_history .content_hisrory_list .data-table td:nth-child(4) {
+        order: 4;
+        margin: 28px 0px 18px;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(5),
+    #content_history .content_hisrory_list .data-table td:nth-child(5) {
+        order: 5;
+        margin: -12px 0 5px;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(6),
+    #content_history .content_hisrory_list .data-table td:nth-child(6) {
+        order: 6;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(7),
+    #content_history .content_hisrory_list .data-table td:nth-child(7) {
+        order: 7;
+    }
+
+    #content_history .content_hisrory_list .header-table th:nth-child(8),
+    #content_history .content_hisrory_list .data-table td:nth-child(8) {
+        order: 8;
+    }
+
+    /* Thêm khoảng cách giữa các dòng */
+    #content_history .content_hisrory_list .data-table tr {
+        margin-bottom: 10px;
+
+    }
+
+    /* Hình ảnh trong cột ảnh */
+    #content_history .content_hisrory_list .data-table td img {
+        display: block;
+        margin: 0 auto;
+        max-width: 40px;
+        height: auto;
+    }
+
+    /* Điều chỉnh nút trong bảng */
+    #content_history .data-table button {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8em;
+    }
+    #cotent_history .content_hisrory_list .header-table {
+        /* width: 348px; */
+    }
+    /* Hover khi di chuột qua dòng */
+    #content_history .content_hisrory_list .data-table tr:hover {
+        background-color: #f9f9f9;
+    }
+    #content_history .content_hisrory_list.mb-bg-reset .header-table th {
+        background-color: transparent; /* Xóa màu nền trên mobile */
+    }
+    /* end content_history */
+
+
     /* end content */
 
    
@@ -3526,8 +3861,43 @@ aside .content__box__addres__apply-sale-off input{
         font-size: 10px;
     }
 
+/* begin content don-hang-mb */
+
+.content__icon__box__cover-all__box .content__icon__box__cover-all__box__color-text {
+    font-size: 12px;
+}
+
+#header-page .header-page__logo img {
+    width: 80px;
+    height: 80px;
+}
+
+
+#content-cover .content__icon .content_icon__box__cover__img > img {
+    width: 80px;
+    height: 80px;
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover-all__box__color-text {
+    color: #75462B;
+    font-size: 10px;
 
 }
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text {
+    color: #FFB647;
+    font-size: 10px;
+}
+
+.content__icon__box__cover-all__box .content__icon__box__cover__bills-text__text-3 a button{
+    font-size: 14px;
+}
+
+
+/* end content don-hang-mb */
+
+}
+
 
 
 /* end mobile */

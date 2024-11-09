@@ -7,9 +7,9 @@
                     <ul>
                         <li><a class="" href="index.php">TRANG CHỦ</a></li>
                         <li><a class="" href="index.php?page=menu1">SẢN PHẨM</a></li>
-                        <li><a class="active-head" href="#">CỬA HÀNG</a></li>
-                        <li><a class="" href="">TIN TỨC</a></li>
-                        <li><a class="" href="">LIÊN HỆ</a></li>
+                        <li><a class="active-head" href="index.php?page=store">CỬA HÀNG</a></li>
+                        <li><a class="" href="index.php?page=news">TIN TỨC</a></li>
+                        <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
                         <a href="index.php?page=cart">
                             <div class="mb__header-page__cart">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -17,7 +17,7 @@
                             </div>
                         </a>
                         <a href="index.php?page=dangnhap">
-                            <div class="mb__header-page__login">
+                            <div class="mb__header-page__login ">
                                 <i class="fa-solid fa-user"></i>
                                 <p>Đăng nhập</p>
                             </div>

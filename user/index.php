@@ -37,6 +37,10 @@
             break;
             case "dangki":require_once('app/view/dangKi.php');
             break;
+            case "donhang":require_once('app/view/donHang.php');
+            break;
+            case "lichsumua":require_once('app/view/lichSuMua.php');
+            break;
             case "account":require_once('app/view/account.php');
             break;
 
