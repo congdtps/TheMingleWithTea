@@ -36,24 +36,24 @@
                     <img src="img/__-removebg-preview.png" alt="">
                 </div>
                 <ul class="header-page__nav">
-                        <li><a class="" href="index.php">TRANG CHỦ</a></li>
-                        <li><a class="" href="index.php?page=menu1">SẢN PHẨM</a></li>
-                        <li><a class="" href="index.php?page=store">CỬA HÀNG</a></li>
-                        <li><a class="" href="index.php?page=news">TIN TỨC</a></li>
-                        <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
+                    <li><a class="" href="index.php">Trang chủ</a></li>
+                    <li><a class="" href="index.php?page=menu1">Sản phẩm</a></li>
+                    <li><a class="" href="index.php?page=store">Cửa hàng</a></li>
+                    <li><a class="" href="index.php?page=news">Tin tức</a></li>
+                    <li><a class="" href="index.php?page=contact">Liên hệ</a></li>
                 </ul>
                 <div class="header-page__search">
                     <input type="text" name="" id="" placeholder="Trà sữa">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
                 <div class="header-page__info">
-                    <a class="" href="#">
+                    <a href="index.php?page=cart">
                         <div class="header-page__info__cart active-head">
                             <span><i class="fa-solid fa-cart-shopping"></i></span>
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>
                         </div>
                     </a>
-                    <a class="" href="index.php?page=dangnhap">
+                    <a href="index.php?page=dangnhap">
                         <div class="header-page__info__login">
                             <span><i class="fa-solid fa-user"></i></span>
                             <h3 style="margin-left: 5px;">Đăng nhập</h3>

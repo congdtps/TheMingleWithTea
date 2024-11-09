@@ -9,8 +9,8 @@
                         <h2>Admin</h2>
                         <ul>
                             <li><a class="" href="index.php"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
+                            <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
+                            <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="active-admin" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>

@@ -24,6 +24,10 @@
             break;
             case "store":require_once('app/view/store.php');
             break;
+            case "news":require_once('app/view/news.php');
+            break;
+            case "contact":require_once('app/view/contact.php');
+            break;
             case "cart":require_once('app/view/cart.php');
             break;
             case "dangnhap":require_once('app/view/dangNhap.php');

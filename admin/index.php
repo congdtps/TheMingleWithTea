@@ -11,6 +11,15 @@
             break;
             case 'fix_category_admin':require_once('app/view/fix_category_admin.php');
             break;
+            case 'bill_admin':require_once('app/view/bill_admin.php');
+            break;
+            case 'fix_bill_admin':require_once('app/view/fix_bill_admin.php');
+            break;
+            case 'personnel_admin':require_once('app/view/personnel_admin.php');
+            break;
+            case 'fix_personnel_admin':require_once('app/view/fix_personnel_admin.php');
+            break;
+
 
             default:require_once('app/view/main.php');
             break;

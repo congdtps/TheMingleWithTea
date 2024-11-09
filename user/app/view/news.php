@@ -1,35 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin tức</title>
-    <link rel="stylesheet" href="/user/front/fontawesome-free-6.5.2-web/css/all.css">
-    <link rel="stylesheet" href="/user/upload/css/index.css">
-</head>
-<body>
-    <!-- Bảo -->
-    <div id="main">
-        <!-- Begin header -->
-        <header>
+<header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </div>
                     <ul>
-                        <li><a class="" href="/user/index.html">TRANG CHỦ</a></li>
-                        <li><a class="" href="/user/app/view/menu1.html">SẢN PHẨM</a></li>
-                        <li><a class="" href="store.html">CỬA HÀNG</a></li>
-                        <li><a class="active-head" href="#">TIN TỨC</a></li>
-                        <li><a class="" href="contact.html">LIÊN HỆ</a></li>
-                        <a href="cart.html">
+                        <li><a class="" href="index.php">TRANG CHỦ</a></li>
+                        <li><a class="" href="index.php?page=menu1">SẢN PHẨM</a></li>
+                        <li><a class="" href="index.php?page=store">CỬA HÀNG</a></li>
+                        <li><a class="active-head" href="index.php?page=news">TIN TỨC</a></li>
+                        <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
+                        <a href="index.php?page=cart">
                             <div class="mb__header-page__cart">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <p>Giỏ hàng</p>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="index.php?page=dangnhap">
                             <div class="mb__header-page__login">
                                 <i class="fa-solid fa-user"></i>
                                 <p>Đăng nhập</p>
@@ -45,27 +32,27 @@
                     <i style="font-size: 24px;" class="fa-solid fa-bars"></i>
                 </div>
                 <div class="header-page__logo">
-                    <img src="/user/img/__-removebg-preview.png" alt="">
+                    <img src="img/__-removebg-preview.png" alt="">
                 </div>
                 <ul class="header-page__nav">
-                    <li><a class="" href="/user/index.html">Trang chủ</a></li>
-                    <li><a class="" href="/user/app/view/menu1.html">Sản phẩm</a></li>
-                    <li><a class="" href="store.html">Cửa hàng</a></li>
-                    <li><a class="active-head" href="#">Tin tức</a></li>
-                    <li><a class="" href="contact.html">Liên hệ</a></li>
+                    <li><a class="" href="index.php">Trang chủ</a></li>
+                    <li><a class="" href="index.php?page=menu1">Sản phẩm</a></li>
+                    <li><a class="" href="index.php?page=store">Cửa hàng</a></li>
+                    <li><a class="active-head" href="index.php?page=news">Tin tức</a></li>
+                    <li><a class="" href="index.php?page=contact">Liên hệ</a></li>
                 </ul>
                 <div class="header-page__search">
                     <input type="text" name="" id="" placeholder="Trà sữa">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
                 <div class="header-page__info">
-                    <a href="cart.html">
+                    <a href="index.php?page=cart">
                         <div class="header-page__info__cart">
                             <span><i class="fa-solid fa-cart-shopping"></i></span>
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>
                         </div>
                     </a>
-                    <a href="dangNhap.html">
+                    <a href="index.php?page=dangnhap">
                         <div class="header-page__info__login">
                             <span><i class="fa-solid fa-user"></i></span>
                             <h3 style="margin-left: 5px;">Đăng nhập</h3>
@@ -74,11 +61,8 @@
                 </div>
             </div>
         </header>
-        <!-- End header -->
-
-
-        <!-- Begin content -->
-        <div id="content">
+         <!-- Begin content -->
+         <div id="content">
             <div id="content_all">
                 <div class="content_all_title-news">
                     <div class="content_all_title-news_col">
@@ -99,7 +83,7 @@
                 <div class="content_all_main-news">
                    <div class="content_news_all">
                        <div class="content_news_detail">
-                           <img src="/user/img/tintuc1.jpg" alt="mừng tết 2025"></a>
+                           <img src="img/tintuc1.jpg" alt="mừng tết 2025"></a>
                            
                            <div class="content_news_text">
                                <h3 class="title">Ý NGHĨA CỦA TẾT NGUYÊN ĐÁN 2025</h3>
@@ -114,7 +98,7 @@
                        </div>
        
                        <div class="content_news_detail">
-                           <img src="/user/img/tintuc2.jpg" alt="lễ 2/9">
+                           <img src="img/tintuc2.jpg" alt="lễ 2/9">
        
                            <div class="content_news_text">
                                <h3 class="title">LỄ NÀY GHÉ MINGEL WITH TEA, 
@@ -130,7 +114,7 @@
                        </div>
        
                        <div class="content_news_detail">
-                           <img src="/user/img/tintuc3.jpg" alt="chính sách ưu đãi">
+                           <img src="img/tintuc3.jpg" alt="chính sách ưu đãi">
                            
                            <div class="content_news_text">
                                <h3>CHÍNH SÁCH KHÁCH HÀNG THÂN THIẾT</h3>
@@ -151,7 +135,7 @@
             
                         <div class="content_register_follow">
                             <h3 style="color: #75462B;">Đăng ký theo dõi</h3>
-                            <img src="/user/img/__-removebg-preview.png" style="width: 140px; height: 140px;" alt="">
+                            <img src="img/__-removebg-preview.png" style="width: 140px; height: 140px;" alt="">
                            <div class="content_register_follow__text-email">
                             <h4>Nhập email để nhận những thông tin <h4 class="content_register_follow__text-email_text">
                                 mới nhất từ Mingle With Tea
@@ -180,81 +164,3 @@
     
 
         <!-- End content -->
-
-
-        <!-- Begin footer -->
-         <footer>
-            <div id="footer-page">
-                <div class="footer-page__all">
-                    <img width="100%" src="/user/img/bg-footer-lg.jpg" alt="">
-                    <div class="footer-page__all__info">
-                        <img width="100px" src="/user/img/__-removebg-preview.png" alt="">
-                        <div class="footer-page__all__info__first">
-                            <h3 >VỀ CHÚNG TÔI</h3>
-                            <ul>
-                                <li><a href="">Giới thiệu về công ty</a></li>
-                                <li><a href="">Chính sách bảo mật</a></li>
-                                <li><a href="">Quy chế hoạt động</a></li>
-                                <li><a href="">Kiểm tra hóa đơn điện tử</a></li>
-                                <li><a href="">Câu hỏi thường gặp khi mùa hàng</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-page__all__info__second">
-                            <h3 >CỬA HÀNG</h3>
-                            <ul >
-                                <li><a href="">Hệ thống cửa hàng</a></li>
-                                <li><a href="">Chính sách sản phẩm</a></li>
-                                <li><a href="">Tin tuyển dụng</a></li>
-                                <li><a href="">Tin khuyến mãi</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-page__all__info__third">
-                            <h3>LIÊN HỆ</h3>
-                            <di v class="footer-page__all__info__chat">
-                                <p>Tư vấn mua hàng (Miễn phí)</p>
-                                <h3 >1800 6601 <small>(Nhánh 1)</small></h3>
-                            </di> 
-                            <div class="footer-page__all__info__chat">
-                                <p>Góp ý khuyến nại (8h00 - 22h00)</p>
-                                <h3 >1800 6601</h3>
-                            </div> 
-                            <div class="footer-page__all__info__pay">
-                                <p>Hỗ trợ thanh toán nước ngoài</p>
-                                <ul>
-                                    <a href="#">
-                                        <li><i class="fa-brands fa-paypal"></i></li>
-                                    </a>
-                                    <a href="#">
-                                        <li><i class="fa-brands fa-cc-visa"></i></li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footer-page__all__info__fourd">
-                            <h3 >Copyrights <i class="fa-solid fa-copyright"></i> 2024 by Mingle With Tea</h3>
-                        </div> 
-                    </div>
-                </div>
-
-            </div>
-
-         </footer>
-        <!-- End footer -->
-
-    </div>
-   
-</body>
-<script
-type="text/javascript"
-src="https://code.jquery.com/jquery-1.11.0.min.js"
-></script>
-<script
-type="text/javascript"
-src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-></script>
-<script
-type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-></script>
-<script src="/user/upload/js/index.js"></script>
-</html>

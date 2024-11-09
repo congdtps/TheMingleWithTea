@@ -5,12 +5,12 @@
             <div class="content-admin__all">
                 <article>
                     <div class="content-admin__all__list-nav">
-                        <img src="/user/img/__-removebg-preview.png" alt="">
+                        <img src="../user/img/__-removebg-preview.png" alt="">
                         <h2>Admin</h2>
                         <ul>
                             <li><a class="" href="index.php"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
+                            <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
+                            <li><a class="" href="index.php?personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="active-admin" href="#"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
@@ -61,12 +61,12 @@
                                     <input type="text" name="" id="" placeholder="URL">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Giá</label>
-                                    <input type="text" name="" id="" placeholder="25.000đ">
+                                    <label for="">Giá gốc</label>
+                                    <input type="text" name="" id="" placeholder="Giá gốc">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Ngày bắt đầu thêm</label>
-                                    <input type="text" name="" id="" placeholder="Ngày bắt đầu">
+                                    <label for="">Giá giảm</label>
+                                    <input type="text" name="" id="" placeholder="Giá giảm">
                                 </div>
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
@@ -77,42 +77,42 @@
                             </div>
                         </form>
                         <div class="content-admin__all__controler-admin__info-product">
-                            <div class="content-admin__all__controler-admin__info-product__nav first">
+                            <div class="content-admin__all__controler-admin__info-product__nav first second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
                                     <h3>ID Sản phẩm</h3>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <h3>Ngày thêm</h3>
-                                    </div>
-                                    <div class="name-pro">
                                         <h3>Tên sản phẩm</h3>
                                     </div>
-                                    <div class="quantity-pro">
+                                    <div class="name-pro">
                                         <h3>Ảnh</h3>
+                                    </div>
+                                    <div class="quantity-pro">
+                                        <h3>Giá gốc</h3>
                                     </div>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price ">
-                                    <h3>Giá</h3>
+                                    <h3>Giá giảm</h3>
                                 </div>
                             </div>
                            
                            
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
+                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
                                     <p style="color: #FFB647;">#TS01</p>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <p>11/02/2024</p>
-                                    </div>
-                                    <div class="name-pro">
                                         <p>Trà sữa truyền thống</p>
                                     </div>
+                                    <div class="name-pro">
+                                        <img width="50px" src="../user/img/sp5.png" alt="">
+                                    </div>
                                     <div class="quantity-pro">
-                                        <img width="50px" src="/user/img/sữa-tươi-trân-châu-đường-đen.png" alt="">
+                                        <p>25.000đ</p>
                                     </div>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">

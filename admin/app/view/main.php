@@ -5,12 +5,12 @@
             <div class="content-admin__all">
                 <article>
                     <div class="content-admin__all__list-nav">
-                        <img src="/user/img/__-removebg-preview.png" alt="">
+                        <img src="../user/img/__-removebg-preview.png" alt="">
                         <h2>Admin</h2>
                         <ul>
                             <li><a class="active-admin" href="#"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
+                            <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
+                            <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
@@ -52,16 +52,28 @@
                         </div>
                         <div class="content-admin__all__controler-admin__search-all-product">
                             <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Sản phẩm</label>
-                                <input type="text" name="" id="" placeholder="Tên sản phẩm">
+                                <label for="">Mã khách hàng</label>
+                                <input type="text" name="" id="" placeholder="Mã">
                             </div>
                             <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Mã sản phẩm</label>
-                                <input type="text" name="" id="" placeholder="ID">
+                                <label for="">Tên khách hàng</label>
+                                <input type="text" name="" id="" placeholder="Tên">
                             </div>
                             <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Ngày bắt đầu đăng</label>
-                                <input type="text" name="" id="" placeholder="Ngày bắt đầu">
+                                <label for="">Email khách hàng</label>
+                                <input type="text" name="" id="" placeholder="Email">
+                            </div>
+                            <div class="content-admin__all__controler-admin__search-all-product__product">
+                                <label for="">Password khách hàng</label>
+                                <input type="text" name="" id="" placeholder="Password">
+                            </div>
+                            <div class="content-admin__all__controler-admin__search-all-product__product">
+                                <label for="">SĐT khách hàng</label>
+                                <input type="text" name="" id="" placeholder="SĐT">
+                            </div>
+                            <div class="content-admin__all__controler-admin__search-all-product__product">
+                                <label for="">Địa chỉ khách hàng</label>
+                                <input type="text" name="" id="" placeholder="Địa chỉ">
                             </div>
                            
                             <div class="content-admin__all__controler-admin__search-all-product__product__search">
@@ -71,70 +83,50 @@
                             </div>
                         </div>
                         <div class="content-admin__all__controler-admin__info-product">
-                            <div class="content-admin__all__controler-admin__info-product__nav first">
+                            <div class="content-admin__all__controler-admin__info-product__nav first second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <h3>ID Sản phẩm</h3>
+                                    <h3>ID khách hàng</h3>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <h3>Ngày đăng</h3>
+                                        <h3>Tên khách hàng</h3>
                                     </div>
                                     <div class="name-pro">
-                                        <h3>Tên sản phẩm</h3>
+                                        <h3>Email khách hàng</h3>
                                     </div>
                                     <div class="quantity-pro">
-                                        <h3>Số lượng</h3>
+                                        <h3>Password</h3>
                                     </div>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price">
-                                    <h3>Giá</h3>
-                                    <h3>Phí phát sinh</h3>
+                                    <h3>SĐT</h3>
+                                    <h3>Địa chỉ</h3>
                                 </div>
                             </div>
                            
-                            <div class="content-admin__all__controler-admin__info-product__nav">
+                            <div class="content-admin__all__controler-admin__info-product__nav second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#TS01</p>
+                                    <p style="color: #FFB647;">#KH01</p>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <p>11/02/2024</p>
+                                        <p>Nguyễn Ngọc Gia Bảo</p>
                                     </div>
                                     <div class="name-pro">
-                                        <p>Trà sữa truyền thống</p>
+                                        <p>bao@gmail.com</p>
                                     </div>
                                     <div class="quantity-pro">
-                                        <p>10</p>
+                                        <p>1</p>
                                     </div>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price">
-                                    <p>20.000đ</p>
-                                    <p>2.000đ</p>
+                                    <p>0123456789</p>
+                                    <p>quận gò vấp </p>
                                 </div>
                             </div>
-                            <div class="content-admin__all__controler-admin__info-product__nav">
-                                <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                    <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#TS01</p>
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__desc">
-                                    <div class="date-post">
-                                        <p>11/02/2024</p>
-                                    </div>
-                                    <div class="name-pro">
-                                        <p>Trà sữa truyền thống</p>
-                                    </div>
-                                    <div class="quantity-pro">
-                                        <p>10</p>
-                                    </div>
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__price">
-                                    <p>20.000đ</p>
-                                    <p>2.000đ</p>
-                                </div>
-                            </div>
+                        
                             
                            
                            

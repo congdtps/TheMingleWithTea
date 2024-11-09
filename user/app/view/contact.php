@@ -1,6 +1,4 @@
-
-   <!-- Begin header -->
-   <header>
+<header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -11,14 +9,14 @@
                         <li><a class="" href="index.php?page=menu1">SẢN PHẨM</a></li>
                         <li><a class="" href="index.php?page=store">CỬA HÀNG</a></li>
                         <li><a class="" href="index.php?page=news">TIN TỨC</a></li>
-                        <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
+                        <li><a class="active-head" href="index.php?page=contact">LIÊN HỆ</a></li>
                         <a href="index.php?page=cart">
-                            <div class="mb__header-page__cart">
+                            <div class="mb__header-page__cart ">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <p>Giỏ hàng</p>
                             </div>
                         </a>
-                        <a href="">
+                        <a href="index.php?page=dangnhap">
                             <div class="mb__header-page__login">
                                 <i class="fa-solid fa-user"></i>
                                 <p>Đăng nhập</p>
@@ -38,10 +36,10 @@
                 </div>
                 <ul class="header-page__nav">
                     <li><a class="" href="index.php">Trang chủ</a></li>
-                    <li><a class="active-head" href="index.php?page=menu1">Sản phẩm</a></li>
+                    <li><a class="" href="index.php?page=menu1">Sản phẩm</a></li>
                     <li><a class="" href="index.php?page=store">Cửa hàng</a></li>
                     <li><a class="" href="index.php?page=news">Tin tức</a></li>
-                    <li><a class="" href="index.php?page=contact">Liên hệ</a></li>
+                    <li><a class="active-head" href="index.php?page=contact">Liên hệ</a></li>
                 </ul>
                 <div class="header-page__search">
                     <input type="text" name="" id="" placeholder="Trà sữa">
@@ -64,20 +62,31 @@
             </div>
         </header>
         <!-- End header -->
+
+
+        <!-- Begin content -->
+        <div id="content">
+            <div id="content__all">
+                <div class="content__all-title">
+                    <div class="content__all-title-col">
          
+                    </div>
+                    <div class="content__all-title-text">
+                        Liên hệ
+                    </div> 
+            </div>    
+                     
+            <div class="content__main">
+                <div class="content__main-text">
+                    <h3>Liên hệ qua mail của mình nhé</h3>
+                </div>
+                <div class="content__main-email">
+                    <a href="" style="color: #FFB647;">minglewithtea@gmail.com</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    
 
-
-<div id="content">
-
-<div class="customer-account">
-    <div class="customer-account__name"></div>
-    <h2>TÀI KHOẢN KHÁCH HÀNG</h2>
-    <a href="">
-        <input type="submit" value="Lịch sử mua hàng">
-    </a>
-    <a href="">
-        <input type="submit" value="Đơn hàng">
-    </a>
-</div>
-</div>
-
+        <!-- End content -->
