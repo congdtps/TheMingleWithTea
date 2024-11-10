@@ -81,7 +81,7 @@
                     <div class="content-page__all__nav__list">
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -107,7 +107,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -133,7 +133,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -159,7 +159,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -185,7 +185,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -211,7 +211,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -237,7 +237,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -263,7 +263,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp16.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -287,7 +287,9 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="content-page__all__nav__list__more-pages">
+                      
+                    </div>
+                    <div class="content-page__all__nav__list__more-pages">
                             <a href="index.php?page=menu1">
                                 <div class="content-page__all__nav__list__more-pages__pages ">
                                     1
@@ -312,7 +314,6 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
                     
                 </div>
             </div>

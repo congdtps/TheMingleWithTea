@@ -148,7 +148,7 @@
                     <div class="content-detail__diff-product__list-product-diff">
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp1.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -174,7 +174,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp1.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -200,7 +200,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp1.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>
@@ -226,7 +226,7 @@
                         </a>
                         <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
-                                <img src="img/trà-sữa-truyền-thống.png" alt="">
+                                <img src="img/sp1.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
                                     Trà sữa truyền thống
                                 </div>

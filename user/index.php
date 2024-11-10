@@ -1,7 +1,7 @@
 <?php
     require_once('app/model/data.php');
     require_once ('app/view/header.php');
-    $db= new data();
+    // $db = new data();
 
     if(isset($_GET['page'])&& $_GET['page'] ){
         switch($_GET['page']){
