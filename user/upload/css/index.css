@@ -2243,6 +2243,9 @@ trong th  or td có thể dùng  th:nth-child() or td:nth-child()  theo thứ t�
 
 /* begin responsive */
 @media screen and (min-width:1025px) {
+
+  
+
     #header-page .mb__header-page__menu-nav{
         display: none;
     }
@@ -2261,6 +2264,9 @@ trong th  or td có thể dùng  th:nth-child() or td:nth-child()  theo thứ t�
 #header-page .header-page__logo{
     margin: 0 0 0 10px;
 }
+
+
+
 
 #header-page .header-page__logo img{
     width: 60px;
@@ -2663,6 +2669,11 @@ aside .content__box__addres__apply-sale-off input{
     margin-top: 66px;
 }
 
+#content-page__all .content-page__all__nav li a{
+    padding: 10px 18px;
+}
+
+
 
 #content-page__all .content-page__all__nav li a:active{
     background-color: var(--main-color);color: #fff;
@@ -2701,6 +2712,9 @@ aside .content__box__addres__apply-sale-off input{
     background-color: var(--main-color);
 
 }
+
+
+
 
 /* end content menu */
 

@@ -1,6 +1,6 @@
 <!-- <?php
  class data{
-  private $severname = "localhost";
+  private $severname = "localhost:3307";
   private $user = "root";
   private $password = "";
   private $dbname = "theminglewithtea";
@@ -10,7 +10,7 @@
     try{
       $this->conn = new PDO("mysql:host=$this->severname;dbname=$this->dbname;charset=utf8",$this->user,$this->password);
       $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-      echo "Kết nối thành công";
+      // echo "Kết nối thành công";
   }catch(PDOException $e){
       echo "Lỗi " . $e->getMessage();
   }
