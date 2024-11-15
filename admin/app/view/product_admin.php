@@ -68,6 +68,10 @@
                                     <label for="">Giá giảm</label>
                                     <input type="text" name="" id="" placeholder="Giá giảm">
                                 </div>
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">ID danh mục</label>
+                                    <input type="text" name="" id="" placeholder="ID danh mục">
+                                </div>
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
                                     <a href="">

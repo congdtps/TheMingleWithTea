@@ -1,3 +1,88 @@
+<?php
+    $listProduct= $data['dssp'];
+
+    function show_product($listProduct){
+        foreach($listProduct as $value){
+            extract($value);
+            if($price_sale){
+                echo '         
+            <a href="index.php?page=detail&&id='.$id_sanpham.'">
+                <div class="content-page__all__nav__list__product">
+                    <img src="img/'.$image.'" alt="">
+                    <input type="hidden" name="image" value="'.$image.'">
+                    <div class="content-page__all__nav__list__product__name">
+                        '.$name.'
+                    <input type="hidden" name="name_product" value="'.$name.'">
+                    </div>
+                    <div class="content-page__all__nav__list__product__row"></div>
+                    <div class="content-page__all__nav__list__product__info-name">
+                        Đậm đà
+                    </div>
+                    <div class="content-page__all__nav__list__product__topping">
+                        Chưa có topping
+                    </div>
+                    <div class="content-page__all__nav__list__product__price-money">
+                        <div class="content-page__all__nav__list__product__price-money__price">
+                            Giá
+                        </div>
+                        <div class="content-page__all__nav__list__product__price-money__money">
+                        '.$price_sale.'đ
+                    <input type="hidden" name="price_sale" value="'.$price_sale.'">
+                    <input type="hidden" name="price" value="'.$price.'">
+                        </div>
+                    </div>
+                    
+                    <div class="content-page__all__nav__list__product__buy">
+                        <input type="submit" value="Mua" name="buy-product">
+                    </div>
+                </div>
+            </a>
+
+    ';
+            }else{ echo ' 
+            <a href="index.php?page=detail&&id='.$id_sanpham.'">
+                <div class="content-page__all__nav__list__product">
+                    <img src="img/'.$image.'" alt="">
+                    <input type="hidden" name="image" value="'.$image.'">
+                    <div class="content-page__all__nav__list__product__name">
+                        '.$name.'
+                    <input type="hidden" name="name_product" value="'.$name.'">
+                    </div>
+                    <div class="content-page__all__nav__list__product__row"></div>
+                    <div class="content-page__all__nav__list__product__info-name">
+                        Đậm đà
+                    </div>
+                    <div class="content-page__all__nav__list__product__topping">
+                        Chưa có topping
+                    </div>
+                    <div class="content-page__all__nav__list__product__price-money">
+                        <div class="content-page__all__nav__list__product__price-money__price">
+                            Giá
+                        </div>
+                        <div class="content-page__all__nav__list__product__price-money__money">
+                        '.$price.'đ
+                    <input type="hidden" name="price_sale" value="'.$price_sale.'">
+                    <input type="hidden" name="price" value="'.$price.'">
+                        </div>
+                    </div>
+                    <div class="content-page__all__nav__list__product__buy">
+                        <input type="submit" value="Mua" name="buy-product">
+                    </div>
+                </div>
+            </a>
+
+    ';
+
+            }
+           
+        }
+    }
+
+
+
+
+?>
+
 <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
@@ -73,6 +158,7 @@
                 </div>
                 <div class="content-page__all__nav">
                     <ul>
+                      
                         <li><a href="index.php?page=bestseller">Best Seller</a></li>
                         <li><a href="index.php?page=bocollection">Bơ Collection</a></li>
                         <li><a href="index.php?page=trasua">Trà sữa</a></li>
@@ -82,214 +168,10 @@
                     </ul>
                     <h2>MENU</h2>
                     <div class="content-page__all__nav__list">
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp5.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
+                       <?php
+                            show_product($listProduct);
+                       ?>
+                       
                        
                     </div>
                     <div class="content-page__all__nav__list__more-pages mb_content_page">

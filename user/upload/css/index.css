@@ -385,15 +385,20 @@ article .content__box__nav-cart .content__box__nav-cart__check-cart .content__bo
 
 
 
-article .content__box__nav-cart__pay-cart__quantity input{
+article .content__box__nav-cart__pay-cart__quantity{
     width: 65%;
     text-align: center;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 
-article .content__box__nav-cart__pay-cart__button input{
+article .content__box__nav-cart__pay-cart__button a{
     padding: 5px 10px;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     background-color: var(--text-color);
     color:#fff;
@@ -401,7 +406,7 @@ article .content__box__nav-cart__pay-cart__button input{
 }
 
 
-article .content__box__nav-cart__pay-cart__button input:hover{
+article .content__box__nav-cart__pay-cart__button a:hover{
     opacity: 0.6;
     cursor: pointer;
 }
@@ -416,6 +421,7 @@ article .content__box__add-product{
     margin-top: 60px;
     transition: all 0.2s ease;
 }
+
 
 article .content__box__add-product:hover{
     background-color: var(--bg-product);
@@ -798,7 +804,7 @@ aside .content__box__total-money__total-all__price--color{
 }
 #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn{margin-top: 7px;
 }
-#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button{
+#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn input{
     width: 73px;
     height: 30px;
     background-color: #FFB647;
@@ -896,7 +902,7 @@ aside .content__box__total-money__total-all__price--color{
 #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn{
     margin-top: 7px;
 }
-#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button{
+#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn input{
     width: 73px;
     height: 30px;
     background-color: #FFB647;
@@ -925,8 +931,8 @@ aside .content__box__total-money__total-all__price--color{
 }
 
 
-#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button:hover,
-#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button:hover{
+#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn input:hover,
+#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn input:hover{
     background-color: #fff;
     cursor: pointer;
     color: var(--main-color);
@@ -1063,7 +1069,7 @@ aside .content__box__total-money__total-all__price--color{
 }
 
 
-#content .content-page__all__nav__list__product__buy button{
+#content .content-page__all__nav__list__product__buy input{
     border: none;
     padding: 8px 20px;
     background-color: var(--main-color);
@@ -1073,7 +1079,7 @@ aside .content__box__total-money__total-all__price--color{
     border: 1px solid var(--text-color);
 }
 
-#content .content-page__all__nav__list__product__buy button:hover{
+#content .content-page__all__nav__list__product__buy input:hover{
     background-color: #fff;
     color: var(--main-color);
     cursor: pointer;
@@ -1493,12 +1499,14 @@ aside .content__box__total-money__total-all__price--color{
 
 
 #content-detail article .content-detail__all-product__img-large{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 #content-detail article .content-detail__all-product__img-large img{
-    width: 338px;
-    height: 322px;
+    width: 520px;
     background-color: #EFEFEF;
     border-radius: 10px;
     padding: 10px;
@@ -1530,6 +1538,14 @@ aside .content__box__total-money__total-all__price--color{
     display: flex;
     flex-direction: column;
 }
+
+#content-detail .content-detail__all-product-info__all-price-detail{
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+
+
 
 
 #content-detail .content-detail__all-product-info h2{
@@ -2644,12 +2660,12 @@ aside .content__box__addres__apply-sale-off input{
         height: 330px;
     }
 
-    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button{
+    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn input{
         width: 100%;
     }
 
 
-    #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button{
+    #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn input{
         width: 100%;
     }
 
@@ -2697,12 +2713,12 @@ aside .content__box__addres__apply-sale-off input{
 
 
 
-#content .content-page__all__nav__list__product__buy button{
+#content .content-page__all__nav__list__product__buy input{
     padding: 6px 80px;
 }
 
 
-#content .content-page__all__nav__list__product__buy button:active{
+#content .content-page__all__nav__list__product__buy input:active{
     background-color: var(--bg-product);
 }
 
@@ -3484,8 +3500,8 @@ aside .content__box__total-money__total-all__price--color{
     }
     #content .content__background__list-bestseller__lists-product .content__background__list-bestseller__lists-product__product {
         background-color: #FFF4B6;
-        width: 144px;
-        height: 225px;
+        width: 180px;
+        height: 280px;
         border-radius: 10px;
         text-align: center;
         padding: 10px;
@@ -3497,7 +3513,7 @@ aside .content__box__total-money__total-all__price--color{
         width: 80%;
     }
     #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__name {
-        font-size: 10px;
+        font-size: 14px;
         color: #9C623C;
         margin: 5px 0;
         text-align: left;
@@ -3518,28 +3534,31 @@ aside .content__box__total-money__total-all__price--color{
     }
     #content .content__background__list-bestseller__lists-product__product__desc .content__background__list-bestseller__lists-product__product__desc__diff-desc{
         margin-bottom: 3px;
+        font-size: 12px;
     }
     #content .content__background__list-bestseller__lists-product__product__desc .content__background__list-bestseller__lists-product__product__desc__topping{
         margin-bottom: 3px;
-    }#content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__price-money{
+        font-size: 12px;
+    }
+    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__price-money{
         display: flex;
         color: #9C623C;
         justify-content: space-between;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 16px;
     }
     #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn{
-        margin-top: 10px;
+        margin-top: 20px;
     }
-    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button{
-        width: 120px;
+    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn input{
+        width: 100%;
         height: 20px;
         background-color: #FFB647;
         border-radius: 5px; 
         color: black;
         border: 1px solid #9C623C;
     }
-    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn button:hover,#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button:hover{
+    #content .content__background__list-bestseller__lists-product__product .content__background__list-bestseller__lists-product__product__btn input:hover,#content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn input:hover{
         background-color: blue;
         cursor: pointer;
     }
@@ -3577,8 +3596,8 @@ aside .content__box__total-money__total-all__price--color{
     }
     #content .content__background__list-uudai__lists-product .content__background__list-uudai__lists-product__product {
         background-color: #FFF4B6;
-        width: 144px;
-        height: 225px;
+        width: 180px;
+        height: 280px;
         border-radius: 10px;
         text-align: center;
         padding: 10px;
@@ -3603,7 +3622,7 @@ aside .content__box__total-money__total-all__price--color{
         width: 80%;
     }
     #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__name {
-        font-size: 10px;
+        font-size: 14px;
         color: #9C623C;
         margin: 5px 0;
         text-align: left;
@@ -3624,22 +3643,24 @@ aside .content__box__total-money__total-all__price--color{
     }
     #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__desc__diff-desc{
         margin-bottom: 3px;
+        font-size: 12px;
     }
     #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__desc__topping{
         margin-bottom: 3px;
+        font-size: 12px;
     }
     #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__price-money{
         display: flex;
         color: #9C623C;
         justify-content: space-between;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 16px;
     }
     #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn{
-        margin-top: 10px;
+        margin-top: 20px;
     }
-    #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn button{
-        width: 120px;
+    #content .content__background__list-uudai__lists-product__product .content__background__list-uudai__lists-product__product__btn input{
+        width: 100%;
         height: 20px;
         background-color: #FFB647;
         border-radius: 5px; 
@@ -3703,12 +3724,12 @@ aside .content__box__total-money__total-all__price--color{
 
 
 
-    #content .content-page__all__nav__list__product__buy button{
+    #content .content-page__all__nav__list__product__buy input{
         padding: 6px 80px;
     }
 
 
-    #content .content-page__all__nav__list__product__buy button:active{
+    #content .content-page__all__nav__list__product__buy input:active{
         background-color: var(--bg-product);
     }
 
@@ -3724,12 +3745,17 @@ aside .content__box__total-money__total-all__price--color{
 
     #content-detail{
         margin-top: 80px;
-        padding: 10px 20px 20px 20px;
+        padding: 10px 40px 20px 40px;
     }
 
 
     #content-detail .content-deatail__back{
         margin: 0;
+    }
+
+    #content-detail article .content-detail__all-product__img-large img{
+        width: 100%;
+        
     }
 
     #content-detail .content-detail__all-product__all{
@@ -3939,6 +3965,7 @@ article .content__box__nav-cart__check-cart__name{
 
 article .content__box__nav-cart .content__box__nav-cart__pay-cart{
     flex-basis: 100px;
+    width: 100%;
 }
 
 article .content__box__nav-cart__pay-cart__price_tem{

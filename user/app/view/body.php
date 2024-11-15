@@ -1,3 +1,76 @@
+<?php
+   $listProductBody= $data['dssp'];
+
+   function show_product_body($listProductBody){
+       foreach($listProductBody as $value){
+           extract($value);
+           if($id_danhmuc===1){
+            echo '   
+        <a href="index.php?page=detail&&id='.$id_sanpham.'">
+            <div class="content__background__list-bestseller__lists-product__product">
+                <img src="img/'.$image.'" alt="'.$name.'">
+                <div class="content__background__list-bestseller__lists-product__product__name">'.$name.'</div>
+                <input type="hidden" name="image" value="'.$name.'">
+                <div class="content__background__list-bestseller__lists-product__product__col"></div>
+                <div class="content__background__list-bestseller__lists-product__product__desc">
+                    <div class="content__background__list-bestseller__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
+                    <div class="content__background__list-bestseller__lists-product__product__desc__topping">Trân châu</div>
+                </div>
+                <div class="content__background__list-bestseller__lists-product__product__price-money">
+                    <div class="content__background__list-bestseller__lists-product__product__price-money__price">Giá:</div>
+                    <div class="content__background__list-bestseller__lists-product__product__price-money__money">'.$price.'đ</div>
+                <input type="hidden" name="price" value="'.$price.'">
+                <input type="hidden" name="price_sale" value="'.$price_sale.'">
+                </div>
+                
+                <div class="content__background__list-bestseller__lists-product__product__btn">
+                    <input type="submit" value="Mua" name="buy-product">
+                </div>
+            </div>
+        
+        </a>
+';
+           }
+        }
+    }
+
+    function show_product_body_sale($listProductBody){
+        foreach($listProductBody as $value){
+            extract($value);
+                if($price_sale){
+                echo'
+                        <a href="index.php?page=detail&&id='.$id_sanpham.'">
+                            <div class="content__background__list-uudai__lists-product__product">
+                                <div class="content__background__list-uudai__lists-product__product__sale">
+                                    <p>Ưu đãi</p>
+                                </div>
+                                <img src="img/'.$image.'" alt="'.$name.'">
+                                <input type="hidden" name="image" value="'.$image.'">
+                                <div class="content__background__list-uudai__lists-product__product__name">'.$name.'</div>
+                                <input type="hidden" name="name-product" value="'.$name.'">
+                                <div class="content__background__list-uudai__lists-product__product__col"></div>
+                                <div class="content__background__list-uudai__lists-product__product__desc">
+                                    <div class="content__background__list-uudai__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div><div class="content__background__list-uudai__lists-product__product__desc__topping">Trân châu</div>
+                                </div>
+                                <div class="content__background__list-uudai__lists-product__product__price-money">
+                                    <div class="content__background__list-uudai__lists-product__product__price-money__price">Giá:</div>
+                                    <div class="content__background__list-uudai__lists-product__product__price-money__money">'.$price_sale.'đ</div>
+                                <input type="hidden" name="price" value="'.$price.'">
+                                <input type="hidden" name="pirce_sale" value="'.$price_sale.'">
+                                </div>
+                                <div class="content__background__list-uudai__lists-product__product__btn">
+                                   <input type="submit" value="Mua" name="buy-product">
+                                </div>
+                            </div>
+                        </a>
+                ';
+               }
+        }
+    }
+
+?>
+
+
 <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
@@ -120,76 +193,11 @@
                         </div>
                     </div>
                     <div class="content__background__list-bestseller__lists-product">
-                        <a href="index.php?page=detail">
-                            <div class="content__background__list-bestseller__lists-product__product">
-                                <img src="img/sp1.png" alt="Trà sữa Trân Châu">
-                                <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Trân Châu</div>
-                                <div class="content__background__list-bestseller__lists-product__product__col"></div>
-                                <div class="content__background__list-bestseller__lists-product__product__desc">
-                                    <div class="content__background__list-bestseller__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
-                                    <div class="content__background__list-bestseller__lists-product__product__desc__topping">Trân châu</div>
-                                </div>
-                                <div class="content__background__list-bestseller__lists-product__product__price-money">
-                                    <div class="content__background__list-bestseller__lists-product__product__price-money__price">Giá:</div>
-                                    <div class="content__background__list-bestseller__lists-product__product__price-money__money">25.000đ</div>
-                                </div>
-                                <div class="content__background__list-bestseller__lists-product__product__btn">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content__background__list-bestseller__lists-product__product">
-                                <img src="img/sp2.png" alt="Trà sữa Kem Trứng Khè">
-                                <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Kem Trứng Khè</div>
-                                <div class="content__background__list-bestseller__lists-product__product__col"></div>
-                                <div class="content__background__list-bestseller__lists-product__product__desc"><div class="content__background__list-bestseller__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
-                                <div class="content__background__list-bestseller__lists-product__product__desc__topping">Lớp kem trứng</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__price-money">
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__money">30.000đ</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-bestseller__lists-product__product">
-                            <img src="img/sp3.png" alt="Trà sữa Sunday">
-                            <div class="content__background__list-bestseller__lists-product__product__name">Trà sữa Sunday</div>
-                            <div class="content__background__list-bestseller__lists-product__product__col"></div>
-                            <div class="content__background__list-bestseller__lists-product__product__desc">
-                                <div class="content__background__list-bestseller__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
-                                <div class="content__background__list-bestseller__lists-product__product__desc__topping">Trân châu đen, plan...</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__price-money">
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__money">35.000đ</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-bestseller__lists-product__product">
-                            <img src="img/sp4.png" alt="Sữa tươi truyền thống"><div class="content__background__list-bestseller__lists-product__product__name">Sữa tươi truyền thống</div>
-                            <div class="content__background__list-bestseller__lists-product__product__col"></div>
-                            <div class="content__background__list-bestseller__lists-product__product__desc">
-                                <div class="content__background__list-bestseller__lists-product__product__desc__diff-desc">Sữa tươi</div>
-                                <div class="content__background__list-bestseller__lists-product__product__desc__topping">Trân châu đường đen</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__price-money">
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-bestseller__lists-product__product__price-money__money">25.000đ</div>
-                            </div>
-                            <div class="content__background__list-bestseller__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
+                    <?php
+                        show_product_body($listProductBody);
+
+                    ?>
+                        
                 </div>
             </div>
             <div class="content__background__list-uudai">
@@ -200,87 +208,10 @@
                     </div>
                 </div>
                 <div class="content__background__list-uudai__lists-product">
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-uudai__lists-product__product">
-                            <div class="content__background__list-uudai__lists-product__product__sale">
-                                <p>Ưu đãi</p>
-                            </div>
-                            <img src="img/sp1.png" alt="Trà sữa Trân Châu">
-                            <div class="content__background__list-uudai__lists-product__product__name">Trà sữa Trân Châu</div>
-                            <div class="content__background__list-uudai__lists-product__product__col"></div>
-                            <div class="content__background__list-uudai__lists-product__product__desc">
-                                <div class="content__background__list-uudai__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div><div class="content__background__list-uudai__lists-product__product__desc__topping">Trân châu</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__price-money">
-                                <div class="content__background__list-uudai__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-uudai__lists-product__product__price-money__money">20.000đ</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-uudai__lists-product__product">
-                            <div class="content__background__list-uudai__lists-product__product__sale">
-                                <p>Ưu đãi</p>
-                            </div>
-                            <img src="img/sp2.png" alt="Trà sữa Kem Trứng Khè">
-                            <div class="content__background__list-uudai__lists-product__product__name">Trà sữa Kem Trứng Khè</div>
-                            <div class="content__background__list-uudai__lists-product__product__col"></div>
-                            <div class="content__background__list-uudai__lists-product__product__desc">
-                                <div class="content__background__list-uudai__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
-                                <div class="content__background__list-uudai__lists-product__product__desc__topping">Lớp kem trứng</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__price-money">
-                                <div class="content__background__list-uudai__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-uudai__lists-product__product__price-money__money">30.000đ</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-uudai__lists-product__product">
-                            <div class="content__background__list-uudai__lists-product__product__sale">
-                                <p>Ưu đãi</p>
-                            </div><img src="img/sp3.png" alt="Trà sữa Sunday">
-                            <div class="content__background__list-uudai__lists-product__product__name">Trà sữa Sunday</div>
-                            <div class="content__background__list-uudai__lists-product__product__col"></div>
-                            <div class="content__background__list-uudai__lists-product__product__desc">
-                                <div class="content__background__list-uudai__lists-product__product__desc__diff-desc">Trà sữa truyền thống</div>
-                                <div class="content__background__list-uudai__lists-product__product__desc__topping">Trân châu đen, plan...</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__price-money">
-                                <div class="content__background__list-uudai__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-uudai__lists-product__product__price-money__money">25.000đ</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="index.php?page=detail">
-                        <div class="content__background__list-uudai__lists-product__product ">
-                            <div class="content__background__list-uudai__lists-product__product__sale">
-                                <p>Ưu đãi</p>
-                            </div>
-                            <img src="img/sp4.png" alt="Sữa tươi truyền thống">
-                            <div class="content__background__list-uudai__lists-product__product__name">Sữa tươi truyền thống</div>
-                            <div class="content__background__list-uudai__lists-product__product__col"></div>
-                            <div class="content__background__list-uudai__lists-product__product__desc">
-                                <div class="content__background__list-uudai__lists-product__product__desc__diff-desc">Sữa tươi</div>
-                                <div class="content__background__list-uudai__lists-product__product__desc__topping">Trân châu đường đen</div>
-                            </div>
-                            <div class="content__background__list-uudai__lists-product__product__price-money">
-                                <div class="content__background__list-uudai__lists-product__product__price-money__price">Giá:</div>
-                                <div class="content__background__list-uudai__lists-product__product__price-money__money">20.000đ</div>
-                            </div><div class="content__background__list-uudai__lists-product__product__btn">
-                                <button>Mua</button>
-                            </div>
-                        </div>
-                    </a>
+                  <?php
+                        show_product_body_sale($listProductBody);
+                  ?>
+                  
                 </div>
             </div>
         </div>
