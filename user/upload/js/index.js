@@ -129,7 +129,6 @@ content_container_all.addEventListener('click',(e)=>{
 
 
 content_container_pay.addEventListener('click',(e)=>{
-    e.preventDefault()
     let inputValue
     content_container_inputs.forEach((input)=>{
         inputValue= input.value.trim()
@@ -146,6 +145,11 @@ content_container_pay.addEventListener('click',(e)=>{
 
 })
 
+
+let content__box__sale__apply= document.querySelector('.content__box__sale__apply input')
+content__box__sale__apply.addEventListener('click',(e)=>{
+    e.preventDefault()
+})
 
 
 

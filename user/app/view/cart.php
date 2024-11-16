@@ -36,7 +36,6 @@
                 $total_item_price=$_SESSION['cart'][$i][2] *  $_SESSION['cart'][$i][4];
                 $total_all+=$total_item_price;
                 echo'
-                <form action="" method="post">
                     <div class="content__box__nav-cart mb__content__box__nav-cart">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
                             <input type="checkbox" name="" id="">
@@ -66,7 +65,6 @@
                 $total_item_price_sale=$_SESSION['cart'][$i][3] * $_SESSION['cart'][$i][4];
                 $total_all+=$total_item_price_sale;
                 echo'
-                <form action="index.php?page=donhang" method="post">
                     <div class="content__box__nav-cart mb__content__box__nav-cart">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
                             <input type="checkbox" name="" id="">
@@ -291,6 +289,7 @@
 
 
                     </div>
+    <form action="index.php?page=donhang" method="post">
                     <?php
                         showCart();
                     ?>

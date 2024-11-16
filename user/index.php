@@ -1,9 +1,15 @@
 <?php
     require_once('app/model/data.php');
     require_once('app/model/product.php');
-    require_once('app/controller/bodyController.php');
+    require_once('app/model/category.php');
     require_once('app/controller/menu1Controller.php');
     require_once('app/controller/menu2Controller.php');
+    require_once('app/controller/bestSellerController.php');
+    require_once('app/controller/boCollectionController.php');
+    require_once('app/controller/traThanhNhietController.php');
+    require_once('app/controller/traNguyenViController.php');
+    require_once('app/controller/traSuaController.php');
+    require_once('app/controller/suaTuoiController.php');
     require_once('app/controller/cartController.php');
     require_once('app/controller/detailController.php');
     require_once ('app/view/header.php');
@@ -19,23 +25,37 @@
                 $menu2=new menu2();
                 $menu2->getProduct_second();
             break;
-            case 'bestseller':require_once('app/view/bestSeller.php');
             break;
-            case 'bocollection':require_once('app/view/boCollection.php');
+            case 'bestseller':
+                $bestSeller=new bestSeller();
+                $bestSeller->getBestSeller();
             break;
-            case 'suatuoi':require_once('app/view/suaTuoi.php');
+            case 'bocollection':
+                $boCollection=new boCollection();
+                $boCollection->getBoCollection();
             break;
-            case 'tranguyenvi':require_once('app/view/traNguyenVi.php');
+            case 'trasua':
+                $trasua=new traSua();
+                $trasua->getTrasua();
             break;
+            case 'suatuoi':
+                $suatuoi=new suaTuoi();
+                $suatuoi->getSuatuoi();
             break;
-            case 'trasua':require_once('app/view/traSua.php');
+            case 'tranguyenvi':
+                $tranguyevi=new traNguyenvi();
+                $tranguyevi->getTranguyenvi();
             break;
-            break;
-            case 'trathanhnhiet':require_once('app/view/traThanhNhiet.php');
+          
+            
+            case 'trathanhnhiet':
+                $trathanhnhiet=new traThanhnhiet();
+                $trathanhnhiet->getTrathanhnhiet();
             break;
             case "detail":
                 $detail=new detail();
                 $detail->getIdDetailProudct();
+                
             break;
             case "store":require_once('app/view/store.php');
             break;

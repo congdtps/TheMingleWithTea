@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -60,7 +60,62 @@
                     </a>
                 </div>
             </div>
-        </header>
+</header> -->
+<?php
+
+$listCategory = $data['dsdm'];
+function showCate($listCategory){
+    foreach($listCategory as $values){
+        extract($values);
+        echo'
+        <li><a class="content-page__all__nav__about-list" href="'.$link_category.'">'.$name_dm.'</a></li>
+        ';
+    }
+}
+
+$listSp = $data['dssp'];
+      function showSp($listSp){
+        foreach($listSp as $value){
+            extract($value);
+            echo '
+              <a href="index.php?page=detail&&id='.$id_sanpham.'">
+                <div class="content-page__all__nav__list__product">
+                    <img src="img/'.$image.'" alt="">
+                    <input type="hidden" name="image" value="'.$image.'">
+                    <div class="content-page__all__nav__list__product__name">
+                        '.$name.'
+                    <input type="hidden" name="name_product" value="'.$name.'">
+                    </div>
+                    <div class="content-page__all__nav__list__product__row"></div>
+                    <div class="content-page__all__nav__list__product__info-name">
+                        Đậm đà
+                    </div>
+                    <div class="content-page__all__nav__list__product__topping">
+                        Chưa có topping
+                    </div>
+                    <div class="content-page__all__nav__list__product__price-money">
+                        <div class="content-page__all__nav__list__product__price-money__price">
+                            Giá
+                        </div>
+                        <div class="content-page__all__nav__list__product__price-money__money">
+                        '.$price.'đ
+                    <input type="hidden" name="price_sale" value="'.$price_sale.'">
+                    <input type="hidden" name="price" value="'.$price.'">
+                        </div>
+                    </div>
+                    <div class="content-page__all__nav__list__product__buy">
+                        <input type="submit" value="Mua" name="buy-product">
+                    </div>
+                </div>
+            </a>
+            ';
+        }
+      }
+?>
+
+
+
+
            <!-- Begin content -->
            <div id="content">
             <div id="content-page__all">
@@ -70,68 +125,21 @@
                 </div>
                 <div class="content-page__all__nav">
                     <ul>
-                        <li><a class="content-page__all__nav__about-list " href="index.php?page=bestseller">Best Seller</a></li>
+                        <!-- <li><a class="content-page__all__nav__about-list " href="index.php?page=bestseller">Best Seller</a></li>
                         <li><a class="content-page__all__nav__about-list " href="index.php?page=bocollection">Bơ Collection</a></li>
                         <li><a class="content-page__all__nav__about-list " href="index.php?page=trasua">Trà sữa</a></li>
                         <li><a class="content-page__all__nav__about-list " href="index.php?page=trathanhnhiet">Trà Thanh Nhiệt</a></li>
                         <li><a class="content-page__all__nav__about-list active-nav" href="#">Trà Nguyên Vị</a></li>
-                        <li><a class="content-page__all__nav__about-list " href="index.php?page=suatuoi">Sữa Tươi</a></li>
+                        <li><a class="content-page__all__nav__about-list " href="index.php?page=suatuoi">Sữa Tươi</a></li> -->
+                        <?php
+                        showCate($listCategory);
+                        ?>
                     </ul>
                     <h2>TRÀ NGUYÊN VỊ</h2>
                     <div class="content-page__all__nav__list">
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp7.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="index.php?page=detail">
-                            <div class="content-page__all__nav__list__product">
-                                <img src="img/sp7.png" alt="">
-                                <div class="content-page__all__nav__list__product__name">
-                                    Trà sữa truyền thống
-                                </div>
-                                <div class="content-page__all__nav__list__product__row"></div>
-                                <div class="content-page__all__nav__list__product__info-name">
-                                    Đậm đà
-                                </div>
-                                <div class="content-page__all__nav__list__product__topping">
-                                    Chưa có topping
-                                </div>
-                                <div class="content-page__all__nav__list__product__price-money">
-                                    <div class="content-page__all__nav__list__product__price-money__price">
-                                        Giá
-                                    </div>
-                                    <div class="content-page__all__nav__list__product__price-money__money">
-                                        25.000đ
-                                    </div>
-                                </div>
-                                <div class="content-page__all__nav__list__product__buy">
-                                    <button>Mua</button>
-                                </div>
-                            </div>
-                        </a>
-                       
+                        <?php
+                            showSp($listSp);
+                        ?>
                      
                     </div>
                     

@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -60,7 +60,7 @@
                     </a>
                 </div>
             </div>
-        </header>
+</header> -->
          <!-- Begin content -->
          <div id="content">
             <div id="content_all">

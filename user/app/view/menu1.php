@@ -78,12 +78,21 @@
         }
     }
 
+    $listCategory = $data['dsdm'];
+    function showCate($listCategory){
+        foreach($listCategory as $values){
+            extract($values);
+            echo'
+            <li><a class="" href="'.$link_category.'">'.$name_dm.'</a></li>
+            ';
+        }
+    }
 
 
 
 ?>
 
-<header>
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -145,7 +154,7 @@
                     </a>
                 </div>
             </div>
-        </header>
+</header> -->
 
 <!-- Begin content -->
   
@@ -158,13 +167,15 @@
                 </div>
                 <div class="content-page__all__nav">
                     <ul>
-                      
-                        <li><a href="index.php?page=bestseller">Best Seller</a></li>
+                      <?php
+                        showCate($listCategory);
+                      ?>
+                        <!-- <li><a href="index.php?page=bestseller">Best Seller</a></li>
                         <li><a href="index.php?page=bocollection">Bơ Collection</a></li>
                         <li><a href="index.php?page=trasua">Trà sữa</a></li>
                         <li><a href="index.php?page=trathanhnhiet">Trà Thanh Nhiệt</a></li>
                         <li><a href="index.php?page=tranguyenvi">Trà Nguyên Vị</a></li>
-                        <li><a href="index.php?page=suatuoi">Sữa Tươi</a></li>
+                        <li><a href="index.php?page=suatuoi">Sữa Tươi</a></li> -->
                     </ul>
                     <h2>MENU</h2>
                     <div class="content-page__all__nav__list">

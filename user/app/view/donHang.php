@@ -7,7 +7,7 @@
      <div id="main">
 
         <!-- Begin header -->
-        <header>
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -69,7 +69,7 @@
                     </a>
                 </div>
             </div>
-        </header>
+</header> -->
         <!-- End header -->
 
 
@@ -90,7 +90,7 @@
                             </div>
                             <div class="content__icon__box__cover__bills-text">
                                 <div class="content__icon__box__cover-all__box__color-text">Để xem lịch sử mua hàng vui lòng</div>
-                                <div class="content__icon__box__cover__bills-text__text"><a href="">xem tại đây.</a></div>
+                                <div class="content__icon__box__cover__bills-text__text"><a href="index.php?page=lichsumua">xem tại đây.</a></div>
                             </div>
                             <div class="content__icon__box__cover-all__box__color-text">Thời gian dự kiến giao hàng là: 19/10/2024</div>
                             <div class="content__icon__box__cover-all__box__color-text">CẢM ƠN QUÝ KHÁCH ĐÃ ỦNG HỘ VÀ TIN TƯỞNG DỊCH VỤ </div>

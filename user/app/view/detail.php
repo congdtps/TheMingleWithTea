@@ -1,6 +1,85 @@
+<?php
+    // $listProductDiff=$data['dsspdiff'];
+
+    // function showListProductDiff($listProductDiff){
+    //     foreach($listProductDiff as $value){
+    //         extract($value);
+    //         echo'
+    //                     <a href="index.php?page=detail">
+    //                         <div class="content-page__all__nav__list__product">
+    //                             <img src="img/sp2.png" alt="">
+    //                             <div class="content-page__all__nav__list__product__name">
+    //                                 Trà sữa Kem Trứng 
+    //                             </div>
+    //                             <div class="content-page__all__nav__list__product__row"></div>
+    //                             <div class="content-page__all__nav__list__product__info-name">
+    //                                 Đậm đà
+    //                             </div>
+    //                             <div class="content-page__all__nav__list__product__topping">
+    //                                 Chưa có topping
+    //                             </div>
+    //                             <div class="content-page__all__nav__list__product__price-money">
+    //                                 <div class="content-page__all__nav__list__product__price-money__price">
+    //                                     Giá
+    //                                 </div>
+    //                                 <div class="content-page__all__nav__list__product__price-money__money">
+    //                                     25000đ
+    //                                 </div>
+    //                             </div>
+    //                             <div class="content-page__all__nav__list__product__buy">
+    //                                 <input type="submit" value="Mua">
+    //                             </div>
+    //                         </div>
+    //                     </a>
+            
+    //         ';
+    //     }
+    // }
 
 
-<header>
+    $listProductDiff=$data['dsspdiff'];
+    function showListProductDiff($listProductDiff){
+        foreach($listProductDiff as $value){
+            extract($value);
+            echo '
+            <a href="index.php?page=detail&&id='.$id_sanpham.'">
+                <div class="content-page__all__nav__list__product">
+                    <img src="img/'.$image.'" alt="">
+                    <input type="hidden" name="image" value="'.$image.'">
+                    <div class="content-page__all__nav__list__product__name">
+                        '.$name.'
+                    <input type="hidden" name="name_product" value="'.$name.'">
+                    </div>
+                    <div class="content-page__all__nav__list__product__row"></div>
+                    <div class="content-page__all__nav__list__product__info-name">
+                        Đậm đà
+                    </div>
+                    <div class="content-page__all__nav__list__product__topping">
+                        Chưa có topping
+                    </div>
+                    <div class="content-page__all__nav__list__product__price-money">
+                        <div class="content-page__all__nav__list__product__price-money__price">
+                            Giá
+                        </div>
+                        <div class="content-page__all__nav__list__product__price-money__money">
+                        '.$price.'đ
+                    <input type="hidden" name="price_sale" value="'.$price_sale.'">
+                    <input type="hidden" name="price" value="'.$price.'">
+                        </div>
+                    </div>
+                    <div class="content-page__all__nav__list__product__buy">
+                        <input type="submit" value="Mua" name="buy-product">
+                    </div>
+                </div>
+            </a>
+            ';
+        }
+    }
+
+
+?>
+
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -62,8 +141,8 @@
                     </a>
                 </div>
             </div>
-        </header>
- 
+</header>
+  -->
  <!-- Begin content -->
  <div id="content">
             <div id="content-detail">
@@ -232,9 +311,9 @@
                     </div>
                     <div class="content-detail__diff-product__list-product-diff">
                     <?php
-                            // showListProductDiff($listProductDiff);
+                            showListProductDiff($listProductDiff);
                     ?>
-                        <a href="index.php?page=detail">
+                        <!-- <a href="index.php?page=detail">
                             <div class="content-page__all__nav__list__product">
                                 <img src="img/sp2.png" alt="">
                                 <div class="content-page__all__nav__list__product__name">
@@ -337,7 +416,7 @@
                                     <input type="submit" value="Mua">
                                 </div>
                             </div>
-                        </a>
+                        </a> -->
                         
                      
                     </div>

@@ -6,6 +6,7 @@
 
         public function __construct(){
             $this->product= new product();
+            $this->category= new category();
         }
 
         public function showProduct($data){
@@ -14,6 +15,7 @@
 
         public function getProduct_first(){
             $this->data['dssp']=$this->product->getPro(1);
+            $this->data['dsdm']=$this->category->getCate();
             return $this->showProduct($this->data);
         }
 

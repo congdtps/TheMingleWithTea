@@ -1,13 +1,13 @@
 <body>
     <!-- Hưng -->
 
-    <div id="main">
+    <
 
      <!-- mít tơ bít1 -->
      <div id="main">
 
         <!-- Begin header -->
-        <header>
+<!-- <header>
             <div id="mb__header-page">
                 <div class="mb__header-page-all js-mb-header-all">
                     <div class="mb__header-page__close js-mb-close">
@@ -41,7 +41,7 @@
                     <i style="font-size: 24px;" class="fa-solid fa-bars"></i>
                 </div>
                 <div class="header-page__logo">
-                    <img src="/user/img/__-removebg-preview.png" alt="">
+                    <img src="img/__-removebg-preview.png" alt="">
                 </div>
                 <ul class="header-page__nav">
                         <li><a class="" href="index.php">TRANG CHỦ</a></li>
@@ -69,7 +69,7 @@
                     </a>
                 </div>
             </div>
-        </header>
+</header> -->
         <!-- End header -->
 
 
@@ -109,9 +109,9 @@
                                     <tr>
                                         <td>#11223344</td>
                                         <td>Trà sữa trân châu</td>
-                                        <td><img src="/user/img/sp6.png" alt="" width="50"></td>
+                                        <td><img src="img/sp6.png" alt="" width="50"></td>
                                         <td>45.000đ</td>
-                                        <td><button>1</button></td>
+                                        <td>1</td>
                                         <td>45.000đ</td>
                                         <td>01/01/2024</td>
                                         <td>Đã giao</td>

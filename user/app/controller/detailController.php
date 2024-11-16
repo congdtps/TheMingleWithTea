@@ -16,8 +16,10 @@
                 foreach($this->product->getPro(4) as $value){
                     if($value['id_sanpham']==$_GET['id']){
                         $this->data=$value;
+                        
                     }
                 }
+                $this->data['dsspdiff']=$this->product->getPro(5);
                 return $this->showDetailProduct($this->data);
             }
         }
