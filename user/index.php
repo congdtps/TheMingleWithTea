@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    ob_start();
+    include_once 'app/model/User.php';
+    include_once 'app/controller/UserController.php';
     require_once('app/model/data.php');
     require_once('app/model/product.php');
     require_once('app/model/category.php');
@@ -13,6 +17,7 @@
     require_once('app/controller/suaTuoiController.php');
     require_once('app/controller/cartController.php');
     require_once('app/controller/detailController.php');
+    
     require_once ('app/view/header.php');
     $db = new data();
 
@@ -69,10 +74,22 @@
                 $cart->showCart();
                 
             break;
-            case "dangnhap":require_once('app/view/dangNhap.php');
-            break;
-            case "dangki":require_once('app/view/dangKi.php');
-            break;
+            case "dangnhap":
+                $dangnhap = new UserController();
+                $dangnhap->viewSingin();
+                break;
+            case 'checkUser':
+                $user =new UserController();
+                $user->check();
+                 break;
+            case "dangki":
+                $dangki =new UserController();
+                $dangki->viewResgin();
+                break;
+            case'adduser':
+                $adduser = new UserController();
+                $adduser->addUser();
+                break;
             case "donhang":require_once('app/view/donHang.php');
             break;
             case "lichsumua":require_once('app/view/lichSuMua.php');
@@ -95,6 +112,6 @@
     }
     require_once ('app/view/footer.php');
 
-
+    
 
 ?>

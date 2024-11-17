@@ -2,27 +2,27 @@
        <!-- Begin content -->
        <div class="login">
         <div class="login-container">
-            <a href="index.php">
+            <a href="/user/index.html">
                 <i class="fa-solid fa-circle-xmark location"></i>
             </a>
             <img src="img/__-removebg-preview.png" alt="Logo" class="login-container_logo">
             <h2>Đăng nhập</h2>
-                <form onsubmit="event.preventDefault(); login();">
+                <form action="index.php?page=checkUser" method="post" enctype="multipart/form-data">
                     <div class="login-container_input">  
                         <h3>Tên đăng nhập</h3>
                         <i class="fa-solid fa-user icon"></i>
-                        <input id="login-container_input_username" type="text" placeholder="Điền Email hoặc Số điện thoại">
+                        <input id="login-container_input_username" type="text" placeholder="Enter Username" name="name" required autocomplete="off">
                     </div> 
                     <div class="login-container_input">
                         <h3>Mật khẩu</h3>
                         <i class="fa-solid fa-lock icon"></i>
-                        <input id="login-container_input_password" type="password" placeholder="Điền mật khẩu">
+                        <input id="login-container_input_password" type="password" placeholder="Điền mật khẩu" name="pass" required autocomplete="off">
                     </div>
                     <div class="login-container__information">
-                        <p><a href="index.php?page=dangki">Chưa có tài khoản</a></p>
+                        <p><a href="dangKi.html">Chưa có tài khoản</a></p>
                         <a href="#">Quên mật khẩu</a>
                     </div>
-                        <input type="submit" value="Đăng nhập">
+                        <input name="sub" type="submit" value="Đăng nhập" >
                     </form>
                         <p>Hoặc</p>
                     <div class="login-container__social-login">
@@ -35,4 +35,4 @@
 
        <!-- End content -->
 
-    </div>
+</div>

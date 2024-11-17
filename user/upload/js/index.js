@@ -69,29 +69,29 @@ js_mb_header.addEventListener("click",()=>{
 )
 
 // login_register
-function login(){
-    var username = document.getElementById('login-container_input_username').value; 
-    var password = document.getElementById('login-container_input_password').value; 
-    if(username === '' || password === '' ) {
-        alert('Bạn chưa nhập tên hoặc email');
-    } else {
-        alert('Cảm ơn bạn đã điền thông tin');
-        // document.getElementById('login-container').style.display = 'none';
-    }
-}
-function resgister(){
-    var register_username = document.getElementById('register_username').value;
-    var resgister_password = document.getElementById('resgister_password').value;
-    var enter_password = document.getElementById('enter_password').value;
-    if(register_username === '' || resgister_password === '' || enter_password === ''){
-        alert('Bạn chưa điền đầy đủ thông tin ')
-    }else if(resgister_password != enter_password){
-        alert('Mật khẩu không khớp vui lòng nhập lại.');
-    }else{
-        alert('Bạn đã đăng kí thành công');
-        // document.getElementById('login-container').style.display= 'none'
-    }
-}
+// function login(){
+//     var username = document.getElementById('login-container_input_username').value; 
+//     var password = document.getElementById('login-container_input_password').value; 
+//     if(username === '' || password === '' ) {
+//         alert('Bạn chưa nhập tên hoặc email');
+//     } else {
+//         alert('Cảm ơn bạn đã điền thông tin');
+//         // document.getElementById('login-container').style.display = 'none';
+//     }
+// }
+// function resgister(){
+//     var register_username = document.getElementById('register_username').value;
+//     var resgister_password = document.getElementById('resgister_password').value;
+//     var enter_password = document.getElementById('enter_password').value;
+//     if(register_username === '' || resgister_password === '' || enter_password === ''){
+//         alert('Bạn chưa điền đầy đủ thông tin ')
+//     }else if(resgister_password != enter_password){
+//         alert('Mật khẩu không khớp vui lòng nhập lại.');
+//     }else{
+//         alert('Bạn đã đăng kí thành công');
+//         // document.getElementById('login-container').style.display= 'none'
+//     }
+// }
 
 // end login_register
 

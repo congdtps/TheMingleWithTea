@@ -7,24 +7,24 @@
             </a>
             <img src="img/__-removebg-preview.png" alt="Logo" class="register__logo">
             <h2>Đăng kí</h2>
-            <form onsubmit="event.preventDefault(); resgister();">
+            <form action="index.php?page=adduser" method="post" onsubmit="event.preventDefault(); resgister();">
                     <div class="register-container__input">  
                         <h3>Tên đăng kí</h3>
                         <i class="fa-solid fa-user icon"></i>
-                        <input id="register_username" type="text" placeholder="Điền Email hoặc Số điện thoại">
+                        <input id="register_username" type="text" placeholder="Điền Email hoặc Số điện thoại" name="email" id="">
                     </div> 
                     <div class="register-container__input">
                         <h3>Mật khẩu</h3>
                         <i class="fa-solid fa-lock icon"></i>
-                        <input id="resgister_password" type="password" placeholder="Điền mật khẩu">
+                        <input id="resgister_password" type="password" placeholder="Điền mật khẩu" name="pass">
                     </div>
                     <div class="register-container__input">
                         <h3>Nhập lại mật khẩu</h3>
                         <i class="fa-solid fa-lock icon"></i>
-                        <input id="enter_password" type="password" placeholder="Nhập lại mật khẩu">
+                        <input id="enter_password" type="password" placeholder="Nhập lại mật khẩu" name="repass">
                     </div>
                         <a href="index.php?page=dangnhap" class="forgot-password">Đã có tài khoản</a>
-                        <input type="submit" value="Đăng kí">
+                        <input type="submit" value="Đăng kí" name="sub">
             </form>
                         <!-- <button onclick="resgister()">Đăng nhập</button> -->
                         <!-- <p class="sign-up">Chưa có tài khoản</p> -->

@@ -4,7 +4,9 @@
             <div class="content-admin__all">
                 <article>
                     <div class="content-admin__all__list-nav">
-                        <img src="../user/img/__-removebg-preview.png" alt="">
+                        <a href="../user/index.php">
+                            <img src="../user/img/__-removebg-preview.png" alt="">
+                        </a>
                         <h2>Admin</h2>
                         <ul>
                             <li><a class="" href="index.php"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>

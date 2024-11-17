@@ -4,8 +4,8 @@
   private $user = "root";
   private $password = "";
   private $dbname = "theminglewithtea";
-  private $stmt = "";
-  private $conn = "";
+  private $stmt;
+  private $conn;
   public function __construct(){
     try{
       $this->conn = new PDO("mysql:host=$this->severname;dbname=$this->dbname;charset=utf8",$this->user,$this->password);
@@ -32,9 +32,10 @@
     }
 
     
-    public function getOne($sql){
-      $statment=$this->query($sql);
-      return $statment->fetch(PDO::FETCH_ASSOC);
+    public function getOne($sql,$param){
+      $this->stmt = $this->conn->prepare($sql);
+      $this->stmt->execute($param);
+      return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
 
 
@@ -54,31 +55,17 @@
       $this->query($sql,$param);
     }
 
-    public function __destruct(){
-      unset($this->conn);
-    }
-
-    //C2
-
-    // public function getAll($sql,$param=[]){
-    //     $this->stmt = $this->conn->prepare($sql);
-    //     $this->stmt->execute($param);
-    //     return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
-    //   }
-
-    // public function insert($sql,$param){
-    //   $this->getAll($sql,$param);
-    //   return $this->conn->lastInsertId();
+    // public function __destruct(){
+    //   unset($this->conn);
     // }
 
+    
 
-    //  public function delete($sql,$param){
-    //    $this->getAll($sql,$param);
-    //  }
+    }
+?> -->
 
    
 
 
 
-    }
-?> -->
+
