@@ -11,7 +11,7 @@
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <p>11/02/2024</p>
+                                        <p>'.$created_at.'</p>
                                     </div>
                                     <div class="name-pro">
                                         <p>'.$name_dm.'</p>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Ngày bắt đầu thêm</label>
-                                    <input type="text" name="created_at" id="" placeholder="Ngày bắt đầu">
+                                    <input type="date" name="created_at" id="" placeholder="Ngày bắt đầu">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
                                         <input type="submit" value="Thêm" name="add-cate">                               
