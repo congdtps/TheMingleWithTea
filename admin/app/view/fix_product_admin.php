@@ -52,37 +52,42 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
-                        <div class="content-admin__all__controler-admin__search-all-product">
+
+                        <?php
+                        echo'
+                        <form action="index.php?page=updateProduct" method="post" enctype="multipart/form-data">
+                            <div class="content-admin__all__controler-admin__search-all-product">
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Sản phẩm</label>
-                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
+                                    <label for="">Tên Sản phẩm</label>
+                                    <input type="text" name="name" value="'.$name.'" id="" placeholder="Tên sản phẩm">
+                                    <input type="hidden" name="id_sanpham" value="'.$id_sanpham.'" id="" placeholder="Tên sản phẩm">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Hình ảnh</label>
-                                    <input type="text" name="" id="" placeholder="URL">
+                                    <input type="file" name="image" id="">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Giá gốc</label>
-                                    <input type="text" name="" id="" placeholder="Giá gốc">
+                                    <input type="text" name="price" value="'.$price.'" id="" placeholder="Giá gốc">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Giá giảm</label>
-                                    <input type="text" name="" id="" placeholder="Giá giảm">
+                                    <input type="text" name="price_sale" value="'.$price_sale.'" id="" placeholder="Giá giảm">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">ID danh mục</label>
-                                    <input type="text" name="" id="" placeholder="ID danh mục">
+                                    <input type="text" name="id_danhmuc" value="'.$id_danhmuc.'" id="" placeholder="ID danh mục">
                                 </div>
-                               
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Sửa">
-                                    </a>
+                                    <input type="submit" value="Sửa" name="updateProduct_Admin">
                                 </div> 
                             </div>
                         </form>
-                        <div class="content-admin__all__controler-admin__info-product">
+                        ';
+
+                        ?>
+
+                        <div style="margin-top:80px" class="content-admin__all__controler-admin__info-product">
                             <div class="content-admin__all__controler-admin__info-product__nav first second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
@@ -105,30 +110,33 @@
                             </div>
                            
                            
+                            <?php
+                                echo'
                             <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#TS01</p>
+                                    <p style="color: #FFB647;">'.$id_sanpham.'</p>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <p>Trà sữa truyền thống</p>
+                                        <p>'.$name.'</p>
                                     </div>
                                     <div class="name-pro">
-                                        <img width="50px" src="../user/img/sp5.png" alt="">
+                                        <img width="50px" src="../user/img/'.$image.'" alt="">
                                     </div>
                                     <div class="quantity-pro">
-                                        <p>25.000đ</p>
+                                        <p>'.$price.'đ</p>
                                     </div>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
-                                    <p>20.000đ</p>
-                                    <a href="">
-                                        <input class="input-dele" type="submit" value="Xóa">
-                                    </a>
+                                    <p>'.$price_sale.'đ</p>
+                                    
                                    
                                 </div>
                             </div>
+                                ';
+
+                            ?>
                          
                            
                            

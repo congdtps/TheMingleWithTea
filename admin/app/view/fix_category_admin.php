@@ -1,3 +1,9 @@
+<?php
+   
+
+
+?>
+
 
 <body>
     <div id="main">
@@ -52,32 +58,34 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
+                    <?php
+                        echo'
+                    <form action="index.php?page=updateCate" method="post">
                         <div class="content-admin__all__controler-admin__search-all-product">
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Danh mục</label>
-                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
-                                </div>
-                                <!-- <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Hình ảnh</label>
-                                    <input type="text" name="" id="" placeholder="URL">
+                                    <label for="">Id danh mục</label>
+                                    <input type="text" name="id_dm" id="" value="'.$id_dm.'" placeholder="ID">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Giá</label>
-                                    <input type="text" name="" id="" placeholder="25.000đ">
-                                </div> -->
+                                    <label for="">Danh mục</label>
+                                    <input type="text" name="name_dm" id="" value="'.$name_dm.'" placeholder="Tên sản phẩm">
+                                </div>
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Link</label>
+                                    <input type="text" name="link_category" id="" value="'.$link_category.'" placeholder="Link danh mục">
+                                </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Ngày bắt đầu thêm</label>
-                                    <input type="text" name="" id="" placeholder="Ngày bắt đầu">
+                                    <input type="text" name="created_at" id="" value="'.$created_at.'" placeholder="Ngày bắt đầu">
                                 </div>
-                               
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Sửa">
-                                    </a>
+                                        <input type="submit" value="Sửa" name="updateCate_Admin">
                                 </div> 
                             </div>
-                        </form>
+                    </form>
+                        ';
+
+                    ?>
                         <div class="content-admin__all__controler-admin__info-product">
                             <div class="content-admin__all__controler-admin__info-product__nav first">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
@@ -91,6 +99,9 @@
                                     <div class="name-pro">
                                         <h3>Tên danh mục</h3>
                                     </div>
+                                    <div class="name-pro">
+                                        <h3>Link danh mục</h3>
+                                    </div>
                                     <!-- <div class="quantity-pro">
                                         <h3>Ảnh</h3>
                                     </div> -->
@@ -100,33 +111,32 @@
                                 </div> -->
                             </div>
                            
-                           
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
+
+                            <?php
+                            echo'
+                             <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#DM01</p>
+                                    <p style="color: #FFB647;">'.$id_dm.'</p>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
                                         <p>11/02/2024</p>
                                     </div>
                                     <div class="name-pro">
-                                        <p>Best Seller</p>
+                                        <p>'.$name_dm.'</p>
                                     </div>
-                                    <!-- <div class="quantity-pro">
-                                        <img width="50px" src="/user/img/sữa-tươi-trân-châu-đường-đen.png" alt="">
-                                    </div> -->
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
-                                    <!-- <p>20.000đ</p> -->
-                                    <a href="">
-                                        <input class="input-dele" type="submit" value="Xóa">
-                                    </a>
-                                    <!-- <a href="fix_product_admin.html">
-                                        <input class="input-fix" type="submit" value="Sửa">
-                                    </a> -->
+                                     <div class="name-pro">
+                                        <p>'.$link_category.'</p>
+                                    </div>
+
                                 </div>
                             </div>
+                            ';
+
+                            ?>
+                           
+                           
                          
                            
                            

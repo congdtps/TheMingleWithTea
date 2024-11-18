@@ -41,6 +41,11 @@
 
         }
 
-    
+        
+        public function uploadPro($id, $data) {
+            $sql = "UPDATE danhmuc SET id_dm=?, name_dm=?, link_category=?, created_at=? WHERE id_dm=?";
+            $param = [$data['id_dm'], $data['name_dm'], $data['link_category'], $data['created_at'], $id];
+            return $this->db->upload($sql, $param);
+        }
     }
 ?>

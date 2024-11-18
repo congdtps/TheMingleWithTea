@@ -51,6 +51,13 @@
         }
 
 
+        public function uploadPro($id, $data) {
+            $sql = "UPDATE sanpham SET name = ?, image = ?, price = ?, price_sale = ?, id_danhmuc = ? WHERE id_sanpham = ?";
+            $param = [$data['name'], $data['image'], $data['price'], $data['price_sale'], $data['id_danhmuc'], $id];
+            return $this->db->upload($sql, $param);
+        }
+
+
     }
 
 ?>

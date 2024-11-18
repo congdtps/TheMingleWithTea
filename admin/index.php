@@ -23,9 +23,14 @@
             case 'add':
                 $product_admin=new productAdmin();
                 $product_admin->addProductAdmin();
-            case 'fix_product_admin':require_once('app/view/fix_product_admin.php');
+            case 'fix_product_admin':
+                $fixProductAdmin=new fixProductAdmin();
+                $fixProductAdmin->getUpdateIdProduct();
             break;
-
+            case 'updateProduct':
+                $fixProductAdmin=new fixProductAdmin();
+                $fixProductAdmin->UpdateIdProduct();
+            break;
             case 'del':
                 $product_admin=new productAdmin();
                 $product_admin->deleProductAdmin();
@@ -41,7 +46,13 @@
                 $cateAdmin=new categoryAdmin();
                 $cateAdmin->deleCate();
             break;
-            case 'fix_category_admin':require_once('app/view/fix_category_admin.php');
+            case 'fix_category_admin':
+                $fixCateAdmin=new fixCateAdmin();
+                $fixCateAdmin->getUpdateIdCate();
+            break;
+            case'updateCate':
+                $fixCateAdmin=new fixCateAdmin();
+                $fixCateAdmin->UpdateIdCate();
             break;
             case 'bill_admin':require_once('app/view/bill_admin.php');
             break;
