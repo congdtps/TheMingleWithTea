@@ -1,3 +1,39 @@
+<?php
+    $listCate=$data['cate'];
+    function viewCate($listCate){
+        foreach($listCate as $value){
+            extract($value);
+            echo'
+                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
+                                <div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                                    <input type="checkbox" name="" id="">
+                                    <p style="color: #FFB647;">'.$id_dm.'</p>
+                                </div>
+                                <div class="content-admin__all__controler-admin__info-product__nav__desc">
+                                    <div class="date-post">
+                                        <p>11/02/2024</p>
+                                    </div>
+                                    <div class="name-pro">
+                                        <p>'.$name_dm.'</p>
+                                    </div>
+                                    <div class="name-pro">
+                                        <p>'.$link_category.'</p>
+                                    </div>
+                                </div>
+                                <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                    <a href="index.php?page=deleCate&&id='.$id_dm.'">
+                                        <input class="input-dele" type="submit" value="Xóa">
+                                    </a>
+                                    <a href="index.php?page=fix_category_admin&&id='.$id_dm.'">
+                                        <input class="input-fix" type="submit" value="Sửa">
+                                    </a>
+                                </div>
+                        </div>';
+        }
+    }
+
+?>
+
 
 <body>
     <div id="main">
@@ -52,11 +88,15 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
+                    <form action="index.php?page=addCate" method="post">
                         <div class="content-admin__all__controler-admin__search-all-product">
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for=""> ID danh mục</label>
+                                    <input type="text" name="id_dm" id="" placeholder="ID">
+                                </div>
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Danh mục</label>
-                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
+                                    <input type="text" name="name_dm" id="" placeholder="Tên danh mục">
                                 </div>
                                 <!-- <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Hình ảnh</label>
@@ -67,17 +107,18 @@
                                     <input type="text" name="" id="" placeholder="25.000đ">
                                 </div> -->
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Ngày bắt đầu thêm</label>
-                                    <input type="text" name="" id="" placeholder="Ngày bắt đầu">
+                                    <label for="">Link danh mục</label>
+                                    <input type="text" name="link_category" id="" placeholder="Link">
                                 </div>
-                               
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Ngày bắt đầu thêm</label>
+                                    <input type="text" name="created_at" id="" placeholder="Ngày bắt đầu">
+                                </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Thêm">
-                                    </a>
+                                        <input type="submit" value="Thêm" name="add-cate">                               
                                 </div> 
                             </div>
-                        </form>
+                    </form>
                         <div class="content-admin__all__controler-admin__info-product">
                             <div class="content-admin__all__controler-admin__info-product__nav first">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
@@ -91,42 +132,19 @@
                                     <div class="name-pro">
                                         <h3>Tên danh mục</h3>
                                     </div>
-                                    <!-- <div class="quantity-pro">
-                                        <h3>Ảnh</h3>
-                                    </div> -->
+                                    <div class="quantity-pro">
+                                        <h3>Link danh mục</h3>
+                                    </div>
                                 </div>
                                 <!-- <div class="content-admin__all__controler-admin__info-product__nav__price ">
                                     <h3>Giá</h3>
                                 </div> -->
                             </div>
+                            <?php
+                                    viewCate($listCate);
+                            ?>
                            
-                           
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
-                                <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                    <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#DM01</p>
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__desc">
-                                    <div class="date-post">
-                                        <p>11/02/2024</p>
-                                    </div>
-                                    <div class="name-pro">
-                                        <p>Best Seller</p>
-                                    </div>
-                                    <!-- <div class="quantity-pro">
-                                        <img width="50px" src="/user/img/sữa-tươi-trân-châu-đường-đen.png" alt="">
-                                    </div> -->
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
-                                    <!-- <p>20.000đ</p> -->
-                                    <a href="">
-                                        <input class="input-dele" type="submit" value="Xóa">
-                                    </a>
-                                    <a href="index.php?page=fix_category_admin">
-                                        <input class="input-fix" type="submit" value="Sửa">
-                                    </a>
-                                </div>
-                            </div>
+                       
                          
                            
                            

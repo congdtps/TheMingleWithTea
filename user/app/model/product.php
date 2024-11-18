@@ -23,6 +23,34 @@
             }
             return $this->db->getAll($sql);
         }
+
+
+        public function getId($id){
+            if($id>0){
+                $sql="SELECT * FROM sanpham WHERE id_sanpham= $id";
+                return $this->db->getOne($sql);
+            }
+        }
+
+
+
+        public function insertPro($data){
+            $sql="INSERT INTO sanpham(name,price,price_sale,image,id_danhmuc) VALUES(?,?,?,?,?)";
+            $param=[$data['name'],$data['price'],$data['price_sale'],$data['image'],$data['id_danhmuc']];
+            return $this->db->insert($sql,$param);
+        }
+
+
+        public function delePro($id){
+                if($id>0){
+                    $sql="DELETE FROM sanpham WHERE id_sanpham=?";
+                    return $this->db->delete($sql,[$id]);
+                }else{
+                    return null;
+                }
+        }
+
+
     }
 
 ?>

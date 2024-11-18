@@ -32,12 +32,10 @@
     }
 
     
-    public function getOne($sql,$param){
-      $this->stmt = $this->conn->prepare($sql);
-      $this->stmt->execute($param);
-      return $this->stmt->fetch(PDO::FETCH_ASSOC);
+    public function getOne($sql){
+      $statment=$this->query($sql);
+      return $statment->fetch(PDO::FETCH_ASSOC);
     }
-
 
     public function insert($sql,$param){
       $this->query($sql,$param);

@@ -1,3 +1,74 @@
+<?php
+    $listProduct=$data['product'];
+
+    function viewProduct($listProduct){
+        foreach($listProduct as $value){
+            extract($value);
+            if($price_sale){
+                echo'
+                <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                    <div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                        <input type="checkbox" name="" id="">
+                        <p style="color: #FFB647;">'.$id_sanpham.'</p>
+                    </div>
+                    <div class="content-admin__all__controler-admin__info-product__nav__desc">
+                        <div class="date-post">
+                            <p>'.$name.'</p>
+                        </div>
+                        <div class="name-pro">
+                            <img width="50px" src="../user/img/'.$image.'" alt="">
+                        </div>
+                        <div class="quantity-pro">
+                            <p>'.$price.'đ</p>
+                        </div>
+                    </div>
+                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                        <p>'.$price_sale.'đ</p>
+                        <a href="index.php?page=del&&id='.$id_sanpham.'">
+                            <input class="input-dele" type="submit" value="Xóa">
+                        </a>
+                        <a href="index.php?page=fix_product_admin&&id='.$id_sanpham.'">
+                            <input class="input-fix" type="submit" value="Sửa">
+                        </a>
+                    </div>
+                </div>
+';
+            }else{
+                echo'
+                <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                    <div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                        <input type="checkbox" name="" id="">
+                        <p style="color: #FFB647;">'.$id_sanpham.'</p>
+                    </div>
+                    <div class="content-admin__all__controler-admin__info-product__nav__desc">
+                        <div class="date-post">
+                            <p>'.$name.'</p>
+                        </div>
+                        <div class="name-pro">
+                            <img width="50px" src="../user/img/'.$image.'" alt="">
+                        </div>
+                        <div class="quantity-pro">
+                            <p>'.$price.'đ</p>
+                        </div>
+                    </div>
+                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                        <p>'.$price.'đ</p>
+                        <a href="index.php?page=del&&id='.$id_sanpham.'">
+                            <input class="input-dele" type="submit" value="Xóa">
+                        </a>
+                        <a href="index.php?page=fix_product_admin&&id='.$id_sanpham.'">
+                            <input class="input-fix" type="submit" value="Sửa">
+                        </a>
+                    </div>
+                </div>
+';
+            }
+           
+        }
+    }
+
+?>
+
 
 <body>
     <div id="main">
@@ -12,7 +83,7 @@
                         <ul>
                             <li><a class="" href="index.php"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
                             <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
-                            <li><a class="" href="index.php?personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
+                            <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="active-admin" href="#"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
@@ -52,33 +123,33 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
+                        <form action="index.php?page=add" method="post" enctype='multipart/form-data'>
                         <div class="content-admin__all__controler-admin__search-all-product">
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Sản phẩm</label>
-                                    <input type="text" name="" id="" placeholder="Tên sản phẩm">
+                                    <input type="text" name="name" id="" placeholder="Tên sản phẩm">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Hình ảnh</label>
-                                    <input type="text" name="" id="" placeholder="URL">
+                                    <input style="padding:6px" type="file" name="image" id="" >
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Giá gốc</label>
-                                    <input type="text" name="" id="" placeholder="Giá gốc">
+                                    <input type="text" name="price" id="" placeholder="Giá gốc">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Giá giảm</label>
-                                    <input type="text" name="" id="" placeholder="Giá giảm">
+                                    <input type="text" name="price_sale" id="" placeholder="Giá giảm">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">ID danh mục</label>
-                                    <input type="text" name="" id="" placeholder="ID danh mục">
+                                    <input type="text" name="id_danhmuc" id="" placeholder="ID danh mục">
                                 </div>
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Thêm">
-                                    </a>
+                                   
+                                        <input type="submit" value="Thêm" name="add">
+                                    
                                 </div> 
                             </div>
                         </form>
@@ -103,9 +174,11 @@
                                     <h3>Giá giảm</h3>
                                 </div>
                             </div>
+                           <?php
+                                viewProduct($listProduct);
+                           ?>
                            
-                           
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                            <!-- <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
                                     <p style="color: #FFB647;">#TS01</p>
@@ -130,7 +203,7 @@
                                         <input class="input-fix" type="submit" value="Sửa">
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
                          
                            
                            
