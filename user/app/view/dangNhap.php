@@ -2,9 +2,7 @@
        <!-- Begin content -->
        <div class="login">
         <div class="login-container">
-            <a href="/user/index.html">
-                <i class="fa-solid fa-circle-xmark location"></i>
-            </a>
+           
             <img src="img/__-removebg-preview.png" alt="Logo" class="login-container_logo">
             <h2>Đăng nhập</h2>
                 <form action="index.php?page=checkUser" method="post" enctype="multipart/form-data">

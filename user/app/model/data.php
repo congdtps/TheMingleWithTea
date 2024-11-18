@@ -37,6 +37,14 @@
       return $statment->fetch(PDO::FETCH_ASSOC);
     }
 
+
+    public function getOne_User($sql,$param){
+      $this->stmt = $this->conn->prepare($sql);
+      $this->stmt->execute($param);
+      return $this->stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+
     public function insert($sql,$param){
       $this->query($sql,$param);
       return $this->conn->lastInsertId();

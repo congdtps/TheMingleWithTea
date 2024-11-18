@@ -45,13 +45,15 @@
         if(isset($_POST['sub']) && $_POST['sub']){
             $user = $_POST['name'];
             $pass = $_POST['pass'];
-            // echo $user,$pass;
+            echo $user,$pass;
             $result = $this->user->checkUser($user, $pass);
             if(is_array($result)){
                 if($result['role'] == 2){
                     $_SESSION['user'] = $result['name_user'];
                     // header('location:app/view/account.php');
                     return $this->renderView('account');
+
+                    // echo '<script> alert("Đăng nhập thành công")</script>';
                 }else{
                     $_SESSION['admin'] = $result['name_user'];
                     header('Location: ../admin/index.php');

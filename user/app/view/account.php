@@ -78,6 +78,14 @@
     <a href="index.php?page=donhang">
         <input type="submit" value="Đơn hàng">
     </a>
+
+
+    <a href="index.php?page=dangnhap">
+        <input type="submit" value="Đăng xuất">
+    </a>
+  
+   
+  
 </div>
 </div>
 

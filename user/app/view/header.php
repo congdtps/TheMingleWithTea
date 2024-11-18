@@ -71,12 +71,31 @@
                             <h3 style="margin-left: 5px;">Giỏ hàng</h3>
                         </div>
                     </a>
+                    <?php
+                    if((isset($_SESSION['user']))&& $_SESSION['user']){
+                        echo'
+                    <a href="index.php?page=account">
+                        <div class="header-page__info__login">
+                            <span><i class="fa-solid fa-user"></i></span>
+                            <h3 style="margin-left: 5px;">Xin chào</h3>
+                        </div>
+                    </a>
+                        ';
+                    }else if(!isset($_SESSION['user'])){
+                        echo'
                     <a href="index.php?page=dangnhap">
                         <div class="header-page__info__login">
                             <span><i class="fa-solid fa-user"></i></span>
                             <h3 style="margin-left: 5px;">Đăng nhập</h3>
                         </div>
                     </a>
+                        ';
+                    }
+                
+
+
+                    ?>
+                   
                 </div>
             </div>
 </header>
