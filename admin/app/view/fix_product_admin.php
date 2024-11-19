@@ -10,7 +10,7 @@
                         </a>
                         <h2>Admin</h2>
                         <ul>
-                            <li><a class="" href="index.php"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
+                            <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
                             <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="active-admin" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
@@ -115,7 +115,7 @@
                             <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">'.$id_sanpham.'</p>
+                                    <p style="color: #FFB647;">#SP'.$id_sanpham.'</p>
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">

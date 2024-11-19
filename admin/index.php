@@ -2,12 +2,14 @@
     require_once('../user/app/model/data.php');
     require_once('../user/app/model/product.php');
     require_once('../user/app/model/category.php');
+    require_once('../user/app/model/User.php');
     require_once('app/controller/bill_admin_controller.php');
     require_once('app/controller/category_admin_controller.php');
     require_once('app/controller/fix_bill_admin_controller.php');
     require_once('app/controller/fix_category_admin_controller.php');
     require_once('app/controller/fix_personnel_admin_controller.php');
     require_once('app/controller/fix_product_admin_controller.php');
+    require_once('app/controller/fix_admin_controller.php');
     require_once('app/controller/main_controller.php');
     require_once('app/controller/personnel_controller.php');
     require_once('app/controller/product_admin_controller.php');
@@ -62,9 +64,35 @@
             break;
             case 'fix_personnel_admin':require_once('app/view/fix_personnel_admin.php');
             break;
+           
+            case 'addMainUser':
+                $addUser=new mainAdmin();
+                $addUser->addUserAdmin();
+            break;
 
+            case 'delUser':
+                $delUser=new mainAdmin();
+                $delUser->deleUserAdmin();
+            break;
 
-            default:require_once('app/view/main.php');
+            case 'fix_main':
+                $fixUser= new fixUserAdmin();
+                $fixUser->getUpdateIdUser();
+            break;
+
+            case 'updateUser':
+                $uploadUser=new fixUserAdmin();
+                $uploadUser->UpdateIdUser();
+                break;
+
+            case "main":
+                $mainUser=new mainAdmin();
+                $mainUser->getUserAdmin();
+            break;
+
+            default:
+            $mainUser=new mainAdmin();
+            $mainUser->getUserAdmin();
             break;
         };
     }else{
