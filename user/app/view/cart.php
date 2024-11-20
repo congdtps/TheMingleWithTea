@@ -4,31 +4,41 @@
     if((!isset($_SESSION['cart']))) $_SESSION['cart']=[];
     if((isset($_GET['del']))&& $_GET['del']>=0 ) array_splice($_SESSION['cart'],$_GET['del'],1);
 
-
-    if((isset($_POST['buy-product']))&& $_POST['buy-product']){
-        $name_product= $_POST['name-product'];
-        $image=$_POST['image'];
-        $price=$_POST['price'];
-        $price_sale=$_POST['price_sale'];
-        $quantity=$_POST['quantity'];
-        $flag=0;
-        for($i=0;$i<count($_SESSION['cart']);$i++){
-            if($_SESSION['cart'][$i][0] == $name_product){
-                $flag=1;
-                $quantity_new = $_SESSION['cart'][$i][4] + $quantity;
-                $_SESSION['cart'][$i][4]=$quantity_new;
-                break;
+    if(count($_SESSION['user'])==0){
+        header('location:index.php?page=dangnhap');
+        exit();
+    }else{
+        if((isset($_POST['buy-product']))&& $_POST['buy-product']){
+            $name_product= $_POST['name-product'];
+            $image=$_POST['image'];
+            $price=$_POST['price'];
+            $price_sale=$_POST['price_sale'];
+            $quantity=$_POST['quantity'];
+            $flag=0;
+            for($i=0;$i<count($_SESSION['cart']);$i++){
+                if($_SESSION['cart'][$i][0] == $name_product){
+                    $flag=1;
+                    $quantity_new = $_SESSION['cart'][$i][4] + $quantity;
+                    $_SESSION['cart'][$i][4]=$quantity_new;
+                    break;
+                }
+            }
+            if($flag==0){
+                $cart_all=[$name_product,$image,$price,$price_sale,$quantity];
+                $_SESSION['cart'][]=$cart_all;
             }
         }
-        if($flag==0){
-            $cart_all=[$name_product,$image,$price,$price_sale,$quantity];
-            $_SESSION['cart'][]=$cart_all;
-        }
     }
+    
 
 
     function showCart(){
     if((isset($_SESSION['cart']))&& is_array($_SESSION['cart'])){
+        if(count($_SESSION['user'])==0){
+            header('location:index.php?page=dangnhap');
+            exit();
+        }else{
+
         $total_all=0;
         $total=0;
         for($i=0;$i<count($_SESSION['cart']);$i++){
@@ -105,7 +115,6 @@
         ';
         echo'
             </article>
-
                 <aside>
                    <div class="content__box__addres-all">
                         <div class="content__box__addres">
@@ -137,6 +146,7 @@
                             <div class="content__box__total-money__sale__text">Giảm giá</div>
                             <div class="content__box__total-money__sale__price">0đ</div>
                         </div>
+                        
                         <div class="content__box__total-money__ship">
                             <div class="content__box__total-money__ship__text">Phí vận chuyển</div>
                             <div class="content__box__total-money__ship__price">0đ</div>
@@ -167,7 +177,7 @@
                         <div class="content-container__all__body__about">
                             <div class="content-container__all__body__info">
                                 <input class="" type="text" name="name-user" id="" placeholder="Tên người nhận">
-                                <input class="" type="text" name="phone-user" id="" placeholder="Số điện thoại">
+                                <input class="" type="text" name="phone" id="" placeholder="Số điện thoại">
                             </div>
                             <div class="content-container__all__body__info">
                                 <input class="" type="text" name="city-user" id="" placeholder="Tỉnh/Thành phố">
@@ -186,13 +196,17 @@
                             </select>
                         </div>
                         <div class="content-container__all__body__check-pay">
+                            <input type="hidden" name="trangthai" value="Đang xử lí">
+                            <input type="hidden" name="id_user" value="'.$_SESSION['user']['id_user'].'">
+
                             <input type="submit" value="Xác Nhận" name="buy-check">
                         </div>
-                    </div>
+            </div>
     </form>
         ';
     }
     }
+}
 
 
 ?>
@@ -208,7 +222,6 @@
                 Giỏ hàng
             </div>
             <div id="content__box">
-                
                 <article> 
                     <div class="content__box__nav-cart content__box__nav-cart__main">
                         <div class="content__box__nav-cart__check-cart ">
@@ -225,7 +238,7 @@
 
 
                     </div>
-    <form action="index.php?page=donhang" method="post">
+    <form action="index.php?page=addBillCart" method="post">
                     <?php
                         showCart();
                     ?>

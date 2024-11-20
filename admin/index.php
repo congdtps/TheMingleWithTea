@@ -3,6 +3,7 @@
     require_once('../user/app/model/product.php');
     require_once('../user/app/model/category.php');
     require_once('../user/app/model/User.php');
+    require_once('../user/app/model/personnel.php');
     require_once('app/controller/bill_admin_controller.php');
     require_once('app/controller/category_admin_controller.php');
     require_once('app/controller/fix_bill_admin_controller.php');
@@ -60,9 +61,26 @@
             break;
             case 'fix_bill_admin':require_once('app/view/fix_bill_admin.php');
             break;
-            case 'personnel_admin':require_once('app/view/personnel_admin.php');
+            case 'personnel_admin':
+                $personnel= new personnelAdmin();
+                $personnel->getPersonnel(); 
             break;
-            case 'fix_personnel_admin':require_once('app/view/fix_personnel_admin.php');
+            case "addNV":
+                $personnel= new personnelAdmin();
+                $personnel->addPersonnelAdmin();
+            break;
+            case "deleteNV":
+                $personnel=new personnelAdmin();
+                $personnel->deletePersonnelAdmin();
+            break;
+            case 'fix_personnel_admin':
+                $fixpersonnel= new fixPersonnelAdmin();
+                $fixpersonnel->getUpdateIdPersonnel();
+            break;
+
+            case "updateNV":
+                $fixUpdatePersonnel = new fixPersonnelAdmin();
+                $fixUpdatePersonnel->UpdateIdPersonnel();
             break;
            
             case 'addMainUser':

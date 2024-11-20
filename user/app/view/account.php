@@ -78,9 +78,7 @@
     <a href="index.php?page=donhang">
         <input type="submit" value="Đơn hàng">
     </a>
-
-
-    <a href="index.php?page=dangnhap">
+    <a href="index.php?page=logout">
         <input type="submit" value="Đăng xuất">
     </a>
   

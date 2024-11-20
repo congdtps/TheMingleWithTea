@@ -15,6 +15,7 @@
 
         public function getProductBody(){
             $this->data['dssp']=$this->product->getPro(3);
+            $this->data['dsspbest']=$this->product->getPro(6);
             return $this->showBody($this->data);
         }
         

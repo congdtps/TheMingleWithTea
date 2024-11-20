@@ -1,11 +1,16 @@
 <?php
     session_start();
     ob_start();
+    if(!isset($_SESSION['user'])){
+        $_SESSION['user'] = [];
+    }
+    
     include_once 'app/model/User.php';
     include_once 'app/controller/UserController.php';
     require_once('app/model/data.php');
     require_once('app/model/product.php');
     require_once('app/model/category.php');
+    require_once('app/model/bill.php');
     require_once("app/controller/bodyController.php");
     require_once('app/controller/menu1Controller.php');
     require_once('app/controller/menu2Controller.php');
@@ -17,7 +22,8 @@
     require_once('app/controller/suaTuoiController.php');
     require_once('app/controller/cartController.php');
     require_once('app/controller/detailController.php');
-    
+    require_once('app/controller/donHangController.php');
+
     require_once ('app/view/header.php');
     $db = new data();
 
@@ -90,13 +96,27 @@
                 $adduser = new UserController();
                 $adduser->addUser();
                 break;
-            case "donhang":require_once('app/view/donHang.php');
+
+            case "donhang":
+                require_once('app/view/donHang.php');
+            break;    
+            
+            case "addBillCart":
+                $addbill=new billController();
+                $addbill->addBill();
             break;
             case "lichsumua":require_once('app/view/lichSuMua.php');
             break;
+            case "account":
+                $dangnhap = new UserController();
+                $dangnhap->renderView('account');
+                break;
+            case "logout":
+                $dangnhap = new UserController();
+                $dangnhap->Logout();
+                break;    
             case "account":require_once('app/view/account.php');
-            break;
-
+                break;
 
             default:
             $body=new body();
@@ -111,7 +131,5 @@
         ;
     }
     require_once ('app/view/footer.php');
-
-    
 
 ?>

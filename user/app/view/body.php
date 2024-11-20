@@ -1,8 +1,9 @@
 <?php
+   $listProductBestBody= $data['dsspbest'];
    $listProductBody= $data['dssp'];
 
-   function show_product_body($listProductBody){
-       foreach($listProductBody as $value){
+   function show_product_body($listProductBestBody){
+       foreach($listProductBestBody as $value){
            extract($value);
            if($id_danhmuc===1){
             echo '   
@@ -132,7 +133,7 @@
                     </div>
                     <div class="content__background__list-bestseller__lists-product">
                     <?php
-                        show_product_body($listProductBody);
+                        show_product_body($listProductBestBody);
 
                     ?>
                         

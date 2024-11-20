@@ -39,6 +39,12 @@
     //     }
     // }
 
+    function Logout(){
+        unset($_SESSION['user']);
+        header('location:index.php?page=dangnhap');
+      
+        
+    }
 
 
     function check(){
@@ -49,14 +55,15 @@
             $result = $this->user->checkUser($user, $pass);
             if(is_array($result)){
                 if($result['role'] == 2){
-                    $_SESSION['user'] = $result['name_user'];
-                    // header('location:app/view/account.php');
-                    return $this->renderView('account');
+                    $_SESSION['user'] = $result;
+                    
+                    header('location:index.php?page=account');
+                    // return $this->renderView('account');
 
                     // echo '<script> alert("Đăng nhập thành công")</script>';
                 }else{
-                    $_SESSION['admin'] = $result['name_user'];
-                    header('Location: ../admin/index.php');
+                    $_SESSION['admin'] = $result;
+                    header('Location: ../admin/index.php?page=main');
                     // return $this->renderView_admin('index');
                 }
             } else {

@@ -42,67 +42,75 @@
                             <div class="content-admin__all__controler-admin__search-all__bell-admin">
                                 <a href="">
                                     <div class="content-admin__all__controler-admin__search-all__bell-admin__bell">
-                                        <i class="fa-solid fa-bell"></i>
-                                        <small></small>
-                                    </div>
+                                        <i class="fa-solid fa-bell"></i><small></small></div>
                                 </a>
                                 <a href="">
                                     <img src="../user/img/myself.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <form action="">
-                        <div class="content-admin__all__controler-admin__search-all-product">
-                              
+                        <?php
+                            echo'
+                    <form action="index.php?page=updateNV" method="post">
+                            <div class="content-admin__all__controler-admin__search-all-product">
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Id NV</label>
+                                    <input type="text" name="id_nv" value="'.$id_nv.'" id="" placeholder="ID">
+                                </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Tên</label>
-                                    <input type="text" name="" id="" placeholder="Tên nhân viên">
+                                    <input type="text" name="name_nv" value="'.$name_nv.'" id="" placeholder="Tên nhân viên">
                                 </div>
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Email</label>
-                                    <input type="text" name="" id="" placeholder="Email nhân viên">
+                                    <input type="text" name="email" id="" value="'.$email.'" placeholder="Email nhân viên">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Password</label>
-                                    <input type="text" name="" id="" placeholder="Password ">
+                                    <input type="text" name="password" value="'.$password.'" id="" placeholder="Password ">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Ngày tạo</label>
-                                    <input type="date" name="" id="">
+                                    <label for="">Role</label>
+                                    <input type="text" name="role" value="'.$role.'" id="" placeholder="Role ">
                                 </div>
+                                
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Sửa">
-                                    </a>
+                                   
+                                        <input type="submit" value="Sửa" name="updatepersonnel">
+                                  
                                 </div> 
                             </div>
-                        </form>
-                        <div class="content-admin__all__controler-admin__info-product">
-                            <div class="content-admin__all__controler-admin__info-product__nav first second">
-                                <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                    <input type="checkbox" name="" id="">
-                                    <h3>ID Nhân Viên</h3>
-                                </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__desc">
-                                    <div class="date-post">
-                                        <h3>Email nhân viên</h3>
+                    </form>
+                            ';
+
+                        ?>
+
+
+                        <div class="content-admin__all__controler-admin__info-product"><div style="grid-template-columns:200px 1fr 1fr 1fr" class="content-admin__all__controler-admin__info-product__nav first second"><div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                                        <input type="checkbox" name="" id="">
+                                        <h3>ID Nhân Viên</h3>
                                     </div>
-                                    <div class="name-pro">
-                                        <h3>Tên nhân viên</h3>
+                                    <div style="grid-template-columns:repeat(3,245px)" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                        <div class="date-post">
+                                            <h3>Email nhân viên</h3>
+                                            </div>
+                                        <div class="name-pro">
+                                            <h3>Tên nhân viên</h3>
+                                        </div>
+                                        <div class="quantity-pro">
+                                            <h3>Password</h3>
+                                        </div>
                                     </div>
-                                    <div class="quantity-pro">
-                                        <h3>Password</h3>
+                                    <div class="content-admin__all__controler-admin__info-product__nav__price ">
+
+                                        <h3>Role</h3>
                                     </div>
+                                    
                                 </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__price ">
-                                    <h3>Ngày tạo</h3>
-                                </div>
-                            </div>
                            
-                           
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                            <!-- <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
                                     <p style="color: #FFB647;">#NV01</p>
@@ -120,13 +128,37 @@
                                 </div>
                                 <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
                                     <p>22/10/2024</p>
-                                    <a href="presonnel_admin.html">
-                                        <input class="input-dele" type="submit" value="Xóa">
-                                    </a>
+                                  
                                    
                                 </div>
-                            </div>
+                            </div> -->
                          
+                            <?php
+                            echo'<div style="grid-template-columns:200px 1fr 1fr 1fr" class="content-admin__all__controler-admin__info-product__nav controller-admin-all second"><div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                                        <input type="checkbox" name="" id="">
+                                        <p style="color: #FFB647;">#NV'.$id_nv.'</p>
+                                    </div>
+                                    <div style="grid-template-columns:repeat(3,245px)" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                        <div class="date-post">
+                                            <p>'.$email.'</p>
+                                        </div>
+                                        <div class="name-pro">
+                                            <p>'.$name_nv.'</p>
+                                        </div>
+                                        <div class="quantity-pro">
+                                            '.$password.'
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                        <p>'.$role  .'</p>
+                                        
+                                    </div>
+                                    
+                                </div>';
+                            
+
+                            ?>
                            
                            
                         </div>

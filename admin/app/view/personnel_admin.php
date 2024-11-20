@@ -1,3 +1,44 @@
+<?php
+    $listpersonnel = $data['personnel'];
+    function viewpersonnel($listpersonnel){
+        foreach($listpersonnel as $value ){ 
+            extract($value);
+            echo'<div style="grid-template-columns:200px 1fr 1fr 1fr" class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                                    <div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                                        <input type="checkbox" name="" id="">
+                                        <p style="color: #FFB647;">#NV'.$id_nv.'</p>
+                                    </div>
+                                    <div style="grid-template-columns:repeat(3,245px)" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                        <div class="date-post">
+                                            <p>'.$email.'</p>
+                                        </div>
+                                        <div class="name-pro">
+                                            <p>'.$name_nv.'</p>
+                                        </div>
+                                        <div class="quantity-pro">
+                                            '.$password.'
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                        <p>'.$role  .'</p>
+                                        
+                                    </div>
+                                     <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                        <a href="index.php?page=deleteNV&&id='.$id_nv.'">
+                                            <input class="input-dele" type="submit" value="Xóa">
+                                        </a>
+                                        <a href="index.php?page=fix_personnel_admin&&id='.$id_nv.'">
+                                            <div style="padding: 8px 12px;border-radius: 4px;" class="input-fix">
+                                                Sửa
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>';
+        }
+    }
+?>
+
 <body>
     <div id="main">
        <div id="content-admin">
@@ -8,8 +49,7 @@
                             <img src="../user/img/__-removebg-preview.png" alt="">
                         </a>
                         <h2>Admin</h2>
-                        <ul>
-                              <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
+                        <ul><li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
                             <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="active-admin" href="#"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
@@ -34,7 +74,7 @@
                         <div class="content-admin__all__controler-admin__search-all">
                             <div class="content-admin__all__controler-admin__search-all__search">
                                 <label for="">Nhân Viên</label>
-                                <input type="text" name="" id="" placeholder="Tìm kiếm">
+                                <input type="text" name="id" id="" placeholder="Tìm kiếm">
                                 <a href="">
                                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </a>
@@ -51,45 +91,46 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
-                        <div class="content-admin__all__controler-admin__search-all-product">
-                                
+                    <form action="index.php?page=addNV" method="post"><div class="content-admin__all__controler-admin__search-all-product">
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Id NV</label>
+                                    <input type="text" name="id_nv" id="" placeholder="ID">
+                                </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Tên</label>
-                                    <input type="text" name="" id="" placeholder="Tên nhân viên">
+                                    <input type="text" name="name_nv" id="" placeholder="Tên nhân viên">
                                 </div>
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Email</label>
-                                    <input type="text" name="" id="" placeholder="Email nhân viên">
+                                    <input type="text" name="email" id="" placeholder="Email nhân viên">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Password</label>
-                                    <input type="text" name="" id="" placeholder="Password ">
+                                    <input type="text" name="password" id="" placeholder="Password ">
                                 </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
-                                    <label for="">Ngày tạo</label>
-                                    <input type="date" name="" id="">
+                                    <label for="">Role</label>
+                                    <input type="text" name="role" id="" placeholder="Role ">
                                 </div>
+                                
                                
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Thêm">
-                                    </a>
+                                  
+                                        <input type="submit" value="Thêm" name="addpersonnel">
+                                
                                 </div> 
                             </div>
-                        </form>
-                        <form action="">
+                    </form>
                             <div class="content-admin__all__controler-admin__info-product">
-                                <div class="content-admin__all__controler-admin__info-product__nav first second">
+                                <div style="grid-template-columns:200px 1fr 1fr 1fr" class="content-admin__all__controler-admin__info-product__nav first second">
                                     <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                         <input type="checkbox" name="" id="">
                                         <h3>ID Nhân Viên</h3>
                                     </div>
-                                    <div class="content-admin__all__controler-admin__info-product__nav__desc">
+                                    <div style="grid-template-columns:repeat(3,245px)" class="content-admin__all__controler-admin__info-product__nav__desc">
                                         <div class="date-post">
-                                            <h3>Email nhân viên</h3>
-                                        </div>
+                                            <h3>Email nhân viên</h3></div>
                                         <div class="name-pro">
                                             <h3>Tên nhân viên</h3>
                                         </div>
@@ -98,12 +139,13 @@
                                         </div>
                                     </div>
                                     <div class="content-admin__all__controler-admin__info-product__nav__price ">
-                                        <h3>Ngày tạo</h3>
+                                        <h3>Role</h3>
                                     </div>
+                                    
                                 </div>
                                
                                
-                                <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                                <!-- <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
                                     <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                         <input type="checkbox" name="" id="">
                                         <p style="color: #FFB647;">#NV01</p>
@@ -132,16 +174,16 @@
                                     </div>
                                 </div>
                              
+                                -->
+                                <?php
+                                viewpersonnel($listpersonnel);
+                                ?>
                                
-                               
-                            </div>
-                        </form>
-                        
-                    </div>
+                            </div></div>
 
-                </aside>
-            </div>
-       </div>
+</aside>
+</div>
+</div>
 
-    </div>
+</div>
 </body>
