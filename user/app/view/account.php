@@ -73,11 +73,9 @@
     <div class="customer-account__name"></div>
     <h2>TÀI KHOẢN KHÁCH HÀNG</h2>
     <a href="index.php?page=lichsumua">
-        <input type="submit" value="Lịch sử mua hàng">
+        <input type="submit" value="Chi tiết đơn hàng">
     </a>
-    <a href="index.php?page=donhang">
-        <input type="submit" value="Đơn hàng">
-    </a>
+    
     <a href="index.php?page=logout">
         <input type="submit" value="Đăng xuất">
     </a>

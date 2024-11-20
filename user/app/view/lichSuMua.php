@@ -200,7 +200,7 @@
          <div style="margin-top: 120px;" id="content">
             <div class="content__title-cart">
                 <div class="content__title-cart__col"></div>
-                Lịch sử mua hàng
+                Chi tiết đơn hàng
             </div>
             <div id="content__box">
                 <article> 

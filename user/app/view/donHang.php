@@ -91,7 +91,7 @@
                                 <div class="content__icon__box__cover__bills-text__text">#11223344 </div>
                             </div>
                             <div class="content__icon__box__cover__bills-text">
-                                <div class="content__icon__box__cover-all__box__color-text">Để xem lịch sử mua hàng vui lòng</div>
+                                <div class="content__icon__box__cover-all__box__color-text">Để xem chi tiết mua hàng vui lòng</div>
                                 <div class="content__icon__box__cover__bills-text__text"><a href="index.php?page=lichsumua">xem tại đây.</a></div>
                                 
                             </div>
