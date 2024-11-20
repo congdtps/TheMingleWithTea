@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <body>
     <div id="main">
        <div id="content-admin">
@@ -13,7 +18,7 @@
                             <li><a class="active-admin" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
+                            <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-calendar-days"></i><p>Lịch hẹn</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-comments"></i><p>Trò chuyện</p></a></li>
@@ -51,69 +56,100 @@
                                 </a>
                             </div>
                         </div>
-                        <form action="">
-                        <div class="content-admin__all__controler-admin__search-all-product">
-                               
 
+                        <?php
+                        echo'
+                    <form action="index.php?page=updateBill" method="post">
+                        <div class="content-admin__all__controler-admin__search-all-product">
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Tráng thái đơn hàng</label>
-                                    <select name="" id="">
-                                        <option value="daTT">Đã thanh toán</option>
-                                        <option value="chTT">Chưa thanh toán</option>
-                                    </select>
+                                        <input type="text" name="trangthai" value="'.$trangthai.'" id=""> 
                                 </div>
-                               
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Address</label>
+                                    <input type="hidden" name="id_dh" value="'.$id_dh.'">
+                                    <input type="text" name="address" value="'.$address.'" id="" placeholder="Địa chỉ">
+                                </div>
                                 
-                               
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">Phone</label>
+                                    <input type="text" name="phone" value="'.$phone.'" id=""  placeholder="SĐT">
+                                </div>
+                                <div class="content-admin__all__controler-admin__search-all-product__product">
+                                    <label for="">ID nhân viên</label>
+                                    <input type="text" name="id_nv" value="'.$id_nv.'" id=""  placeholder="ID">
+                                </div>
                                 <div class="content-admin__all__controler-admin__search-all-product__product__search">
-                                    <a href="">
-                                        <input type="submit" value="Sửa">
-                                    </a>
+                                        <input type="submit" value="Sửa" name="updateBillAdmin">
                                 </div> 
                             </div>
-                        </form>
+                    </form>
+                        ';
+
+                        ?>
+                   
                         <div class="content-admin__all__controler-admin__info-product">
-                            <form action="">
-                                <div class="content-admin__all__controler-admin__info-product__nav first">
-                                    <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                        <input type="checkbox" name="" id="">
-                                        <h3>Mã đơn hàng</h3>
-                                    </div>
-                                    <div class="content-admin__all__controler-admin__info-product__nav__desc">
-                                        <div class="date-post">
-                                            <h3>Trạng thái</h3>
-                                        </div>
-                                       
-                                    </div>
-                                   
-                                   
-                                    
-                                </div>
-                            </form>
-                           
-                           
-                            <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
+                            <div class="content-admin__all__controler-admin__info-product__nav first">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
                                     <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#ĐH01</p>
+                                    <h3>ID đơn hàng</h3>
                                 </div>
-                                <div class="content-admin__all__controler-admin__info-product__nav__desc">
+                                <div style="grid-template-columns:250px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
-                                        <p>Đã thanh toán</p>
+                                        <h3>Khách hàng</h3>
                                     </div>
-                                   
-                                </div>
-                              
-                               
-                                <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
-                                    <a href="">
-                                        <input class="input-dele" type="submit" value="Xóa">
-                                    </a>
-                                    
+                                    <div class="date-post">
+                                        <h3>Trạng thái</h3>
+                                    </div>
+                                    <div class="name-pro">
+                                        <h3>Tổng tiền</h3>
+                                    </div>
+                                 
                                 </div>
                                
+                                <div class="content-admin__all__controler-admin__info-product__nav__price ">
+                                    <h3>PTTT</h3>
+                                </div>
+                                <div class="content-admin__all__controler-admin__info-product__nav__price ">
+                                    <h3>ID NV</h3>
+                                </div>
                             </div>
-                         
+                            <?php
+                                echo'
+                                <div class="content-admin__all__controler-admin__info-product__nav controller-admin-all">
+                                                    <div class="content-admin__all__controler-admin__info-product__nav__check-id">
+                                                        <input type="checkbox" name="" id="">
+                                                        <p style="color: #FFB647;">#DH'.$id_dh.'</p>
+                                                    </div>
+                                                    <div style="grid-template-columns:250px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                                         <div class="date-post">
+                                                            <p>ID khách hàng: '.$id_user.'</p>
+                                                            <p style="padding:10px 0">'.$address.'</p>
+                                                            <p>'.$phone.'</p>
+                                                            
+                                                        </div>
+                                                        <div class="date-post">
+                                                            <p>'.$trangthai.'</p>
+                                                        </div>
+                                                        <div class="name-pro">
+                                                            <p>'.$total.'đ</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                                        '.$id_pttt.'
+                                                    </div>
+                                                    <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                                        '.$id_nv.'
+                                                    </div>
+                                                    
+                                                   
+                                </div>
+                                             
+                                ';
+                            ?>
+                           
+                            
                            
                            
                         </div>

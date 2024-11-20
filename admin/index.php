@@ -3,6 +3,7 @@
     require_once('../user/app/model/product.php');
     require_once('../user/app/model/category.php');
     require_once('../user/app/model/User.php');
+    require_once('../user/app/model/bill.php');
     require_once('../user/app/model/personnel.php');
     require_once('app/controller/bill_admin_controller.php');
     require_once('app/controller/category_admin_controller.php');
@@ -57,10 +58,27 @@
                 $fixCateAdmin=new fixCateAdmin();
                 $fixCateAdmin->UpdateIdCate();
             break;
-            case 'bill_admin':require_once('app/view/bill_admin.php');
+            case 'bill_admin':
+                $bill=new billAdmin();
+                $bill->getBill();
             break;
-            case 'fix_bill_admin':require_once('app/view/fix_bill_admin.php');
+
+            case "delBill":
+                $delBill=new billAdmin();
+                $delBill->deleBill();
             break;
+
+            case 'fix_bill_admin':
+                $fixBill= new fixBilAdmin();
+                $fixBill->getUpdateIdBill();
+            break;
+
+            case "updateBill":
+                $updateBill= new fixBilAdmin();
+                $updateBill->UpdateIdBill();
+            break;
+
+
             case 'personnel_admin':
                 $personnel= new personnelAdmin();
                 $personnel->getPersonnel(); 

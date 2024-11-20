@@ -74,7 +74,10 @@
 
         <!-- Begin content -->
        <?php
-       
+        $listBill=$data['dsbill'];
+        foreach($listBill as $value){
+            extract($value);
+        }
             echo'
         <div class="notthing"></div>
         <div id="content-cover">
@@ -88,11 +91,11 @@
                             <div class="content__icon__box__cover-all__box__color-text">Thanh toán thành công</div>
                             <div class="content__icon__box__cover__bills-text">
                                 <div class="content__icon__box__cover-all__box__color-text">Mã số đơn hàng của bạn là:</div>
-                                <div class="content__icon__box__cover__bills-text__text">#11223344 </div>
+                                <div class="content__icon__box__cover__bills-text__text">#DH'.$id_dh.' </div>
                             </div>
                             <div class="content__icon__box__cover__bills-text">
                                 <div class="content__icon__box__cover-all__box__color-text">Để xem chi tiết mua hàng vui lòng</div>
-                                <div class="content__icon__box__cover__bills-text__text"><a href="index.php?page=lichsumua">xem tại đây.</a></div>
+                                <div class="content__icon__box__cover__bills-text__text"><a href="index.php?page=lichsumua&&id='.$id_dh.'">xem tại đây.</a></div>
                                 
                             </div>
                             <div class="content__icon__box__cover-all__box__color-text">Thời gian dự kiến giao hàng là: 19/10/2024</div>

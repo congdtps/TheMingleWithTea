@@ -14,8 +14,8 @@ class UserModel{
        return $this->db->getOne_User($sql,[$user,$pass]);
    }
    function inserUser($data){
-       $sql = "INSERT INTO user(name, email, password) VALUES(?,?,?)";
-       $param=[$data['name'],$data['email'],$data['password']];
+       $sql = "INSERT INTO user(name_user, email, password_user) VALUES(?,?,?)";
+       $param=[$data['name_user'],$data['email'],$data['password_user']];
        return $this->db->insert($sql,$param);
    }
    function checkmail($email){

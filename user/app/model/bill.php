@@ -26,6 +26,23 @@ class bill{
         return $this->db->insert($sql,$param);
     }
 
+    public function updateBill($id, $data){
+        $sql = "UPDATE donhang SET trangthai=?, address=?, phone=?, id_nv=? WHERE id_dh=?";
+        $param = [$data['trangthai'], $data['address'], $data['phone'], $data['id_nv'], $id];
+        return $this->db->upload($sql, $param);
+    }
+
+    public function delBill($id){
+        if($id>0){
+            $sql="DELETE FROM donhang WHERE id_dh=?";
+            return $this->db->delete($sql,[$id]);
+        }else{
+            return null;
+        }
+
+    }
+
+
     
  
 }

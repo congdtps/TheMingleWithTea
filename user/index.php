@@ -92,13 +92,15 @@
                 $dangki =new UserController();
                 $dangki->viewResgin();
                 break;
-            case'adduser':
+
+            case'addUser':
                 $adduser = new UserController();
                 $adduser->addUser();
                 break;
 
             case "donhang":
-                require_once('app/view/donHang.php');
+                $bill= new billController();
+                $bill->getBill();
             break;    
             
             case "addBillCart":

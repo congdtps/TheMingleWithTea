@@ -196,7 +196,7 @@
                             </select>
                         </div>
                         <div class="content-container__all__body__check-pay">
-                            <input type="hidden" name="trangthai" value="Đang xử lí">
+                            <input type="hidden" name="trangthai" value="Chưa xử lí">
                             <input type="hidden" name="id_user" value="'.$_SESSION['user']['id_user'].'">
 
                             <input type="submit" value="Xác Nhận" name="buy-check">

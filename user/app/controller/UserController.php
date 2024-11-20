@@ -76,29 +76,47 @@
     function viewResgin(){
         $this->renderView('dangki');
     }
+    // function addUser(){
+    //     if(isset($_POST['sub'])){
+    //         $data = [];
+    //         // $data['name'] = $_POST['name'];
+    //         $data['email'] = $_POST['email'];
+    //         $data['pass'] = $_POST['pass'];
+    //         $repass = $_POST['repass'];
+    //         if($data['pass'] === $repass){
+    //             $result = $this->user ->checkmail($data['email']);
+    //             if($result){
+    //                 echo '<script> alert("Email đã tồn tại")</script>';
+    //                 echo '<script>location.href="index.php?page=dangKi"</script>';
+    //             }else{
+    //                 $this->user->inserUser($data);
+    //                 echo '<script> alert("Đăng kí thành công")</script>';
+    //                 echo '<script>location.href="index.php?page=dangNhap"</script>';
+    //             }
+    //         }else{
+    //             echo '<script> alert("Mật khẩu không trùng khớp")</script>';
+    //             echo '<script>location.href="index.php?page=dangKi"</script>';
+    //         }
+    //     }
+    // }
+
+  
+
     function addUser(){
-        if(isset($_POST['sub'])){
-            $data = [];
-            // $data['name'] = $_POST['name'];
-            $data['email'] = $_POST['email'];
-            $data['pass'] = $_POST['pass'];
-            $repass = $_POST['repass'];
-            if($data['pass'] === $repass){
-                $result = $this->user ->checkmail($data['email']);
-                if($result){
-                    echo '<script> alert("Email đã tồn tại")</script>';
-                    echo '<script>location.href="index.php?page=dangKi"</script>';
-                }else{
-                    $this->user->inserUser($data);
-                    echo '<script> alert("Đăng kí thành công")</script>';
-                    echo '<script>location.href="index.php?page=dangNhap"</script>';
-                }
-            }else{
-                echo '<script> alert("Mật khẩu không trùng khớp")</script>';
-                echo '<script>location.href="index.php?page=dangKi"</script>';
-            }
-        }
+        if((isset($_POST['btn-res']))&& $_POST['btn-res']){
+            $data=[];
+            $data['name_user']=$_POST['name_user'];
+            $data['email']=$_POST['email'];
+            $data['password_user']=$_POST['password_user'];
+            $this->user->inserUser($data);}
+            
+            echo'
+            <script>location.href="index.php?page=dangnhap"</script>
+            
+            ';
+            
     }
+
 }
 
 
