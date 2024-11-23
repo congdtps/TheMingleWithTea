@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    
     ob_start();
     if((!isset($_SESSION['cart']))) $_SESSION['cart']=[];
     if((isset($_GET['del']))&& $_GET['del']>=0 ) array_splice($_SESSION['cart'],$_GET['del'],1);
