@@ -35,12 +35,29 @@
                                 <p>Giỏ hàng</p>
                             </div>
                         </a>
+                        <?php
+                    if(empty($_SESSION['user'])){
+
+                        echo'
                         <a href="index.php?page=dangnhap">
-                            <div class="mb__header-page__login">
-                                <i class="fa-solid fa-user"></i>
-                                <p>Đăng nhập</p>
+                            <div style="display:flex" class=""mb__header-page__login">
+                                <span><i class="fa-solid fa-user"></i></span>
+                                <h3 style="margin-left: 5px;">Đăng nhập</h3>
                             </div>
                         </a>
+                        ';
+                    }else{
+                        echo'<a href="index.php?page=account">
+                                <div style="display:flex" class=""mb__header-page__login">
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                    <h3 style="margin-left: 5px;">Thành Công</h3>
+                                </div>
+                            </a>';
+                    }
+                
+
+
+                    ?>
                     </ul>
                 </div>
 
