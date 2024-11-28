@@ -60,7 +60,10 @@
             $param = [$data['name'], $data['image'], $data['price'], $data['price_sale'], $data['id_danhmuc'], $id];
             return $this->db->upload($sql, $param);
         }
-        
+        public function searchProducts($keyword) {
+            $sql = "SELECT * FROM sanpham WHERE name LIKE :keyword";
+            return $this->getAll($sql, ['keyword' => "%$keyword%"]);
+        }
 
 
     }

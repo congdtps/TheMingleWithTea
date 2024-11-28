@@ -78,8 +78,10 @@
                         <li><a class="" href="index.php?page=contact">LIÊN HỆ</a></li>
                 </ul>
                 <div class="header-page__search">
-                    <input type="text" name="" id="" placeholder="Trà sữa">
-                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <form method="GET" action="index.php?page=search">
+                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." value="<?php echo isset($_GET['search']) ? htmlspecialchars($_GET['search']) : ''; ?>">
+                <span type="submit"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
                 </div>
                 <div class="header-page__info">
                     <a href="index.php?page=cart">

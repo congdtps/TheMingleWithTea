@@ -1,6 +1,7 @@
 <?php
     
     ob_start();
+    $total_quantity=1;
     if((!isset($_SESSION['cart']))) $_SESSION['cart']=[];
     if((isset($_GET['del']))&& $_GET['del']>=0 ) array_splice($_SESSION['cart'],$_GET['del'],1);
 
@@ -19,6 +20,7 @@
                 if($_SESSION['cart'][$i][0] == $name_product){
                     $flag=1;
                     $quantity_new = $_SESSION['cart'][$i][4] + $quantity;
+                    $total_quantity+=$quantity_new;
                     $_SESSION['cart'][$i][4]=$quantity_new;
                     break;
                 }
@@ -41,10 +43,14 @@
 
         $total_all=0;
         $total=0;
+        $total_quantity=0;
+        $total_name="";
         for($i=0;$i<count($_SESSION['cart']);$i++){
             if($_SESSION['cart'][$i][2]){
                 $total_item_price=$_SESSION['cart'][$i][2] *  $_SESSION['cart'][$i][4];
                 $total_all+=$total_item_price;
+                $total_quantity+=$_SESSION['cart'][$i][4];
+                $total_name.=$_SESSION['cart'][$i][0];
                 echo'
                     <div class="content__box__nav-cart mb__content__box__nav-cart">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
@@ -59,7 +65,7 @@
                             <input type="hidden" name="price-cart" value="'.$_SESSION['cart'][$i][2].'">
                             <div class="content__box__nav-cart__pay-cart__quantity">
                             '.$_SESSION['cart'][$i][4].'
-                            <input type="hidden" name="quantity-item" value="'.$_SESSION['cart'][$i][4].'">
+                       
                             </div>
                             <div class="content__box__nav-cart__pay-cart__money-cart">'.$total_item_price.'đ</div>
                             <input type="hidden" name="total-item-price" value="'.$total_item_price.'">
@@ -74,6 +80,8 @@
             }else if($_SESSION['cart'][$i][3]){
                 $total_item_price_sale=$_SESSION['cart'][$i][3] * $_SESSION['cart'][$i][4];
                 $total_all+=$total_item_price_sale;
+                $total_quantity+=$_SESSION['cart'][$i][4];
+                $total_name.=$_SESSION['cart'][$i][0];
                 echo'
                     <div class="content__box__nav-cart mb__content__box__nav-cart">
                         <div class="content__box__nav-cart__check-cart content__box__nav-cart__check-cart__copy">
@@ -90,6 +98,7 @@
                             '.$_SESSION['cart'][$i][4].'
                             <input type="hidden" name="quantity-item" value="'.$_SESSION['cart'][$i][4].'">
                             </div>
+
                             <div class="content__box__nav-cart__pay-cart__money-cart">'.$total_item_price_sale.'đ</div>
                             <input type="hidden" name="total-item-price-sale" value="'.$total_item_price_sale.'">
                             <div class="content__box__nav-cart__pay-cart__button">
@@ -100,10 +109,11 @@
                         </div>
                     </div>
             ';
-            }else{
-                $total=$total_item_price+$total_item_price_sale;
-                $total_all+=$total;
             }
+            // else{
+            //     $total=$total_item_price+$total_item_price_sale;
+            //     $total_all+=$total;
+            // }
         };
         echo'
                     <div class="content__box__add-product">
@@ -197,6 +207,9 @@
                         </div>
                         <div class="content-container__all__body__check-pay">
                             <input type="hidden" name="trangthai" value="Chưa xử lí">
+         
+                            <input type="hidden" name="quantity-name_products" value="'.$total_name.'">
+                            <input type="hidden" name="quantity-item" value="'.$total_quantity.'">
                             <input type="hidden" name="id_user" value="'.$_SESSION['user']['id_user'].'">
 
                             <input type="submit" value="Xác Nhận" name="buy-check">

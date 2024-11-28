@@ -1685,7 +1685,91 @@ aside .content__box__total-money__total-all__price--color{
 
 
 /* end content detail */
+/* search*/
+.search-results{
+    margin-top: 100px;
+}
+.search-results_list{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    align-items: center;
+    gap:40px
+}
 
+
+.search-results_list__product{
+    width: 210px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 10px;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--bg-product);
+}
+
+.search-results_list__product img{
+    width: 80%;
+}
+
+
+.search-results_list__product__name{
+    color:var(--text-color);
+    font-weight: 600;
+    margin-top: 10px;
+    align-self: self-start;
+    margin-bottom: 6px;
+}
+
+
+.search-results_list__product__row{
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.search-results_list__product__info-name,
+.search-results_list__product__topping{
+    font-size: 12px;
+    padding: 2px 0;
+    align-self: self-start;
+
+}
+
+.search-results_list__product__price-money{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    color:var(--text-color);
+    font-weight: 600;
+}
+
+.search-results_list__product__buy{
+    margin-top: 10px;
+}
+
+
+.search-results_list__product__buy input{
+    border: none;
+    padding: 8px 20px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    border: 1px solid var(--text-color);
+}
+
+.search-results_list__product__buy input:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/*end search*/
 
 /* begin content store */
 

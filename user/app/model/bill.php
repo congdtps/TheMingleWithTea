@@ -21,14 +21,14 @@ class bill{
     
    
     public function insertBill($data){
-        $sql="INSERT INTO donhang(trangthai,address,phone,total,id_pttt,id_user,id_nv) VALUES(?,?,?,?,?,?,?)";
-        $param=[$data['trangthai'],$data['address'],$data['phone'],$data['total'],$data['id_pttt'],$data['id_user'],$data['id_nv']];
+        $sql="INSERT INTO donhang(trangthai,name_products,address,phone,total,quantity_bill,id_pttt,id_user,id_nv) VALUES(?,?,?,?,?,?,?,?,?)";
+        $param=[$data['trangthai'],$data['name_products'],$data['address'],$data['phone'],$data['total'],$data['quantity_bill'],$data['id_pttt'],$data['id_user'],$data['id_nv']];
         return $this->db->insert($sql,$param);
     }
 
     public function updateBill($id, $data){
-        $sql = "UPDATE donhang SET trangthai=?, address=?, phone=?, id_nv=? WHERE id_dh=?";
-        $param = [$data['trangthai'], $data['address'], $data['phone'], $data['id_nv'], $id];
+        $sql = "UPDATE donhang SET trangthai=?, address=?, phone=?, id_nv=?  WHERE id_dh=?";
+        $param = [$data['trangthai'], $data['address'], $data['phone'], $data['id_nv'] ,$id];
         return $this->db->upload($sql, $param);
     }
 

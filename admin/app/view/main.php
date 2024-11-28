@@ -56,7 +56,7 @@
                         </a>
                         <h2>Admin</h2>
                         <ul>
-                            <li><a class="active-admin" href="#"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
+                            <li><a class="active-admin" href="#"><i class="fa-solid fa-house"></i><p>Quản lý người dùng</p></a></li>
                             <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
@@ -80,7 +80,7 @@
                     <div class="content-admin__all__controler-admin">
                         <div class="content-admin__all__controler-admin__search-all">
                             <div class="content-admin__all__controler-admin__search-all__search">
-                                <label for="">Tổng Quan</label>
+                                <label for="">Quản lý người dùng</label>
                                 <input type="text" name="" id="" placeholder="Tìm kiếm">
                                 <a href="">
                                     <button><i class="fa-solid fa-magnifying-glass"></i></button>

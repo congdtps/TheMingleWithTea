@@ -25,6 +25,8 @@
             $data['address']=$_POST['detail-address-user'];
             $data['phone']=$_POST['phone'];
             $data['total']=$_POST['total_all'];
+            $data['quantity_bill']=$_POST['quantity-item'];
+            $data['name_products']=$_POST['quantity-name_products'];
             $data['id_pttt']=$_POST['method-pay'];
             $data['id_user']=$_POST['id_user'];
             $data['id_nv']=$_POST['id_nv'];

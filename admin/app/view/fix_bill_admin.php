@@ -14,7 +14,7 @@
                         </a>
                         <h2>Admin</h2>
                         <ul>
-                            <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
+                            <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Quản lý người dùng</p></a></li>
                             <li><a class="active-admin" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
@@ -68,6 +68,7 @@
                                 <div class="content-admin__all__controler-admin__search-all-product__product">
                                     <label for="">Address</label>
                                     <input type="hidden" name="id_dh" value="'.$id_dh.'">
+                                    <input type="hidden" name="quantity_bill" value="'.$quantity_bill.'">
                                     <input type="text" name="address" value="'.$address.'" id="" placeholder="Địa chỉ">
                                 </div>
                                 

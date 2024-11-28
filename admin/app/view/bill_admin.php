@@ -10,7 +10,7 @@
                                     <input type="checkbox" name="" id="">
                                     <p style="color: #FFB647;">#DH'.$id_dh.'</p>
                                 </div>
-                                <div style="grid-template-columns:250px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                <div style="grid-template-columns:250px 150px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
                                      <div class="date-post">
                                         <p>ID khách hàng: '.$id_user.'</p>
                                         <p style="padding:10px 0">'.$address.'</p>
@@ -19,6 +19,11 @@
                                     </div>
                                     <div class="date-post">
                                         <p>'.$trangthai.'</p>
+                                    </div>
+                                    <div class="name-pro">
+                                        <p style="padding-bottom:5px">Tổng sp là: '.$quantity_bill.'
+                                        </p>
+                                        <p>Gồm: '.$name_products.'</p>
                                     </div>
                                     <div class="name-pro">
                                         <p>'.$total.'đ</p>
@@ -59,7 +64,7 @@
                         </a>
                         <h2>Admin</h2>
                         <ul>
-                            <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Bảng điều khiển</p></a></li>
+                            <li><a class="" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Quản lý người dùng</p></a></li>
                             <li><a class="active-admin" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
@@ -134,12 +139,15 @@
                                     <input type="checkbox" name="" id="">
                                     <h3>ID đơn hàng</h3>
                                 </div>
-                                <div style="grid-template-columns:250px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                <div style="grid-template-columns:250px 150px 150px 150px" class="content-admin__all__controler-admin__info-product__nav__desc">
                                     <div class="date-post">
                                         <h3>Khách hàng</h3>
                                     </div>
                                     <div class="date-post">
                                         <h3>Trạng thái</h3>
+                                    </div>
+                                    <div class="name-pro">
+                                        <h3>Sản phẩm</h3>
                                     </div>
                                     <div class="name-pro">
                                         <h3>Tổng tiền</h3>

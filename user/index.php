@@ -126,6 +126,27 @@
             ;
             break;
         };
+    }elseif (isset($_GET['search'])) { // Xử lý khi URL có `search`
+            $keyword = trim($_GET['search']);
+            if ($keyword) {
+                $sql = "SELECT * FROM sanpham WHERE name LIKE :keyword";
+                try {
+                    // Sửa lại gọi query và fetchAll
+                    $stmt = $db->query($sql, ['keyword' => "%$keyword%"]);
+                    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+                    // Kiểm tra xem có kết quả nào không
+                    if ($results === false || count($results) == 0) {
+                        echo "Không tìm thấy sản phẩm nào với từ khóa: '$keyword'.";
+                    } else {require_once('app/view/searchResult.php'); // Hiển thị kết quả tìm kiếm
+                    }
+                } catch (PDOException $e) {
+                    // Xử lý lỗi khi truy vấn không thành công
+                    echo "Lỗi khi thực hiện truy vấn: " . $e->getMessage();
+                }
+            } else {
+                echo "Vui lòng nhập từ khóa để tìm kiếm.";
+            }
     }else{
         
         $body=new body();
