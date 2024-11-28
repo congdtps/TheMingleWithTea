@@ -10,12 +10,12 @@
                         </a>
                         <h2>Admin</h2>
                         <ul>
-                            <li><a class="active-admin" href="index.php?page=main"><i class="fa-solid fa-house"></i><p>Quản lý người dùng</p></a></li>
+                            <li><a class="" href="#"><i class="fa-solid fa-house"></i><p>Quản lý người dùng</p></a></li>
                             <li><a class="" href="index.php?page=bill_admin"><i class="fa-solid fa-book"></i><p>Danhh sách đơn hàng</p></a></li>
                             <li><a class="" href="index.php?page=personnel_admin"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
-                            <li><a class="" href="index.php?page=statistics"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
+                            <li><a class="active-admin" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-calendar-days"></i><p>Lịch hẹn</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-comments"></i><p>Trò chuyện</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-wallet"></i><p>Ví</p></a></li>
@@ -34,7 +34,7 @@
                     <div class="content-admin__all__controler-admin">
                         <div class="content-admin__all__controler-admin__search-all">
                             <div class="content-admin__all__controler-admin__search-all__search">
-                                <label for="">Quản lý người dùng</label>
+                                <label for="">Thống kê</label>
                                 <input type="text" name="" id="" placeholder="Tìm kiếm">
                                 <a href="">
                                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -52,54 +52,38 @@
                                 </a>
                             </div>
                         </div>
-                        <?php
-                            echo'
-            <form action="index.php?page=updateUser" method="post">
+                    <form action="index.php?page=addMainUser" method="post">
                         <div class="content-admin__all__controler-admin__search-all-product">
-                            <input type="hidden" name="id_user" value="'.$id_user.'">
+                            <div class="content-admin__all__controler-admin__search-all-product__product">
+                                <label for="">ID khách hàng</label>
+                                <input type="text" name="id_user" id="" placeholder="ID">
+                            </div>
                             <div class="content-admin__all__controler-admin__search-all-product__product">
                                 <label for="">Tên khách hàng</label>
-                                <input type="text" name="name_user" value="'.$name_user.'" id="" placeholder="Tên">
+                                <input type="text" name="name_user" id="" placeholder="Tên">
                             </div>
-                            
                             <div class="content-admin__all__controler-admin__search-all-product__product">
                                 <label for="">Email khách hàng</label>
-                                <input type="text" name="email" value="'.$email.'" id="" placeholder="Email">
+                                <input type="text" name="email" id="" placeholder="Email">
                             </div>
-                            <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Password khách hàng</label>
-                                <input type="text" name="password_user" value="'.$password_user.'" id="" placeholder="Password">
-                            </div>
-                            <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">SĐT khách hàng</label>
-                                <input type="text" name="phone" value="'.$phone.'" id="" placeholder="SĐT">
-                            </div>
-                            <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Địa chỉ khách hàng</label>
-                                <input type="text" name="address" value="'.$address.'" id="" placeholder="Địa chỉ">
-                            </div>
-                            <div class="content-admin__all__controler-admin__search-all-product__product">
-                                <label for="">Role</label>
-                                <input type="text" name="role" value="'.$role.'" id="" placeholder="Role">
-                            </div>
+
                             <div class="content-admin__all__controler-admin__search-all-product__product__search">
 
-                                    <input type="submit" value="Sửa" name="update_user">
+                                    <input type="submit" value="Tìm kiếm" name="add-user">
 
                             </div>
                         </div>
-            </form>
-                            ';
-
-                        ?>
+                    </form>
                         <div class="content-admin__all__controler-admin__info-product">
                             <div style="" class="content-admin__all__controler-admin__info-product__nav first second">
                                 <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                    <input type="checkbox" name="" id="">
-                                    <h3>ID khách hàng</h3>
+                                    <!-- <input type="checkbox" name="" id="">
+                                    <h3>ID khách hàng</h3> -->
                                 </div>
-                                <div style="grid-template-columns: 200px 220px 135px 100px;" class="content-admin__all__controler-admin__info-product__nav__desc">
-                                    <div class="date-post">
+                                <div style="display:block;text-align:center" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                <h2>Thống kê</h2>
+                                
+                                <!-- <div class="date-post">
                                         <h3>Tên khách hàng</h3>
                                     </div>
                                     <div class="name-pro">
@@ -110,49 +94,36 @@
                                     </div>
                                     <div class="quantity-pro">
                                         <h3>Role</h3>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div style="grid-template-columns: 110px 262px;" class="content-admin__all__controler-admin__info-product__nav__price">
-                                    <h3>SĐT</h3>
-                                    <h3>Địa chỉ</h3>
+                                    <!-- <h3>SĐT</h3>
+                                    <h3>Địa chỉ</h3> -->
                                 </div>
                             </div>
-                            <?php
-                                echo'
-                            <div  class="content-admin__all__controler-admin__info-product__nav second">
-                                <div class="content-admin__all__controler-admin__info-product__nav__check-id">
-                                    <input type="checkbox" name="" id="">
-                                    <p style="color: #FFB647;">#KH'.$id_user.'</p>
-                                </div>
-                                <div style="grid-template-columns: 200px 220px 135px 100px;" class="content-admin__all__controler-admin__info-product__nav__desc">
-                                    <div class="date-post">
-                                        <p>'.$name_user.'</p>
+                        <?php
+                            $listStat=$data['dstk'];
+                                function showStat($listStat){
+                                    $totalStat=0;
+                                    foreach($listStat as $value){
+                                        extract($value);
+                                        $totalStat+=$total;
+                                        
+                                    }
+                                    echo'
+                                    <div style="display:block" class="content-admin__all__controler-admin__info-product__nav controller-admin-all second">
+                                        <div  style="display:block" class="content-admin__all__controler-admin__info-product__nav__desc">
+                                        <h3 style="display:inline-block;padding-right:5px">Tổng tiền tháng này: <h2 style="display:inline-block;color:#FFCB05">'.$totalStat.' đồng</h2></h3> <br>
+                                        </div>
+                                        <div class="content-admin__all__controler-admin__info-product__nav__price controller-admin">
+                                        
+                                        </div>
                                     </div>
-                                    <div class="name-pro">
-                                        <p>'.$email.'</p>
-                                    </div>
-                                    <div class="quantity-pro">
-                                        <p>'.$password_user.'</p>
-                                    </div>
-                                    <div class="quantity-pro">
-                                        <p>'.$role.'</p>
-                                    </div>
-                                </div>
-                                <div style="grid-template-columns: 110px 262px;" class="content-admin__all__controler-admin__info-product__nav__price">
-                                    <p>'.$phone.'</p>
-                                    <p>'.$address.'</p>
-                                </div>
-
-                                
-                            </div>
-                        
                                 ';
-
-                            ?>
-
-                            
-                           
-                           
+                                    
+                                    }
+                                    showStat($listStat);
+                        ?>
                         </div>
                     </div>
 

@@ -1250,7 +1250,7 @@ aside .content__box__total-money__total-all__price--color{
     color: #666;
     font-size: 12px;
     outline: none;
-    margin: -15px 19px 24px;
+    margin: -15px -6px 24px;
     /* text-decoration: none; */
 }
 
@@ -2815,6 +2815,21 @@ aside .content__box__addres__apply-sale-off input{
 
 }
 
+.search-results{
+    margin-top: 100px;
+}
+.search-results_list{
+    display: flex;
+    column-gap: 110px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-results_list__product__buy input{
+    padding: 6px 80px;
+}
+
+
 
 
 
@@ -3825,6 +3840,30 @@ aside .content__box__total-money__total-all__price--color{
         background-color: var(--main-color);
 
     }
+
+
+    .search-results{
+        margin-top: 100px;
+        
+    }
+    .search-results h2{
+        font-size: 20px;
+        
+    }
+    .search-results_list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    
+    
+    .search-results_list__product__buy input{
+        padding: 6px 80px;
+    }
+
+
+    /* end content menu */
 
 
     /* begin content detail */

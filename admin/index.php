@@ -5,6 +5,7 @@
     require_once('../user/app/model/User.php');
     require_once('../user/app/model/bill.php');
     require_once('../user/app/model/personnel.php');
+    require_once('../user/app/model/statistics.php');
     require_once('app/controller/bill_admin_controller.php');
     require_once('app/controller/category_admin_controller.php');
     require_once('app/controller/fix_bill_admin_controller.php');
@@ -15,6 +16,7 @@
     require_once('app/controller/main_controller.php');
     require_once('app/controller/personnel_controller.php');
     require_once('app/controller/product_admin_controller.php');
+    require_once('app/controller/statistics_controller.php');
     
     require_once('app/view/header_admin.php');
     $db= new data();
@@ -124,6 +126,11 @@
             case "main":
                 $mainUser=new mainAdmin();
                 $mainUser->getUserAdmin();
+            break;
+
+            case "statistics":
+                $stat=new statisticsController();
+                $stat->getStatistics();
             break;
 
             default:

@@ -15,7 +15,7 @@
                             <li><a class="" href="index.php?page=personnel"><i class="fa-solid fa-user"></i><p>Nhân viên</p></a></li>
                             <li><a class="active-admin" href="index.php?page=product"><i class="fa-solid fa-martini-glass"></i><p>Sản phẩm</p></a></li>
                             <li><a class="" href="index.php?page=category"><i class="fa-solid fa-list"></i><p>Danh mục sản phẩm</p></a></li>
-                            <li><a class="" href="#"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
+                            <li><a class="" href="index.php?page=statistics"><i class="fa-solid fa-arrow-trend-up"></i><p>Thống kê</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-calendar-days"></i><p>Lịch hẹn</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-comments"></i><p>Trò chuyện</p></a></li>
                             <li><a class="" href="#"><i class="fa-solid fa-wallet"></i><p>Ví</p></a></li>

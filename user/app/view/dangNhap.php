@@ -17,8 +17,8 @@
                         <input id="login-container_input_password" type="password" placeholder="Điền mật khẩu" name="pass" required autocomplete="off">
                     </div>
                     <div class="login-container__information">
+                        <p></p>
                         <p><a href="index.php?page=dangki">Chưa có tài khoản</a></p>
-                        <a href="">Quên mật khẩu</a>
                     </div>
                         <input name="sub" type="submit" value="Đăng nhập" >
                     </form>

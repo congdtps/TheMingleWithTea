@@ -11,6 +11,7 @@
     require_once('app/model/product.php');
     require_once('app/model/category.php');
     require_once('app/model/bill.php');
+    require_once('app/model/statistics.php');
     require_once("app/controller/bodyController.php");
     require_once('app/controller/menu1Controller.php');
     require_once('app/controller/menu2Controller.php');
