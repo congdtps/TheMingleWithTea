@@ -212,7 +212,7 @@
                             <input type="hidden" name="quantity-item" value="'.$total_quantity.'">
                             <input type="hidden" name="id_user" value="'.$_SESSION['user']['id_user'].'">
 
-                            <input type="submit" value="Xác Nhận" name="buy-check">
+                           <a href="index.php?page=guimail"><input type="submit" value="Xác Nhận" name="buy-check"></a>
                         </div>
             </div>
     </form>

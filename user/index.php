@@ -120,7 +120,11 @@
                 break;    
             case "account":require_once('app/view/account.php');
                 break;
-
+            case"guimail":
+                    echo("vao");
+                break;
+            case "testmail":require_once('app/view/testmail.php');
+                break;
             default:
             $body=new body();
             $body->getProductBody();
