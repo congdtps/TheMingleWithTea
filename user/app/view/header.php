@@ -105,7 +105,7 @@
                         echo'<a href="index.php?page=account">
                                 <div class="header-page__info__login">
                                     <span><i class="fa-solid fa-user"></i></span>
-                                    <h3 style="margin-left: 5px;">Xin Chào</h3>
+                                    <h3 style="margin-left: 5px;">Xin chào</h3>
                                 </div>
                             </a>';
                     }

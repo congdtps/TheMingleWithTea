@@ -88,7 +88,7 @@
             case 'checkUser':
                 $user =new UserController();
                 $user->check();
-                 break;
+                break;
             case "dangki":
                 $dangki =new UserController();
                 $dangki->viewResgin();
@@ -103,6 +103,10 @@
                 $bill= new billController();
                 $bill->getBill();
             break;    
+            // case "guimail":
+            //     $emailUser= new UserController();
+            //     $emailUser->getEmail();
+            // break;
             
             case "addBillCart":
                 $addbill=new billController();
@@ -112,6 +116,7 @@
             break;
             case "account":
                 $dangnhap = new UserController();
+                $dangnhap->viewAccount();
                 $dangnhap->renderView('account');
                 break;
             case "logout":
@@ -120,11 +125,7 @@
                 break;    
             case "account":require_once('app/view/account.php');
                 break;
-            case"guimail":
-                    echo("vao");
-                break;
-            case "testmail":require_once('app/view/testmail.php');
-                break;
+            
             default:
             $body=new body();
             $body->getProductBody();

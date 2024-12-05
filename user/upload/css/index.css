@@ -1468,7 +1468,7 @@ aside .content__box__total-money__total-all__price--color{
     display: inline-block;
     padding: 10px 15px;
     background-color: var(--main-color);
-    margin-left: 20px;
+    margin-left: 100px;
     border-radius: 10px;
     font-size: 20px;
     color:var(--text-color);
@@ -1685,16 +1685,30 @@ aside .content__box__total-money__total-all__price--color{
 
 
 /* end content detail */
+/* acount */
+#content .customer-account .table{
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid;
+}
 /* search*/
 .search-results{
-    margin-top: 100px;
+    margin-top: 110px;
+    
+}
+.search-results h2{
+    margin-left: 180px;
 }
 .search-results_list{
     display: grid;
     grid-template-columns: repeat(4,200px);
     justify-content: center;
     align-items: center;
-    gap:40px
+    gap:40px;
+    margin-top: 40px;
 }
 
 
@@ -2524,7 +2538,7 @@ trong th  or td có thể dùng  th:nth-child() or td:nth-child()  theo thứ t�
 
 
 #content__box article {
-    flex-basis: 65%;
+    padding: 0 25px;
 }
 
 article .content__box__nav-cart .content__box__nav-cart__check-cart__copy{
@@ -2814,9 +2828,11 @@ aside .content__box__addres__apply-sale-off input{
     background-color: var(--main-color);
 
 }
-
 .search-results{
     margin-top: 100px;
+}
+.search-results h2{
+    margin-left: 150px;
 }
 .search-results_list{
     display: flex;
@@ -2828,7 +2844,6 @@ aside .content__box__addres__apply-sale-off input{
 .search-results_list__product__buy input{
     padding: 6px 80px;
 }
-
 
 
 
@@ -3848,7 +3863,7 @@ aside .content__box__total-money__total-all__price--color{
     }
     .search-results h2{
         font-size: 20px;
-        
+        margin-left: 70px;
     }
     .search-results_list{
         display: flex;
@@ -3861,7 +3876,6 @@ aside .content__box__total-money__total-all__price--color{
     .search-results_list__product__buy input{
         padding: 6px 80px;
     }
-
 
     /* end content menu */
 

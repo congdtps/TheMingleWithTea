@@ -1,6 +1,6 @@
 <!-- <?php
  class data{
-  private $severname = "localhost:3307";
+  private $severname = "localhost";
   private $user = "root";
   private $password = "";
   private $dbname = "theminglewithtea";

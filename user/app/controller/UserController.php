@@ -1,6 +1,7 @@
 <?php
  class UserController{
     private $user;
+    private $data;
     function __construct()
     {
         $this -> user=new UserModel();
@@ -17,6 +18,12 @@
 
     function viewSingin(){
         $this->renderView('dangnhap');
+    }
+
+
+    public function getEmail(){
+        $this->data['dsuser']=$this->user->getUser();
+        $this->renderView('donHang',$this->data);
     }
 
 
@@ -68,7 +75,7 @@
                 }
             } else {
                 echo '<script> alert("Sai tên đăng nhập hoặc mật khẩu")</script>';
-                echo '<script>location.href="index.php?page=dangNhap"</script>';
+                echo '<script>location.href="index.php?page=dangnhap"</script>';
             }
         }
     }
@@ -116,7 +123,15 @@
             ';
             
     }
-
+    function viewAccount() {
+        if (isset($_SESSION['user'])) {
+            print_r($_SESSION['user']);
+            $data = $_SESSION['user'];
+            $this->renderView('account', $data);
+        } else {
+            echo '<script>alert("Bạn chưa đăng nhập!"); location.href="index.php?page=dangnhap";</script>';
+        }
+    }
 }
 
 
