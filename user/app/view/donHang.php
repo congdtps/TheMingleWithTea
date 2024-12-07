@@ -194,7 +194,6 @@ try {
 
     $mail->CharSet = 'UTF-8';
     $mail->send();
-    echo 'Email đã được gửi thành công!';
 } catch (Exception $e) {
     echo "Không thể gửi email. Lỗi: {$mail->ErrorInfo}";
 }

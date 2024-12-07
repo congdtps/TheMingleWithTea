@@ -1,4 +1,3 @@
-<?php print_r($data) ?>
 <div id="content">
 
 <div class="customer-account">
